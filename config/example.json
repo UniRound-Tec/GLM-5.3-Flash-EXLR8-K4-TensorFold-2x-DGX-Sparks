@@ -1,0 +1,23 @@
+{
+  "worker": "spark02",
+  "head_rdma_ip": "10.100.0.2",
+  "head_interface": "enp1s0f0np0",
+  "worker_interface": "enp1s0f0np0",
+  "head_hca": "rocep1s0f0,roceP2p1s0f0",
+  "worker_hca": "rocep1s0f0,roceP2p1s0f0",
+  "gid_index": 3,
+  "head": {"data_dir": "~/.local/share/glm53-exlr8-recipe", "model_dir": "", "draft_dir": "", "vision_dir": ""},
+  "peer": {"data_dir": "~/.local/share/glm53-exlr8-recipe", "model_dir": "", "draft_dir": "", "vision_dir": ""},
+  "api_key_file": "",
+  "image": "glm53-exlr8-recipe:20261018",
+  "container": "glm53-exlr8-recipe",
+  "model_name": "GLM-5.3-Flash-EXLR8-K4",
+  "api_host": "0.0.0.0",
+  "api_port": 8888,
+  "backend_port": 8889,
+  "master_port": 29551,
+  "context": 1048576,
+  "parallel": 4,
+  "max_tokens": 32768,
+  "vision": true
+}

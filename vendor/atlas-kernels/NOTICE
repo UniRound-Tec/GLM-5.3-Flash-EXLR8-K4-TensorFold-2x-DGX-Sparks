@@ -1,0 +1,2 @@
+Derived from Enntity/atlas 72588541a466f53cb9d38afd74c515e14ab601db, AGPL-3.0-only.
+Existing QAD/CSF expert adaptations retained. Added persistent scheduler and sparse MLA reading TensorFold row-scaled FP8 cache.

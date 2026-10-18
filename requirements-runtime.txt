@@ -1,0 +1,12 @@
+nvidia-cutlass-dsl==4.7.1
+nvidia-cutlass-dsl-libs-base==4.7.1
+nvidia-cutlass-dsl-libs-core==4.7.1
+nvidia-cutlass-dsl-libs-cu12==4.7.1
+nvidia-cutlass-dsl-libs-cu13==4.7.1
+apache-tvm-ffi==0.1.12
+rich==15.0.0
+safetensors==0.8.0
+transformers==5.18.0
+huggingface-hub==1.33.0
+av==18.1.0
+xgrammar==0.2.8

@@ -1,0 +1,5 @@
+* -text
+quickstart.sh text eol=lf
+scripts/rebuild-native.sh text eol=lf
+*.so binary
+*.o binary

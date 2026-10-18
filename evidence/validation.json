@@ -1,0 +1,58 @@
+{
+  "complete": true,
+  "checks": {
+    "config.json": true,
+    "exlr8-runtime-headers.json": true,
+    "vision_files_identical": true,
+    "prepare_idempotent": true,
+    "image_checkpoint_contract": {
+      "family": "glm53_flash_exlr8_k4",
+      "expert_compute": "fp16",
+      "dense_compute": "bf16"
+    },
+    "cuda_initialized": false,
+    "shell_syntax": true
+  },
+  "view": {
+    "logical_tensors": 113074,
+    "vision_tensors": 347,
+    "vision_bytes": 1127254016
+  },
+  "new_model_loads": 0,
+  "generated_requests": 0,
+  "public_base_fresh_install_tested": false,
+  "static_checks": {
+    "python_ast_files": 919,
+    "unit_checks": 5,
+    "source_delta": [
+      "tensorfold/families/glm5_next/cuda/draft_checkpoints.py"
+    ],
+    "source_omitted": [
+      "tensorfold/families/glm5_next/cuda/libatlas_prefill.so"
+    ],
+    "markdown_links_checked": true,
+    "secret_signature_scan_passed": true
+  },
+  "service_audit": {
+    "head_identity_unchanged": true,
+    "worker_identity_unchanged": true,
+    "defaults_unchanged": true,
+    "generated_requests_delta": 0,
+    "new_image_layers": 119,
+    "health": {
+      "ok": true,
+      "busy": false,
+      "requests_total": 6,
+      "requests_running": 0,
+      "pool_tokens": 1699840
+    }
+  },
+  "build": {
+    "mode": "offline",
+    "base": "glm-mxprefill:20261018",
+    "gpu_used": false,
+    "final_cpu_container_started": true,
+    "dual_gpu_model_load_tested": false
+  },
+  "checkpoint_contract_note": "dense_compute in the loader contract is a family metadata label; actual <=32-row native MXFP8 and other per-module paths are documented in README."
+}

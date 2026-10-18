@@ -1,0 +1,20 @@
+{
+  "quant": "mse",
+  "kda": false,
+  "taps": false,
+  "prefill": 0,
+  "asyncmsg": false,
+  "sampler": false,
+  "prefill_taps": true,
+  "index_split": true,
+  "mla_variant": 1,
+  "chunk8k": false,
+  "gr8": false,
+  "pf": 1,
+  "d30": 7,
+  "verify8": true,
+  "expert_order": 2,
+  "draft_noise": 1.0,
+  "rrs_k": 0,
+  "mx_prefill": false
+}

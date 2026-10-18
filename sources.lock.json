@@ -1,0 +1,57 @@
+{
+  "snapshot_date": "2026-10-18",
+  "tensorfold": {
+    "repo": "https://github.com/ashhart/TensorFold",
+    "ref": "v0.6.0",
+    "license": "Apache-2.0"
+  },
+  "mia": {
+    "repo": "https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks-TensorFold",
+    "selected_v110_commit": "549fdc562c477d477244d2df0590d6c14bda4889",
+    "license": "Apache-2.0"
+  },
+  "base_image": "ghcr.io/miaai-lab/glm-5.3-flash-exl3-2x-dgx-sparks-tensorfold@sha256:b47c19d66633f27cbe37da13fbc580363f466c08b9529feab1eecb1a4b904bf1",
+  "atlas": {
+    "repo": "https://github.com/Enntity/atlas",
+    "revision": "72588541a466f53cb9d38afd74c515e14ab601db",
+    "license": "AGPL-3.0-only"
+  },
+  "b12x": {
+    "repo": "https://github.com/local-inference-lab/b12x",
+    "revision": "f838b9b669999151953cb3238c041183e9ce8d22",
+    "license": "Apache-2.0",
+    "local_modifications": true
+  },
+  "csf_reader": {
+    "repo": "https://github.com/local-inference-lab/vllm",
+    "revision": "a5430f5f25b681cf0b3f35bd339e1d1f21d47fb1",
+    "license": "Apache-2.0"
+  },
+  "model": {
+    "repo": "kindlingai/glm-5.3-flash-exlr8-k2-k3-k4",
+    "revision": "3117e3b85744ca91c49fcbe95b46c33f31091829",
+    "variant": "K4",
+    "license": "MIT"
+  },
+  "draft": {
+    "repo": "incoai/GLM-5.3-Flash-DFlash2",
+    "revision": "bf582e4eacc1810f76656d1811693ff6c6737d2a",
+    "license": "CC-BY-NC-ND-4.0",
+    "optional_retired_revisions": [
+      "7d74cdd881ed7e32c31175984a67823127b66cfe",
+      "dc77ff1c99eeb2df044ee3d4f0094eb033fee410"
+    ]
+  },
+  "vision_source": {
+    "repo": "local-inference-lab/GLM-5.3-Flash-NVFP4-CSF-QAD",
+    "revision": "0e906796c76ae14616398507f446c06af48a6c1d",
+    "license": "LicenseRef-LIL-1.0",
+    "source_repo": "local-inference-lab/GLM-5.3-Flash-NVFP4",
+    "source_revision": "175ae8ce3b5af842b0d0140dbeb43e9cfc557c49"
+  },
+  "gr8": {
+    "repo": "https://github.com/kindlingai/gr8",
+    "role": "codec/native-kernel reference; gr8 runtime disabled",
+    "license": "MIT"
+  }
+}

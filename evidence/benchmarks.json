@@ -1,0 +1,1135 @@
+{
+  "selection": "Fast valid historical samples; not averages or fresh recipe benchmarks",
+  "created": "2026-10-18",
+  "decode": [
+    {
+      "source": "research/glm-speed6040-20261018/rrs/code-recheck-results.json",
+      "source_sha256": "9b8abaed022cbcf818710f4954b609ed5a7579742c9f6db2e07c66ba8ee06f9e",
+      "row_index": 2,
+      "name": "mia_code",
+      "seed": 42,
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 512,
+        "total_tokens": 614,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.2506,
+        "decode_s": 4.295,
+        "rounds": 43,
+        "drafts": true,
+        "cached": 64,
+        "min_rows": 6,
+        "drafted": 507,
+        "accepted": 468,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2
+        },
+        "verify_graph_paths_total": {
+          "-4": 907,
+          "-2": 2961,
+          "-3": 1018,
+          "-7": 139,
+          "-8": 341,
+          "-5": 312,
+          "-6": 180,
+          "-1": 1,
+          "16": 159,
+          "9": 6
+        },
+        "sha256": "6119bb231c1950a6",
+        "tokens_per_round": 11.884,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "f6b71efda36a"
+      },
+      "tok_s": 118.97555296856811,
+      "output_sha256": "b85ff5b136521940b283638a9bbc2fb4836cd83fb08fa69cc19679e46cb14d09",
+      "output_text": "def clamp_00(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_01(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_02(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_03(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_04(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_05(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_06(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_07(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_08(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_09(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_10(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_11(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_12(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_13(x, lo=0, hi=1):\n    if x <"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/rrs/combo42-results.json",
+      "source_sha256": "411d209ef1ea15e13b5844dd837513df41b66f0b25d60f3c2cc4221389b9ae92",
+      "row_index": 0,
+      "name": "mia_prose",
+      "seed": 42,
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 512,
+        "total_tokens": 545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.2313,
+        "decode_s": 9.0227,
+        "rounds": 164,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 462,
+        "accepted": 347,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2
+        },
+        "verify_graph_paths_total": {
+          "-4": 844,
+          "-2": 2677,
+          "-3": 899,
+          "-7": 117,
+          "-8": 168,
+          "-5": 279,
+          "-6": 126,
+          "-1": 1,
+          "16": 3,
+          "9": 6
+        },
+        "sha256": "3f3ba26718574411",
+        "tokens_per_round": 3.116,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "cf57e1925de3"
+      },
+      "tok_s": 56.63493189400069,
+      "output_sha256": "7ef208a474460f4253685b8d81943ed9b4278a375fe0aa3d59ddcdf5940af751",
+      "output_text": "# Hash Maps: A Complete Technical Explanation\n\nA **hash map** (also called a hash table) is a data structure that stores key-value pairs and provides average O(1) time for insertion, lookup, and deletion. Here's how it works under the hood.\n\n---\n\n## 1. Core Concept\n\nA hash map stores data by converting a **key** into an **array index**, so it can jump directly to the data's location instead of searching for it.\n\nThe two essential components:\n\n- **An array (bucket array):** The underlying storage. Each slot in the array is called a *bucket*.\n- **A hash function:** A function that maps a key to an index in that array.\n\n```\nkey → [hash function] → hash value → [index = hash % capacity] → bucket → value\n```\n\n---\n\n## 2. Step-by-Step: Storing a Value (`put(key, value)`)\n\nLet's walk through inserting `(\"apple\", 5)` into a hash map of capacity 16.\n\n**Step 1 — Hash the key.**\nThe hash function converts the key into a large integer called the *hash code*. For a string like `\"apple\"`, a common technique is polynomial rolling:\n\n```\nhash = 0\nhash = 31 * hash + 'a'  →  97\nhash = 31 * hash + 'p'  →  3038\nhash = 31 * hash + 'p'  →  94269\nhash = 31 * hash + 'l'  →  2922340\nhash = 31 * hash + 'e'  →  90592625\n```\n\n**Step 2 — Compress to an index.**\nThe raw hash is usually a huge number (or even negative in some languages). We compress it into the valid range `[0, capacity - 1]`:\n\n```\nindex = hash & (capacity - 1)      // bitwise mask, requires power-of-2 capacity\n// or\nindex = Math.abs(hash) % capacity  // modulo alternative\n```\n\nIf `capacity = 16`, the bitwise mask `hash & 15` keeps only the lowest 4 bits. Say the result is **index 9**.\n\n**Step 3 — Store the entry.**\nThe key-value pair is placed in bucket 9. Crucially, the **key is stored alongside the value** — this is necessary"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/rrs/confirm-results.json",
+      "source_sha256": "0a837c470555e1c71fe508de94e24a7eb4d61d37c678f13a16452ec54d907d3e",
+      "row_index": 1,
+      "name": "mia_prose",
+      "seed": 43,
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 512,
+        "total_tokens": 545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.2296,
+        "decode_s": 9.3934,
+        "rounds": 169,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 496,
+        "accepted": 342,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2
+        },
+        "verify_graph_paths_total": {
+          "-4": 627,
+          "-2": 1042,
+          "-3": 463,
+          "-7": 78,
+          "-8": 88,
+          "-5": 139,
+          "-6": 74,
+          "-1": 1,
+          "16": 2
+        },
+        "sha256": "bd2678ec6c55b6d7",
+        "tokens_per_round": 3.024,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "09368b53944c"
+      },
+      "tok_s": 54.39989780058339,
+      "output_sha256": "2da7806e7279947a9c86f138b61064d775a339932c2681674525eab8e4e22390",
+      "output_text": "# How a Hash Map Works: A Complete Guide\n\nA **hash map** (also called a hash table or dictionary) is a data structure that stores key-value pairs and provides, on average, constant-time lookup, insertion, and deletion. Here's a thorough breakdown of how it works internally.\n\n---\n\n## 1. The Core Idea\n\nA hash map stores data in an **array of \"buckets.\"** To decide where a key-value pair goes, we don't search the array — we *compute* the location directly using a hash function.\n\nThe three components are:\n\n1. **A hash function** — converts a key into an integer.\n2. **An index mapping** — converts that integer into a valid array index.\n3. **An array of buckets** — where the actual entries live.\n\n```\nkey → hash(key) → index → array[index]\n```\n\n---\n\n## 2. Step-by-Step: What Happens on `put(key, value)`\n\nLet's walk through inserting `put(\"apple\", 5)` into a hash map with capacity 8.\n\n### Step 1: Hash the key\nThe map calls the key's hash function, producing a (typically 32- or 64-bit) integer:\n\n```\nhash(\"apple\") = 0x7f3a91b2c4d5e6f8   (some large integer)\n```\n\nA good hash function should:\n- Be **deterministic**: the same key always produces the same hash.\n- **Distribute uniformly**: different keys produce hashes spread evenly across the range.\n- Be **fast** to compute.\n- Be **avalanche-sensitive**: a tiny change in the key drastically changes the hash.\n\n### Step 2: Map the hash to an array index\nThe hash is usually far larger than the array, so we compress it into a valid index. The most common method:\n\n```\nindex = hash & (capacity - 1)     // if capacity is a power of 2\n// or equivalently:\nindex = hash % capacity\n```\n\nWith capacity 8:\n\n```\nindex = 0x7f3a91b2c4d5e6f8 & 0b111 = 0b000  →  index 0\n```\n\n> **Why capacity is usually a power of 2:** Bitwise AND (`& (n-1)`) is faster than modulo, and it only works correctly when capacity is a power of 2. Java"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/rrs/confirm-results.json",
+      "source_sha256": "0a837c470555e1c71fe508de94e24a7eb4d61d37c678f13a16452ec54d907d3e",
+      "row_index": 6,
+      "name": "mia_prose",
+      "seed": 44,
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 512,
+        "total_tokens": 545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.2296,
+        "decode_s": 8.232,
+        "rounds": 143,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 492,
+        "accepted": 368,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2
+        },
+        "verify_graph_paths_total": {
+          "-4": 730,
+          "-2": 1847,
+          "-3": 680,
+          "-7": 97,
+          "-8": 117,
+          "-5": 195,
+          "-6": 90,
+          "-1": 1,
+          "16": 3,
+          "9": 2
+        },
+        "sha256": "d4879e59a35fe2fe",
+        "tokens_per_round": 3.573,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "005cfc3a4fed"
+      },
+      "tok_s": 62.07482993197279,
+      "output_sha256": "791ca47261c2dbb919a8a3530f2f02e361ba32f598f5feeb04b4d41f72565875",
+      "output_text": "# Hash Maps: A Comprehensive Explanation\n\n## 1. What Is a Hash Map?\n\nA hash map (also called a hash table or dictionary) is a data structure that stores **key-value pairs** and provides, on average, **O(1)** time for lookups, insertions, and deletions.\n\nInstead of searching through data sequentially (O(n)) or using tree-based comparisons (O(log n)), a hash map computes *where* a value should be stored directly from its key.\n\n---\n\n## 2. Core Components\n\nA hash map consists of:\n\n1. **Keys** — unique identifiers used to retrieve values\n2. **Values** — the data associated with each key\n3. **Buckets (or slots)** — storage locations in an underlying array\n4. **Hash function** — converts a key into an array index\n5. **Load factor** — a measure of how \"full\" the table is\n\n### The Underlying Array\n\n```\nIndex:   0     1     2     3     4     5     6     7\n       ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐\n       │     │     │ (\"ab\", 5) │     │     │     │     │\n       └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘\n```\n\n---\n\n## 3. The Hash Function\n\n### Step 1: Hash the Key\n\nThe hash function takes an arbitrary key (string, number, object) and produces an integer. A good hash function:\n\n- Is **deterministic** — the same key always yields the same hash\n- Distributes keys **uniformly** across the table\n- Is fast to compute\n\nExample for a string key `\"cat\"` using a simple polynomial rolling hash:\n\n```\nh = 0\nh = (31 * 0 + 'c') = 99\nh = (31 * 99 + 'a') = 3138\nh = (31 * 3138 + 't') = 97,297\n```\n\n### Step 2: Map the Hash to an Index\n\nThe raw hash may be a huge number, so it's compressed into a valid array index:\n\n```\nindex = hash(key"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/rrs/guards-results.json",
+      "source_sha256": "49afc9e1a27c4b07cdd5cf6975522965d9c191439ef6b93dd72cead7aa5a188d",
+      "row_index": 2,
+      "name": "mia_code",
+      "seed": 42,
+      "usage": {
+        "prompt_tokens": 102,
+        "completion_tokens": 512,
+        "total_tokens": 614,
+        "prompt_tokens_details": {
+          "cached_tokens": 64
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.252,
+        "decode_s": 4.292,
+        "rounds": 43,
+        "drafts": true,
+        "cached": 64,
+        "min_rows": 6,
+        "drafted": 507,
+        "accepted": 468,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2
+        },
+        "verify_graph_paths_total": {
+          "-4": 854,
+          "-2": 2852,
+          "-3": 951,
+          "-7": 122,
+          "-8": 220,
+          "-5": 283,
+          "-6": 135,
+          "-1": 1,
+          "16": 81,
+          "9": 6
+        },
+        "sha256": "6119bb231c1950a6",
+        "tokens_per_round": 11.884,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "f6b71efda36a"
+      },
+      "tok_s": 119.0587138863001,
+      "output_sha256": "b85ff5b136521940b283638a9bbc2fb4836cd83fb08fa69cc19679e46cb14d09",
+      "output_text": "def clamp_00(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_01(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_02(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_03(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_04(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_05(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_06(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_07(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_08(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_09(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_10(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_11(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_12(x, lo=0, hi=1):\n    if x < lo:\n        return lo\n    if x > hi:\n        return hi\n    return x\n\ndef clamp_13(x, lo=0, hi=1):\n    if x <"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/rrs/guards-results.json",
+      "source_sha256": "49afc9e1a27c4b07cdd5cf6975522965d9c191439ef6b93dd72cead7aa5a188d",
+      "row_index": 4,
+      "name": "logic_code",
+      "seed": 42,
+      "usage": {
+        "prompt_tokens": 211,
+        "completion_tokens": 512,
+        "total_tokens": 723,
+        "prompt_tokens_details": {
+          "cached_tokens": 192
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.1197,
+        "decode_s": 7.9196,
+        "rounds": 130,
+        "drafts": true,
+        "cached": 192,
+        "min_rows": 2,
+        "drafted": 459,
+        "accepted": 381,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2
+        },
+        "verify_graph_paths_total": {
+          "-4": 890,
+          "-2": 2923,
+          "-3": 996,
+          "-7": 134,
+          "-8": 269,
+          "-5": 302,
+          "-6": 163,
+          "-1": 1,
+          "16": 81,
+          "9": 6
+        },
+        "sha256": "c74801d6d43ddb0f",
+        "tokens_per_round": 3.931,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "7c61eafcc3cb"
+      },
+      "tok_s": 64.52346078084751,
+      "output_sha256": "993561df73946476ba93914cbc4e54bc00c91d67d078ce1d56887b390801586b",
+      "output_text": "```python\nfrom __future__ import annotations\n\nfrom typing import List, Tuple\n\n\ndef partition_intervals(\n    intervals: List[Tuple[int, int, str]],\n) -> List[Tuple[int, int, Tuple[str, ...]]]:\n    \"\"\"Partition the union of half-open intervals into maximal segments.\n\n    Each input interval is (start, end, label) covering [start, end).\n    Returns a sorted list of nonempty segments (start, end, labels) where\n    labels is a sorted tuple of distinct labels active on that segment.\n    Adjacent segments sharing the same labels are merged.\n\n    Zero-length intervals (start == end) are ignored; start > end raises\n    ValueError. The input list is never modified. Negative coordinates\n    are supported.\n\n    Sweeps over the O(n) distinct endpoints rather than integer\n    coordinates, so the complexity is O(n log n) time (sorting the\n    endpoint events) and O(n) space.\n    \"\"\"\n    events: List[Tuple[int, int, str]] = []\n    for start, end, label in intervals:\n        if start > end:\n            raise ValueError(f\"start > end in interval {start!r}..{end!r}\")\n        if start == end:\n            continue\n        # delta at each endpoint: +1 for starts, -1 for ends.\n        events.append((start, 1, label))\n        events.append((end, -1, label))\n\n    events.sort(key=lambda e: (e[0], e[1]))\n\n    result: List[Tuple[int, int, Tuple[str, ...]]] = []\n    # Counts of each active label. Duplicate same-label overlaps are\n    # tracked so an end event only removes a label when its count hits 0.\n    active: dict[str, int] = {}\n\n    i = 0\n    n = len(events)\n    while i < n:\n        pos = events[i][0]\n        # Process every event at this endpoint (starts and ends together,\n        # so multiple starts/ends at the same point are handled at once).\n        while i < n and events[i][0] == pos:\n            _, delta, label = events[i]\n            active[label] = active.get(label, 0) + delta\n            if active[label] == 0:\n                del active[label]\n            i += 1\n\n        if active:\n            labels = tuple(sorted(active))\n            if result and result[-1][1] == pos and"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/adaptive_rrs/confirm-results.json",
+      "source_sha256": "d397108f8c59b9fb4d8aebf9ac3ad68769139619d2040f0934b47bdd3a7cd071",
+      "row_index": 1,
+      "name": "mia_prose",
+      "seed": 43,
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 512,
+        "total_tokens": 545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.231,
+        "decode_s": 9.3257,
+        "rounds": 169,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 496,
+        "accepted": 342,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0
+        },
+        "verify_graph_paths_total": {
+          "-3": 576,
+          "-5": 181,
+          "-7": 78,
+          "-8": 102,
+          "-6": 90,
+          "-4": 298,
+          "-2": 767,
+          "-1": 4,
+          "16": 2
+        },
+        "sha256": "bd2678ec6c55b6d7",
+        "tokens_per_round": 3.024,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "09368b53944c"
+      },
+      "tok_s": 54.794814330291565,
+      "output_sha256": "2da7806e7279947a9c86f138b61064d775a339932c2681674525eab8e4e22390",
+      "output_text": "# How a Hash Map Works: A Complete Guide\n\nA **hash map** (also called a hash table or dictionary) is a data structure that stores key-value pairs and provides, on average, constant-time lookup, insertion, and deletion. Here's a thorough breakdown of how it works internally.\n\n---\n\n## 1. The Core Idea\n\nA hash map stores data in an **array of \"buckets.\"** To decide where a key-value pair goes, we don't search the array — we *compute* the location directly using a hash function.\n\nThe three components are:\n\n1. **A hash function** — converts a key into an integer.\n2. **An index mapping** — converts that integer into a valid array index.\n3. **An array of buckets** — where the actual entries live.\n\n```\nkey → hash(key) → index → array[index]\n```\n\n---\n\n## 2. Step-by-Step: What Happens on `put(key, value)`\n\nLet's walk through inserting `put(\"apple\", 5)` into a hash map with capacity 8.\n\n### Step 1: Hash the key\nThe map calls the key's hash function, producing a (typically 32- or 64-bit) integer:\n\n```\nhash(\"apple\") = 0x7f3a91b2c4d5e6f8   (some large integer)\n```\n\nA good hash function should:\n- Be **deterministic**: the same key always produces the same hash.\n- **Distribute uniformly**: different keys produce hashes spread evenly across the range.\n- Be **fast** to compute.\n- Be **avalanche-sensitive**: a tiny change in the key drastically changes the hash.\n\n### Step 2: Map the hash to an array index\nThe hash is usually far larger than the array, so we compress it into a valid index. The most common method:\n\n```\nindex = hash & (capacity - 1)     // if capacity is a power of 2\n// or equivalently:\nindex = hash % capacity\n```\n\nWith capacity 8:\n\n```\nindex = 0x7f3a91b2c4d5e6f8 & 0b111 = 0b000  →  index 0\n```\n\n> **Why capacity is usually a power of 2:** Bitwise AND (`& (n-1)`) is faster than modulo, and it only works correctly when capacity is a power of 2. Java"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/adaptive_rrs/confirm-results.json",
+      "source_sha256": "d397108f8c59b9fb4d8aebf9ac3ad68769139619d2040f0934b47bdd3a7cd071",
+      "row_index": 4,
+      "name": "mia_prose",
+      "seed": 44,
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 512,
+        "total_tokens": 545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.2327,
+        "decode_s": 8.2251,
+        "rounds": 143,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 492,
+        "accepted": 368,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0
+        },
+        "verify_graph_paths_total": {
+          "-3": 768,
+          "-5": 224,
+          "-7": 88,
+          "-8": 127,
+          "-6": 103,
+          "-4": 378,
+          "-2": 1116,
+          "-1": 5,
+          "16": 2,
+          "9": 2
+        },
+        "sha256": "d4879e59a35fe2fe",
+        "tokens_per_round": 3.573,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "005cfc3a4fed"
+      },
+      "tok_s": 62.1269042321674,
+      "output_sha256": "791ca47261c2dbb919a8a3530f2f02e361ba32f598f5feeb04b4d41f72565875",
+      "output_text": "# Hash Maps: A Comprehensive Explanation\n\n## 1. What Is a Hash Map?\n\nA hash map (also called a hash table or dictionary) is a data structure that stores **key-value pairs** and provides, on average, **O(1)** time for lookups, insertions, and deletions.\n\nInstead of searching through data sequentially (O(n)) or using tree-based comparisons (O(log n)), a hash map computes *where* a value should be stored directly from its key.\n\n---\n\n## 2. Core Components\n\nA hash map consists of:\n\n1. **Keys** — unique identifiers used to retrieve values\n2. **Values** — the data associated with each key\n3. **Buckets (or slots)** — storage locations in an underlying array\n4. **Hash function** — converts a key into an array index\n5. **Load factor** — a measure of how \"full\" the table is\n\n### The Underlying Array\n\n```\nIndex:   0     1     2     3     4     5     6     7\n       ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐\n       │     │     │ (\"ab\", 5) │     │     │     │     │\n       └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘\n```\n\n---\n\n## 3. The Hash Function\n\n### Step 1: Hash the Key\n\nThe hash function takes an arbitrary key (string, number, object) and produces an integer. A good hash function:\n\n- Is **deterministic** — the same key always yields the same hash\n- Distributes keys **uniformly** across the table\n- Is fast to compute\n\nExample for a string key `\"cat\"` using a simple polynomial rolling hash:\n\n```\nh = 0\nh = (31 * 0 + 'c') = 99\nh = (31 * 99 + 'a') = 3138\nh = (31 * 3138 + 't') = 97,297\n```\n\n### Step 2: Map the Hash to an Index\n\nThe raw hash may be a huge number, so it's compressed into a valid array index:\n\n```\nindex = hash(key"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/adaptive_rrs/cost-screen-results.json",
+      "source_sha256": "33c1b046fcc9c3f7cf7bf8fc32da4b77388b6c4e770ad3f610e02d809eabb451",
+      "row_index": 0,
+      "name": "mia_prose",
+      "seed": 42,
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 512,
+        "total_tokens": 545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.2314,
+        "decode_s": 9.0462,
+        "rounds": 164,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 462,
+        "accepted": 347,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0
+        },
+        "verify_graph_paths_total": {
+          "-3": 1012,
+          "-5": 292,
+          "-7": 108,
+          "-8": 161,
+          "-6": 146,
+          "-4": 487,
+          "-2": 1485,
+          "-1": 5,
+          "16": 2,
+          "9": 2
+        },
+        "sha256": "3f3ba26718574411",
+        "tokens_per_round": 3.116,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "cf57e1925de3"
+      },
+      "tok_s": 56.48780703499811,
+      "output_sha256": "7ef208a474460f4253685b8d81943ed9b4278a375fe0aa3d59ddcdf5940af751",
+      "output_text": "# Hash Maps: A Complete Technical Explanation\n\nA **hash map** (also called a hash table) is a data structure that stores key-value pairs and provides average O(1) time for insertion, lookup, and deletion. Here's how it works under the hood.\n\n---\n\n## 1. Core Concept\n\nA hash map stores data by converting a **key** into an **array index**, so it can jump directly to the data's location instead of searching for it.\n\nThe two essential components:\n\n- **An array (bucket array):** The underlying storage. Each slot in the array is called a *bucket*.\n- **A hash function:** A function that maps a key to an index in that array.\n\n```\nkey → [hash function] → hash value → [index = hash % capacity] → bucket → value\n```\n\n---\n\n## 2. Step-by-Step: Storing a Value (`put(key, value)`)\n\nLet's walk through inserting `(\"apple\", 5)` into a hash map of capacity 16.\n\n**Step 1 — Hash the key.**\nThe hash function converts the key into a large integer called the *hash code*. For a string like `\"apple\"`, a common technique is polynomial rolling:\n\n```\nhash = 0\nhash = 31 * hash + 'a'  →  97\nhash = 31 * hash + 'p'  →  3038\nhash = 31 * hash + 'p'  →  94269\nhash = 31 * hash + 'l'  →  2922340\nhash = 31 * hash + 'e'  →  90592625\n```\n\n**Step 2 — Compress to an index.**\nThe raw hash is usually a huge number (or even negative in some languages). We compress it into the valid range `[0, capacity - 1]`:\n\n```\nindex = hash & (capacity - 1)      // bitwise mask, requires power-of-2 capacity\n// or\nindex = Math.abs(hash) % capacity  // modulo alternative\n```\n\nIf `capacity = 16`, the bitwise mask `hash & 15` keeps only the lowest 4 bits. Say the result is **index 9**.\n\n**Step 3 — Store the entry.**\nThe key-value pair is placed in bucket 9. Crucially, the **key is stored alongside the value** — this is necessary"
+    },
+    {
+      "source": "research/glm-speed6040-20261018/adaptive_rrs/screen-results.json",
+      "source_sha256": "cd15848c677269d9a84878152451c180459b99bc9ec4a05a5c552f764f92f3a3",
+      "row_index": 2,
+      "name": "mia_prose",
+      "seed": 42,
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 512,
+        "total_tokens": 545,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 0.2309,
+        "decode_s": 9.0385,
+        "rounds": 164,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 462,
+        "accepted": 347,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0
+        },
+        "verify_graph_paths_total": {
+          "-3": 117,
+          "-5": 71,
+          "-7": 31,
+          "-8": 49,
+          "-6": 46,
+          "-4": 79,
+          "-2": 122,
+          "-1": 2
+        },
+        "sha256": "3f3ba26718574411",
+        "tokens_per_round": 3.116,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "cf57e1925de3"
+      },
+      "tok_s": 56.535929634341976,
+      "output_sha256": "7ef208a474460f4253685b8d81943ed9b4278a375fe0aa3d59ddcdf5940af751",
+      "output_text": "# Hash Maps: A Complete Technical Explanation\n\nA **hash map** (also called a hash table) is a data structure that stores key-value pairs and provides average O(1) time for insertion, lookup, and deletion. Here's how it works under the hood.\n\n---\n\n## 1. Core Concept\n\nA hash map stores data by converting a **key** into an **array index**, so it can jump directly to the data's location instead of searching for it.\n\nThe two essential components:\n\n- **An array (bucket array):** The underlying storage. Each slot in the array is called a *bucket*.\n- **A hash function:** A function that maps a key to an index in that array.\n\n```\nkey → [hash function] → hash value → [index = hash % capacity] → bucket → value\n```\n\n---\n\n## 2. Step-by-Step: Storing a Value (`put(key, value)`)\n\nLet's walk through inserting `(\"apple\", 5)` into a hash map of capacity 16.\n\n**Step 1 — Hash the key.**\nThe hash function converts the key into a large integer called the *hash code*. For a string like `\"apple\"`, a common technique is polynomial rolling:\n\n```\nhash = 0\nhash = 31 * hash + 'a'  →  97\nhash = 31 * hash + 'p'  →  3038\nhash = 31 * hash + 'p'  →  94269\nhash = 31 * hash + 'l'  →  2922340\nhash = 31 * hash + 'e'  →  90592625\n```\n\n**Step 2 — Compress to an index.**\nThe raw hash is usually a huge number (or even negative in some languages). We compress it into the valid range `[0, capacity - 1]`:\n\n```\nindex = hash & (capacity - 1)      // bitwise mask, requires power-of-2 capacity\n// or\nindex = Math.abs(hash) % capacity  // modulo alternative\n```\n\nIf `capacity = 16`, the bitwise mask `hash & 15` keeps only the lowest 4 bits. Say the result is **index 9**.\n\n**Step 3 — Store the entry.**\nThe key-value pair is placed in bucket 9. Crucially, the **key is stored alongside the value** — this is necessary"
+    }
+  ],
+  "prefill": [
+    {
+      "source": "research/glm-source-speed-20261018/mlp-prefill-results.json",
+      "source_sha256": "74f68d17d5491e203f47e2dd0221c6eadedbf3e7b9d9396f3dfc12bf9d528bdc",
+      "row_index": 0,
+      "label": "historical-source-mlp-K0",
+      "nominal_tokens": 8192,
+      "usage": {
+        "prompt_tokens": 8256,
+        "completion_tokens": 32,
+        "total_tokens": 8288,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 3.5864,
+        "decode_s": 1.1226,
+        "rounds": 31,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 1,
+        "drafted": 0,
+        "accepted": 0,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": true,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 0.7
+        },
+        "sha256": "c75ffdc599e134f2",
+        "tokens_per_round": 1.0,
+        "parallel": 4,
+        "policy": "0",
+        "token_sha": "9d85cc4319c2"
+      },
+      "ttft_s": 5.005295914947055,
+      "prompt_sha256": "86111649af41a1e0a9a4eedf4096d505acdfcd91997bae684d0da016754fabaa",
+      "tok_s": 2302.0298906981934,
+      "seed": 42
+    },
+    {
+      "source": "research/glm-source-speed-20261018/mlp-prefill-results.json",
+      "source_sha256": "74f68d17d5491e203f47e2dd0221c6eadedbf3e7b9d9396f3dfc12bf9d528bdc",
+      "row_index": 1,
+      "label": "historical-source-mlp-K0",
+      "nominal_tokens": 32768,
+      "usage": {
+        "prompt_tokens": 32830,
+        "completion_tokens": 32,
+        "total_tokens": 32862,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 13.2354,
+        "decode_s": 1.1248,
+        "rounds": 31,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 1,
+        "drafted": 0,
+        "accepted": 0,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": true,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 0.7
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 1.0,
+        "parallel": 4,
+        "policy": "0",
+        "token_sha": "74266b861d23"
+      },
+      "ttft_s": 18.86242935003247,
+      "prompt_sha256": "bfa7982752435cfe3cc8897dfb14b507e7bfb9d3bb5e60ecf3cbcf4dd83823d1",
+      "tok_s": 2480.4690451365277,
+      "seed": 42
+    },
+    {
+      "source": "research/glm-current-prefill-20261018/results.json",
+      "source_sha256": "916280958490e0b53f8f61cff183fabd6ec2b3cbfee69195c8aebb9233f49c02",
+      "row_index": 0,
+      "label": "retained-FNC7-path",
+      "nominal_tokens": 8192,
+      "usage": {
+        "prompt_tokens": 8258,
+        "completion_tokens": 32,
+        "total_tokens": 8290,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 5.0454,
+        "decode_s": 0.9014,
+        "rounds": 19,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 24,
+        "accepted": 12,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false
+        },
+        "verify_graph_paths_total": {
+          "3": 975,
+          "5": 396,
+          "2": 1880,
+          "8": 405,
+          "6": 230,
+          "4": 626,
+          "7": 148,
+          "16": 13
+        },
+        "sha256": "78996e13bedb8e89",
+        "tokens_per_round": 1.632,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "420d8a126d01"
+      },
+      "ttft_s": 5.116065580048598,
+      "prompt_sha256": "c60bdf99ae0dd88f9fcbf72c2a09c938a3a8ed2262ca35a68cf992902e8880a8",
+      "tok_s": 1636.7384151900742,
+      "seed": 42
+    },
+    {
+      "source": "research/glm-current-prefill-20261018/results.json",
+      "source_sha256": "916280958490e0b53f8f61cff183fabd6ec2b3cbfee69195c8aebb9233f49c02",
+      "row_index": 1,
+      "label": "retained-FNC7-path",
+      "nominal_tokens": 32768,
+      "usage": {
+        "prompt_tokens": 32832,
+        "completion_tokens": 32,
+        "total_tokens": 32864,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 18.9132,
+        "decode_s": 0.3376,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false
+        },
+        "verify_graph_paths_total": {
+          "3": 975,
+          "5": 396,
+          "2": 1881,
+          "8": 406,
+          "6": 230,
+          "4": 626,
+          "7": 148,
+          "16": 14,
+          "9": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "ttft_s": 18.975597259006463,
+      "prompt_sha256": "d123f446d97165f55194e20591cd2155d66a5b551836a575d69ba61f180f3dc9",
+      "tok_s": 1735.930461265148,
+      "seed": 42
+    },
+    {
+      "source": "research/glm-mxfp8-prefill-20261018/integration/bench-results.json",
+      "source_sha256": "34796c5f3b5473be6c5da9866a52ae5ac892ff41b66e3d367a8bef4d08235679",
+      "row_index": 0,
+      "label": "current-image-mx-prefill-false",
+      "nominal_tokens": 8192,
+      "usage": {
+        "prompt_tokens": 8258,
+        "completion_tokens": 32,
+        "total_tokens": 8290,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 5.0954,
+        "decode_s": 0.9151,
+        "rounds": 19,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 24,
+        "accepted": 12,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false
+        },
+        "verify_graph_paths_total": {
+          "2": 15,
+          "3": 3,
+          "4": 1
+        },
+        "sha256": "78996e13bedb8e89",
+        "tokens_per_round": 1.632,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "420d8a126d01"
+      },
+      "ttft_s": 5.124680784996599,
+      "prompt_sha256": "c60bdf99ae0dd88f9fcbf72c2a09c938a3a8ed2262ca35a68cf992902e8880a8",
+      "tok_s": 1620.677473799898,
+      "seed": 42
+    },
+    {
+      "source": "research/glm-mxfp8-prefill-20261018/integration/bench-results.json",
+      "source_sha256": "34796c5f3b5473be6c5da9866a52ae5ac892ff41b66e3d367a8bef4d08235679",
+      "row_index": 3,
+      "label": "current-image-mx-prefill-false",
+      "nominal_tokens": 32768,
+      "usage": {
+        "prompt_tokens": 32832,
+        "completion_tokens": 32,
+        "total_tokens": 32864,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 19.0036,
+        "decode_s": 0.3434,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false
+        },
+        "verify_graph_paths_total": {
+          "2": 37,
+          "3": 6,
+          "4": 4,
+          "5": 2,
+          "13": 1,
+          "8": 1,
+          "16": 1,
+          "9": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "ttft_s": 19.065173786017112,
+      "prompt_sha256": "d123f446d97165f55194e20591cd2155d66a5b551836a575d69ba61f180f3dc9",
+      "tok_s": 1727.672651497611,
+      "seed": 42
+    }
+  ],
+  "protocol": {
+    "temperature": 1,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "thinking": false,
+    "decode_output_tokens": 512,
+    "decode_formula": "(completion_tokens-1)/stats.decode_s",
+    "prefill_formula": "(prompt_tokens-cached_tokens)/stats.prefill_s"
+  },
+  "selected_decode": {
+    "mia_code": 119.0587138863001,
+    "mia_prose": 62.1269042321674,
+    "logic_code": 64.52346078084751
+  }
+}

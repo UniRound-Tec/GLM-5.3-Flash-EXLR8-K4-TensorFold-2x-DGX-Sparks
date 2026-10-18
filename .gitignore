@@ -1,0 +1,14 @@
+config/local.json
+*.private.json
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+data/
+weights/
+private/
+*.key
+.env
+*.tar
+*.tar.gz
+*.zip

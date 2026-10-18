@@ -1,0 +1,7 @@
+{
+  "description": "Post-capture runtime cleanup patch copied verbatim from the running container; old draft files are optional. Original capture hashes remain in live-source-manifest.json.",
+  "file": "vendor/tensorfold/families/glm5_next/cuda/draft_checkpoints.py",
+  "sha256": "6bbc55f877132c58566849e480f98569f704797a12d2bd501f62347dc7a251d5",
+  "numeric_changes": false,
+  "model_reload_performed": false
+}

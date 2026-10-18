@@ -1,0 +1,9 @@
+.git
+config/local.json
+**/__pycache__
+**/*.pyc
+tests
+*.zip
+data
+weights
+private

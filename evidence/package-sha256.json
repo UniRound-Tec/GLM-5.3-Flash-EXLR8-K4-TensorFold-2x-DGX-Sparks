@@ -1,0 +1,5305 @@
+{
+  "algorithm": "sha256",
+  "excludes": [
+    ".git",
+    "__pycache__",
+    "evidence/package-sha256.json"
+  ],
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 80,
+      "sha256": "2e3f9d5e4ceb7ec18686ee4450ccb75765fc604fe7cb81f822645b348934678e"
+    },
+    {
+      "path": ".gitattributes",
+      "bytes": 95,
+      "sha256": "6ca94f0308ebf974e168e811e0fa92f486bd4aa2ddcfdb36dc82259becf2d571"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 124,
+      "sha256": "b71c807d14379f190fafd88ba2c99e2b811e20ce1e6d259b5688baadd4e3dc43"
+    },
+    {
+      "path": "config/defaults.json",
+      "bytes": 356,
+      "sha256": "cb95fbb9ed88d10b524120ff00f4db0e4620bbf80318cccd199045d90eb04b8a"
+    },
+    {
+      "path": "config/example.json",
+      "bytes": 774,
+      "sha256": "daa6eee98f7d2470bba1e8552b39683721d2132275a029e8ba9e2dd8ed7345a4"
+    },
+    {
+      "path": "config/policy.txt",
+      "bytes": 10,
+      "sha256": "b71db5349b5d7c7ed00ce1a3a57863f1c638892ff72d00912be9c90294bcb0dc"
+    },
+    {
+      "path": "config/runtime.env",
+      "bytes": 1679,
+      "sha256": "5d3a495550457902c15c3f54d9054f475f7b81edf242a5a3e5c2c01e3729251b"
+    },
+    {
+      "path": "Dockerfile",
+      "bytes": 1036,
+      "sha256": "2224cbf56b284750840b7ff9142c3f2df2a3426bc5095ac1097d5565f7ca4c17"
+    },
+    {
+      "path": "docs/BENCHMARKS.md",
+      "bytes": 2149,
+      "sha256": "0d0cd04c86b576fb9e3fae9d8ab95dc2ca33ef1b152a7c0fa3c1ed8100b4a0fe"
+    },
+    {
+      "path": "docs/BUILD.md",
+      "bytes": 1713,
+      "sha256": "0a1221979ea8629ec71acc42de447563dd9a0430bb81f2307c2ab9afe57e3358"
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "bytes": 4067,
+      "sha256": "c4185d87568e03b0eb39b2065247afb1907e1069e99bcc4cd5a04065b11efdfd"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 1857,
+      "sha256": "4f5103cf32a214b64486e10967bb455beac81599083016003c86def6b8665caa"
+    },
+    {
+      "path": "evidence/benchmarks.json",
+      "bytes": 50772,
+      "sha256": "c8b0e9a739bda0c28a543008fbd5596052716acd660f30c1dd724497514d4918"
+    },
+    {
+      "path": "evidence/live-source-manifest.json",
+      "bytes": 187733,
+      "sha256": "24a445c7875903af0820189d75c3670edf923dc1c7a543aaddebac4662934958"
+    },
+    {
+      "path": "evidence/prompts.json",
+      "bytes": 1918,
+      "sha256": "397439263ef9cf1ff09cd17089842d6fab611007cc5a7a81c3f9b0d06b162b09"
+    },
+    {
+      "path": "evidence/runtime-source-update.json",
+      "bytes": 419,
+      "sha256": "90e084ff18f33a604933eda173acc453bd1b5b2409aa49463ef2215bf258ed98"
+    },
+    {
+      "path": "evidence/validation.json",
+      "bytes": 1683,
+      "sha256": "b2bc7cfc8da3c7883c89a9a7768e05ff40047a74df381ac6765c2ae4b1996859"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 34020,
+      "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+    },
+    {
+      "path": "licenses/AGPL-3.0-only.txt",
+      "bytes": 34020,
+      "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+    },
+    {
+      "path": "licenses/Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "licenses/EXLR8-model-MIT.txt",
+      "bytes": 1070,
+      "sha256": "30b85b6b9659f2e78aa259f8faf5d920a68dee7c9ced3fa6dba1f19f2bc4fca1"
+    },
+    {
+      "path": "licenses/gr8-MIT.txt",
+      "bytes": 1080,
+      "sha256": "70d01af48be4eca4e9d91c1199d2d7dddce0bc6846b9e99fdc68d35f437adef4"
+    },
+    {
+      "path": "licenses/TensorFold-Apache-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "quickstart.sh",
+      "bytes": 141,
+      "sha256": "7207aef26346100cbaeacb0f9b4d869eb8e88e3c8498295400535124fadfa8d6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8329,
+      "sha256": "3fe82bce469b128183c33aaa87b6a3ea3decdcffb2b42dbb96f334e2a6d42248"
+    },
+    {
+      "path": "requirements-runtime.txt",
+      "bytes": 297,
+      "sha256": "00c207e15c280a8b80e73416546004502a4d3096f465eb94dfe21d7a156da7a3"
+    },
+    {
+      "path": "runtime/auth_proxy.py",
+      "bytes": 3011,
+      "sha256": "b81f44ca5a2998fbd427b84f03dab880a37558090225411b79c3d6eaa7eedecf"
+    },
+    {
+      "path": "runtime/request_body.py",
+      "bytes": 3232,
+      "sha256": "975289a809c8bf7a0c5057f751dbc867dacdfa30a5e6bb3683910f1d4a9f1fef"
+    },
+    {
+      "path": "runtime/serve.py",
+      "bytes": 2180,
+      "sha256": "3d2109837ca3f70f93df6807333ae0b61af6f30377c29c15e55230c60d15b2ea"
+    },
+    {
+      "path": "scripts/benchmark.py",
+      "bytes": 3930,
+      "sha256": "616cc434ffca49a3b334163822be348719814db10f7e813a862ef2ce862cfb41"
+    },
+    {
+      "path": "scripts/check_runtime.py",
+      "bytes": 958,
+      "sha256": "e2024921ecfc0af1f3c90d052c714def4af6d875c41424574138cc53d5fcf10b"
+    },
+    {
+      "path": "scripts/prepare_view.py",
+      "bytes": 6821,
+      "sha256": "8d8719e44921934448c7a8b21cd59eb035e5d6cde3692d76cefd88168d750550"
+    },
+    {
+      "path": "scripts/rebuild-native.sh",
+      "bytes": 1012,
+      "sha256": "e3af66ac6454022ad4df95585b096b3f180dba6881db7c5f92df1df2d830e61f"
+    },
+    {
+      "path": "scripts/recipe.py",
+      "bytes": 10430,
+      "sha256": "84d9e3ca01463e9d6e35dd00cb8ab7cae0be1a1baf62916d578763b07cc048ce"
+    },
+    {
+      "path": "sources.lock.json",
+      "bytes": 2038,
+      "sha256": "3c8007bc2d573e85188978e4792e6c4426024bee6004b104d891e6b4d4ed6129"
+    },
+    {
+      "path": "tests/test_recipe.py",
+      "bytes": 2900,
+      "sha256": "87ea2f57a2bded2fcfa5e43c01d65a6d25eb3fed1640c3933b75390ce6f34b36"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3137,
+      "sha256": "d41d91e656c6fcf7d2ab8a6dddc5fcaad71d3771501c2f54521f5df00e43e27f"
+    },
+    {
+      "path": "vendor/atlas-kernels/atlas_k128w.cuh",
+      "bytes": 26217,
+      "sha256": "ec56be0ac159b658207b4542f85a3f3f0838b16027ab666d99c07f721c2a7e0f"
+    },
+    {
+      "path": "vendor/atlas-kernels/atlas_m16.cuh",
+      "bytes": 5863,
+      "sha256": "0c6930b520ff7355f3f69489e38f0f6646080668413d8930481bd11a70fa5136"
+    },
+    {
+      "path": "vendor/atlas-kernels/bridge.cu",
+      "bytes": 7021,
+      "sha256": "a7f39b2bc60d0cc8794e5adccc421f252371e3faa9cc2b14cb99286b112bbb15"
+    },
+    {
+      "path": "vendor/atlas-kernels/entry.cuh",
+      "bytes": 3154,
+      "sha256": "26df809a5b59679642b8d9887fa16128979a457f5f475ba3f62362bf476af7b0"
+    },
+    {
+      "path": "vendor/atlas-kernels/LICENSE-Atlas",
+      "bytes": 34020,
+      "sha256": "d8a6cc31abc16b6748c7a21f21611f5a1ec33f67d22ca23d7da1c19b95496bee"
+    },
+    {
+      "path": "vendor/atlas-kernels/m128n128.cuh",
+      "bytes": 16629,
+      "sha256": "3d56774fbc849347a497876ef2f82ad1c32d22041aec7688694ee744ea5a9022"
+    },
+    {
+      "path": "vendor/atlas-kernels/m128n256.cuh",
+      "bytes": 16629,
+      "sha256": "09783749acc8bac8a5edec1584312378d94124d5b01443cfb4414e711ca9e86d"
+    },
+    {
+      "path": "vendor/atlas-kernels/mla.cu",
+      "bytes": 19718,
+      "sha256": "635f6de417e9a56c2d43b90218725839ecfb25b9b2ae9d1dcd3aec4c8b4b0bfb"
+    },
+    {
+      "path": "vendor/atlas-kernels/NOTICE",
+      "bytes": 213,
+      "sha256": "243721dd7449a98cadaba6e2f57bde1ef2a9a9593309b57a07786be6d459e558"
+    },
+    {
+      "path": "vendor/atlas-kernels/prefill_entry.cuh",
+      "bytes": 2949,
+      "sha256": "42009af7578c101a804aef1121bc7e4abb69040916f369e2fbfd1ed1dec0898b"
+    },
+    {
+      "path": "vendor/atlas-kernels/qad_helpers.cuh",
+      "bytes": 3059,
+      "sha256": "170cbd80b60266a42d8bbf0d960c887145e16e4f5122987c903c579c1dbee15f"
+    },
+    {
+      "path": "vendor/atlas-kernels/sampling_pack.cuh",
+      "bytes": 936,
+      "sha256": "abfa3eb1065338a0994d22d15e50df59306cf9b50871988032193216399c234e"
+    },
+    {
+      "path": "vendor/atlas-kernels/stream_qad.cuh",
+      "bytes": 6779,
+      "sha256": "0f749f43264f44c4c4a3fa66e993a107f64a03fe03120fed26c5283adb22c79c"
+    },
+    {
+      "path": "vendor/b12x/__init__.py",
+      "bytes": 5011,
+      "sha256": "ae3c9e414b04f6ff0ee391d031e6660a4b5341d0b713dd5d3732eac5f7f63319"
+    },
+    {
+      "path": "vendor/b12x/_lib/__init__.py",
+      "bytes": 1769,
+      "sha256": "bd6f8f4a0b0261c47788779104c21db1f6a1c7acf92297d7637dfe89370ce208"
+    },
+    {
+      "path": "vendor/b12x/_lib/cache_integrity.py",
+      "bytes": 3736,
+      "sha256": "22557cd3e106d8cbd6e868a622feb6c8b987473d5618339a94d25188c716bde5"
+    },
+    {
+      "path": "vendor/b12x/_lib/compile_plan.py",
+      "bytes": 21774,
+      "sha256": "3e207d5588c379934041d1572e81fee866c48515811382437c84035bd996aacc"
+    },
+    {
+      "path": "vendor/b12x/_lib/compile_pool.py",
+      "bytes": 26537,
+      "sha256": "626d0bc48deaf9af71fb6860bde7831f2c1f411180084eed37a2d739dd4f68f9"
+    },
+    {
+      "path": "vendor/b12x/_lib/compiler.py",
+      "bytes": 100602,
+      "sha256": "58242c8ccc5981b054f84142aac4e4b7dbb630271f95d0f1f16448f33c7f9cd3"
+    },
+    {
+      "path": "vendor/b12x/_lib/dense_gemm.py",
+      "bytes": 413019,
+      "sha256": "66c5d91863d0ddff6a2da7db52550df622f3dce4a178f05d02226d4588873f08"
+    },
+    {
+      "path": "vendor/b12x/_lib/dense_gemm_mxfp6.py",
+      "bytes": 4901,
+      "sha256": "2a16f399049476f278df910c4ed7d3baf4357caf4c34662f3568cf179dda7001"
+    },
+    {
+      "path": "vendor/b12x/_lib/env.py",
+      "bytes": 522,
+      "sha256": "5e7af97f1427917b8e840040b35b558e64882be9c0404e999d5bd0e1680c069d"
+    },
+    {
+      "path": "vendor/b12x/_lib/fp6.py",
+      "bytes": 61581,
+      "sha256": "986f24c90f257d9ff9ebcb4debcf3d313e0fcec3a86b0300efe2c0ab008f2598"
+    },
+    {
+      "path": "vendor/b12x/_lib/gating.py",
+      "bytes": 3211,
+      "sha256": "5bc885d507a66d61df73fa5dcacea201499dc91b727a0cffa74227fb3613e1b4"
+    },
+    {
+      "path": "vendor/b12x/_lib/intrinsics.py",
+      "bytes": 243185,
+      "sha256": "7b9a28dd3a4f6339c8fa9c15cdc327b8de23802f4b529cc8aded9b65f97f8e3b"
+    },
+    {
+      "path": "vendor/b12x/_lib/meta.py",
+      "bytes": 3038,
+      "sha256": "93a088a2b583fa2d50c3b8dcb619eecd56bbd18c7c0d743c95c1464835449ec1"
+    },
+    {
+      "path": "vendor/b12x/_lib/program_cache.py",
+      "bytes": 8703,
+      "sha256": "836a7d2d1c1f33c066d5522878dfc98d4bc639f35b8fe16f52f5e312b9372619"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/__init__.py",
+      "bytes": 74,
+      "sha256": "bf66a3164d078ed176b08b0765a6ebb999f843c6c5bcac7fd6b6e6ae50310525"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/block_codec.py",
+      "bytes": 1300,
+      "sha256": "69f145256dda6a5ccc8244ceb96bfb19c08e6b91a2b6243ff7ec38c687b0c5d5"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/csf_routing.py",
+      "bytes": 3373,
+      "sha256": "461336835303a3c23c280e25e35d88c89bdee2deda80a80f91ba6b704f08d9fa"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/iq2_xs.py",
+      "bytes": 7666,
+      "sha256": "b036d8da33d4cbe6cef0f46cff22771bde74dc61d2dfa1058896e064f30b1164"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/lut_e4m3.py",
+      "bytes": 6535,
+      "sha256": "bb329c16d3f9fa81271899048d1ff0f698df7bdd933ded006390d1ccafa81ab5"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/lut_fp16.py",
+      "bytes": 6543,
+      "sha256": "bd6d62a79e23ad3ace01f2935a03deec43a9b421e3e4d152f805f633feac3bb8"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/mxfp4_csf.py",
+      "bytes": 16313,
+      "sha256": "01520a8779339330e8aa915522784bf59f7506ac8775b96a92e37dbe51fed5a8"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/mxfp8_rows.py",
+      "bytes": 19531,
+      "sha256": "8c452f67e23f85b4edf0f5bf8ef160c6e3af7ddfb754c3faafdd199362397381"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/nvfp4_csf.py",
+      "bytes": 31850,
+      "sha256": "67240612c128b3993ccf51856db92deaf4b1981516c0e2b7bb3c16d882bde5a4"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/nvfp4_csf_inline.py",
+      "bytes": 19859,
+      "sha256": "0eaccbd7660c18a6a10829774cde660958b6c971a0b747f963ce4b57ad45b7b8"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/x4t_packed_scales.py",
+      "bytes": 23390,
+      "sha256": "ae5e1afcd985ebd916edd41929ceedd2274d4e1e11b9e076ef8057670e5805c9"
+    },
+    {
+      "path": "vendor/b12x/_lib/quant/x4t_scales.py",
+      "bytes": 48096,
+      "sha256": "ff6169fabf7573b2daf85bb03d37c050fefddd25cccc2fa7b2909a493b1f92d3"
+    },
+    {
+      "path": "vendor/b12x/_lib/runtime_control.py",
+      "bytes": 2628,
+      "sha256": "0ed3446289baf12ee5a92f805f5559f38b20bb0e5fe27bb696b7bb2c8c377ea0"
+    },
+    {
+      "path": "vendor/b12x/_lib/runtime_patches.py",
+      "bytes": 6255,
+      "sha256": "53ce88b19bbb049e4d328e18f3a181e96595dfffc23279b87819bab70f852a9a"
+    },
+    {
+      "path": "vendor/b12x/_lib/scratch.py",
+      "bytes": 2279,
+      "sha256": "2eb5db6a170f53c8560df423758edd4111c8992c612b1635a047013b3fdf8fc8"
+    },
+    {
+      "path": "vendor/b12x/_lib/scratch_layout.py",
+      "bytes": 6284,
+      "sha256": "4ebd5338b947d2ed60270e5c46953b0207e4ca37ee3fb421b423464f808d0f24"
+    },
+    {
+      "path": "vendor/b12x/_lib/smem.py",
+      "bytes": 1662,
+      "sha256": "a5ea3a8925187ca5a9100c472ec59698bf801a18ac36672d5d11d9558a5aff4e"
+    },
+    {
+      "path": "vendor/b12x/_lib/utils.py",
+      "bytes": 23395,
+      "sha256": "cf54f1387ff04fc7e46bc8bcb29fdb5b973152cb92678082f3b12eee042b03d6"
+    },
+    {
+      "path": "vendor/b12x/attention/__init__.py",
+      "bytes": 1359,
+      "sha256": "e47af53eb33e871e8e29f795fe8a12c48753fdfdb9009539200675be7724ac48"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/__init__.py",
+      "bytes": 368,
+      "sha256": "9292af7f053f094d2e25a1a7fcd7ac9eaf0cf937c5dfba48d794f0be33e1811b"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/__init__.py",
+      "bytes": 569,
+      "sha256": "943f87a79aa945fb25478b127b10ed39eaf89dd3e64c19ab9529625e95ad2a79"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/api.py",
+      "bytes": 76311,
+      "sha256": "07fe613e369c675c3197ff7fa961a04248a7079d5a70aede416b478bbd616b9b"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/block_info.py",
+      "bytes": 3259,
+      "sha256": "6abc7e4a3b1ec61fc6e2dbb2f4005c5b91b71cdaf654fcdd4596d34535c020d2"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/cute_dsl_utils.py",
+      "bytes": 3042,
+      "sha256": "200cdcbf7c13efd80fa40f4fdeb21d30c62e14e73ae217d1983f06d451684fb7"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/forward.py",
+      "bytes": 52844,
+      "sha256": "9c03103a3ac22558f4289d906411bea3dba8e394de34c52e1f9807e3300d13b0"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/layout_utils.py",
+      "bytes": 2613,
+      "sha256": "03ffc597d4e643b8a3193aafb1a92df878bca845d035f5f366c7ca7686cf9647"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/mask.py",
+      "bytes": 3594,
+      "sha256": "c9e2631ffa54b683c31319acc094cef9adf0878f723f285002dd159be4203608"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/named_barrier.py",
+      "bytes": 155,
+      "sha256": "76efb3ef35726da1a720a91dfaad8d2bc2b25798b5327b144b89a56231588d1b"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/pack_gqa.py",
+      "bytes": 5551,
+      "sha256": "e26431b5a699e233c21305837475fca860387f9c8279f7a566978bb7f54619d3"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/seqlen_info.py",
+      "bytes": 3249,
+      "sha256": "a8bd38c73a07e2ac58a65562089535c1da122832c6583d4fe0afeaf7999877a0"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/softmax.py",
+      "bytes": 6329,
+      "sha256": "2c9bfe6fa00adae0553fa26bb0634c8272530e93e0535142e66c61464df1fbce"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/contiguous/tile_scheduler.py",
+      "bytes": 13139,
+      "sha256": "8bccf6360b2cf13a4f15c7adf5ec1c919532335e789a0d3ce75910752a2a5ca5"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/cute/__init__.py",
+      "bytes": 61,
+      "sha256": "370fc36e08e87c52093d0e58e218fea3bf3b5765d9ca3b77cc50dacd7a64edf8"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/cute/copy.py",
+      "bytes": 2341,
+      "sha256": "a1ef9f60879bb0a38efb9bf01ea6266d0ef3071d3e114a7a6bab4c24fb112c23"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/cute/ops.py",
+      "bytes": 7721,
+      "sha256": "a834f8db307cbff09e3e3c32013b54d7c12d970d6b6df7f21555fbb0a1cc1f20"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/cute/pipeline.py",
+      "bytes": 3018,
+      "sha256": "0e67505f62a96fa7f005e0206f9a3fc08b1fef1507dcbb59b344615b35f3b0c1"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/__init__.py",
+      "bytes": 591,
+      "sha256": "533e901d1208da02aadfc870432d83583657c9e51e11356bfcc383406e7b2ed7"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/api.py",
+      "bytes": 38139,
+      "sha256": "6b9fc9977aa290cd96c412683f8cb8e71224c741b3c93040312c1fb28c551dc8"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/compressed_api.py",
+      "bytes": 29251,
+      "sha256": "934e5d1587b929d731d6a568050ef980165db3819669149ec7906300ec716d79"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/compressed_config.py",
+      "bytes": 3268,
+      "sha256": "702e62d9ec3103131408264c3e13284f002a5290e623f84d01e93f5dcfb69cc2"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/compressed_reference.py",
+      "bytes": 22928,
+      "sha256": "123afd7522d9969eedab2b049702d70dd70e993d4e74a31ef2cecb46b8f95959"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/decode_math.py",
+      "bytes": 139832,
+      "sha256": "5978dc7d54ecb4aa00776a26707c0b871c0d95008eab2639f3e5f3dac2ac0b58"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/io.py",
+      "bytes": 34385,
+      "sha256": "d0a5a37552cbd4f19b51d11dfb6720a87db9610d2f8cc51f15ebb89ef52cbde7"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/io_mg.py",
+      "bytes": 11114,
+      "sha256": "b582b693ca62fa71de581dfca6ddb61088e4c889ddac5a62f76dce78ccaaa871"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/kernel.py",
+      "bytes": 139669,
+      "sha256": "d4916b11ac485aa327cfa32662427ddc7a09929c09f39f07ae6974d5ad28d63c"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/kv_cache.py",
+      "bytes": 51125,
+      "sha256": "1875529f531b5e0b74be28332986d46adc8f561cb79fb18655c0560d10d4c25a"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/merge.py",
+      "bytes": 33512,
+      "sha256": "c2fb8882edc96e06276834130d5efb94d4d06c7c64ec2e9badf7674d74637d02"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/packed.py",
+      "bytes": 1375,
+      "sha256": "f90789ae26a997071032a1b791f434e8d341bcb56d583acf31eba539e8e1314d"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/prefill.py",
+      "bytes": 22982,
+      "sha256": "6f4102e1ef94ed1138102370b569319557eaaa5e1e5b2c7f0de0be7759fefee9"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/prefill_mg.py",
+      "bytes": 180627,
+      "sha256": "35afe9e494ca4d7766bd84207171fdf22e0b5197139b74b77dde3c3d48eaae2c"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/reference.py",
+      "bytes": 9545,
+      "sha256": "ee5299727b829fca2dbe837ea88bf0ea3a268a01fbbafdceb6bd191e098b6324"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/smem.py",
+      "bytes": 25053,
+      "sha256": "2e0e88ad146d867fef0fcde6db0728a234946662d4cb6a295cacb7aaee01751e"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/smem_mg.py",
+      "bytes": 22893,
+      "sha256": "3abc5dfc8bceadb98a057c936e2a62a9c6cb9649a637f45f79f99ded68cbce5f"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/mla/traits.py",
+      "bytes": 18216,
+      "sha256": "a732ef77a07b71211b466cdc014048de0c2c1c8453fe1fd821f37e1044ebc430"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/static_fp8_quant.py",
+      "bytes": 7076,
+      "sha256": "3cbb450da949be729b2672107d939da13eee768b18317d20220b5773a42707ee"
+    },
+    {
+      "path": "vendor/b12x/attention/_shared/workspace.py",
+      "bytes": 112157,
+      "sha256": "9185ec0ee1cecb08c50867cbf6c5e5ff4f1fe3cf879b0a009068935fce34aa68"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/__init__.py",
+      "bytes": 1921,
+      "sha256": "710027b9d3605b1e6e82880c02e67ae0f97dd417b9a2e05c8707a3fa8f552c34"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/_metadata.py",
+      "bytes": 4360,
+      "sha256": "dc6b1b8fa3440efa6aac4bff824930268fedb5d2795b4ebdc6de33a2b0471853"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/_preparation.py",
+      "bytes": 24908,
+      "sha256": "45ae4c1bb1219dd02b7c5c54f0b51ddd460d552ea7d64673c0d54566c1e532a6"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/_scratch.py",
+      "bytes": 27712,
+      "sha256": "88f364707d86adacc254a20e25c2cf1b8c6ab68a083efcbdd6ce6fdfc9270d9d"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/_tuning.py",
+      "bytes": 11213,
+      "sha256": "47ecc81351888a3529ab1b68d32c12e726d285c900869158b91b1586c7187e7c"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/api.py",
+      "bytes": 1412,
+      "sha256": "564a4a84c3121d16e360241849da88ba253171fd9f8888591e402bbc37b76d9f"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/cache_writer.py",
+      "bytes": 7174,
+      "sha256": "7cfbefd547d7d91a73d057cdc7765e05e335aafd15069a8416b8d2054fa3ba2e"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/cast.py",
+      "bytes": 5896,
+      "sha256": "26f8e0462cb40fb4a82f05d06de2ebca246dee0243e069e399a6d58c6cc8178e"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/reference.py",
+      "bytes": 183,
+      "sha256": "62d18d94c49447a2c93978ee95dba15e194515857fd1238474bf3da45c330569"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/rotary.py",
+      "bytes": 7847,
+      "sha256": "619649f9f650c26fdf3726698d64e50af10c69801f5ffc9810251586554d1ec4"
+    },
+    {
+      "path": "vendor/b12x/attention/compressed_sparse_mla/weight_scale.py",
+      "bytes": 4020,
+      "sha256": "c845dc16a8240412728731c92fd1f175a84031794ba439fe4418b31775e38353"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/__init__.py",
+      "bytes": 2759,
+      "sha256": "3518a7a9831b9427243276508679753a93b3e1e62589cabf8fc461d081eb7a69"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_forward.py",
+      "bytes": 26267,
+      "sha256": "f2c62547f490202cc049dbd45b90abe3f2cf2012f321c08bb2c27ff98c3a91e4"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_io.py",
+      "bytes": 2457,
+      "sha256": "7aab6f903d2d4ecbb444289b01015d4649cadb66211d33d0de0d4a6410d7a00e"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_kernel.py",
+      "bytes": 14622,
+      "sha256": "7ddb4dedc892be3d593c607e5c7c127501452a0c8d70510529271d7fd0f3b83d"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_layout.py",
+      "bytes": 4980,
+      "sha256": "7c5330b50c24a030179d293afd04083867fe6c4b174a6936d1713d26d2517447"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_math.py",
+      "bytes": 26069,
+      "sha256": "a5b886707b194e5509b5a9a36baa5d95c3175b61492ada276e590b35c3ecaec2"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_merge.py",
+      "bytes": 7038,
+      "sha256": "ee7cf6c34fe03f046583f3ce495be541b08c0204ac3930f8918ba69e5d6b0097"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_preparation.py",
+      "bytes": 19049,
+      "sha256": "ec3050aeef87273e14405d35ccce14b678f60fceb1554b3f8b35ee3462fb9d9f"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_reference.py",
+      "bytes": 7026,
+      "sha256": "514bb969525cb6d413f9820c400be8d55a8421a0250f69c7dea54a3278ac1f6a"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_scratch.py",
+      "bytes": 23565,
+      "sha256": "e630c29f288be4a503cef182d67e93e8596f2d292c046172e5e97ea346006726"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/_tuning.py",
+      "bytes": 6016,
+      "sha256": "f4ba21896c1a0e5f73281e35fd033f02d18a27cbcea120e04ef6dc6074ed84c6"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/api.py",
+      "bytes": 2895,
+      "sha256": "d9f5be0716ebfd3ff08b9c9293dbd1bba853872bd3aa613de278081fc53f91fb"
+    },
+    {
+      "path": "vendor/b12x/attention/dense_mla/planner.py",
+      "bytes": 4358,
+      "sha256": "f5c55f720322cd3cf3ffb3e5fd42b36f1fc28ef7a5e7ffa9cb04557816d4fec7"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/__init__.py",
+      "bytes": 2180,
+      "sha256": "698b82c01b368b860f82d3a536508d3f9cc1294b230f2481048a5b5532ff3d6f"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/_impl.py",
+      "bytes": 70516,
+      "sha256": "706a07404f988423ed5086a8a02f430961e829522f75a6471284d2e70d53fda5"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/_preparation.py",
+      "bytes": 18068,
+      "sha256": "6237d4a0420e8af3ea60d135f92f0cbbdbaa4dfdad00b341f32dab6ba9e47635"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/_tuning.py",
+      "bytes": 8240,
+      "sha256": "1ef14116b5fc2b273d7c4c102f0021af2250734faa5b2866d85ff507eebde0a8"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/api.py",
+      "bytes": 11403,
+      "sha256": "427881384e48bb0fb2f0eca3db352eb6d0ab52e669a2b702a7a0754973b5fb14"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/contiguous_kernel.py",
+      "bytes": 133997,
+      "sha256": "47338c14b1c6069c606903268a15b3026cbe1b9d96b1cfe3cbdab926dd9ca855"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/fused_indexer.py",
+      "bytes": 139915,
+      "sha256": "45d0dec6d65e37866c3dde1c6ec8fd9fce1b8afd7b458dca35269709c89faf38"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/kernel.py",
+      "bytes": 147507,
+      "sha256": "ad481216e0a1a68300ac519f8afbbfb07c74ecb3ffd01aa9ad608fb9bc3f7806"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/msa_reference.py",
+      "bytes": 15854,
+      "sha256": "d8d4c028147dcfa0ac4769d2338a92be1718627a10a5bcba119cdc2481cbfe58"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/mxfp4.py",
+      "bytes": 58486,
+      "sha256": "ed73093717a7667ce43d22d0bb424896edbf2f860f8075c87d9e7fc6cd722e40"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/paged.py",
+      "bytes": 47255,
+      "sha256": "9e0ce066b3c1254a44860e9054cf66f6fdbfb05a403ac352237d67431e1d3f4e"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/persistent_topk.py",
+      "bytes": 35829,
+      "sha256": "0d064fa88117d50727df37c12538da99dfab2e1d752c7b530f2219725ef7b0c3"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/reference.py",
+      "bytes": 13269,
+      "sha256": "e59ecac22acd94595372a838a62c64e2518822610feb9d176d1a50a49d50199c"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/schedule_metadata.py",
+      "bytes": 5184,
+      "sha256": "9c6be2d5eb140b6321cd0bf191036625f828faba2df9e3b51b450d935a7c2ccc"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/scratch.py",
+      "bytes": 96670,
+      "sha256": "c3705a1427c03639563a5d17283f1157e4b841bf7a9b9c6c55eaa7db4580771f"
+    },
+    {
+      "path": "vendor/b12x/attention/dsa_indexer/tiled_topk.py",
+      "bytes": 82564,
+      "sha256": "13cbc9cb2841bb9050c420b767d7f65d77fe2299159ea5688d9de00aacf4c461"
+    },
+    {
+      "path": "vendor/b12x/attention/mla_compress/__init__.py",
+      "bytes": 629,
+      "sha256": "a9de7908d4267b5730840aae6ddc100bbc647549063f86dd734f78c5ca3be48c"
+    },
+    {
+      "path": "vendor/b12x/attention/mla_compress/_cute.py",
+      "bytes": 10012,
+      "sha256": "12cc115259165297ac219f4f05ea9388c7e13661271b69359fdb5a10c6edd4e3"
+    },
+    {
+      "path": "vendor/b12x/attention/mla_compress/_impl.py",
+      "bytes": 10226,
+      "sha256": "e840bd2d594e3b9dceb9fd92d320f61e6a0a12014d1022713d8ec5bbdc0735fd"
+    },
+    {
+      "path": "vendor/b12x/attention/mla_compress/_preparation.py",
+      "bytes": 1488,
+      "sha256": "3144f3721ab745209bf6a5acfa6a58bf963d612e049df67dacb75ae27528d48b"
+    },
+    {
+      "path": "vendor/b12x/attention/mla_compress/_tuning.py",
+      "bytes": 506,
+      "sha256": "cfadae53bfb6b5732bd1074087b99c90c51eb6d370b43346bc1cd96047b88a86"
+    },
+    {
+      "path": "vendor/b12x/attention/mla_compress/api.py",
+      "bytes": 488,
+      "sha256": "c3ba6c23689c9170e87bc4b0dde96876dfcff13d321bc7599f842524bd8e8c43"
+    },
+    {
+      "path": "vendor/b12x/attention/mla_compress/reference.py",
+      "bytes": 2377,
+      "sha256": "4be8240feb8b72f00180df53e3912a3d51581de8f87ef33d3482423ca670d6d4"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/__init__.py",
+      "bytes": 3743,
+      "sha256": "8b8c7c518a740acf010356542217623bae2c822159ec95f6cae44a67289e97f8"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/_controls.py",
+      "bytes": 1907,
+      "sha256": "72f4466ab2e3e47258dcd4ac035a74ce01c4dc8229bbf3780f4892a15e2a1026"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/_forward.py",
+      "bytes": 74752,
+      "sha256": "8066b91e0ecd740beed95bd7953696cab145ac7b95b2c002c0cb55dcfe75c719"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/_preparation.py",
+      "bytes": 18252,
+      "sha256": "2f38fbcb53933709da79efcea164997034032e45527053a27c496d70c9a20a1e"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/_scratch.py",
+      "bytes": 114036,
+      "sha256": "7a1abf418aebc5abb113cc66305bf1da33bbe2c0aeb78a7034e6231f2d4e37db"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/_selected_forward.py",
+      "bytes": 57823,
+      "sha256": "f1dce2b1aaea6dca9cb709c24dc669eae943010cf5c896250624e8d0e73d7b92"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/_selected_forward_config.py",
+      "bytes": 186,
+      "sha256": "40328a9d8f72ab057c0eaf49f1ec236d14ca3fb673b7d66840e0e36e0dbc37a4"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/_tuning.py",
+      "bytes": 18084,
+      "sha256": "53306da65748bd2680ddc2c0058cfb2c4cb9ef8ddbd452a8a6809de49840ea3c"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/api.py",
+      "bytes": 2973,
+      "sha256": "e9b18734bd2001c20e66a86ee6cbd1e0a99c0c316de23093f35e44cf219f0acd"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/forward_extend_generic.py",
+      "bytes": 317688,
+      "sha256": "189929bebf706ebe003ca6894fc75d63747ac82262c8ac74094ef4ad68db9bbc"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/forward_paged.py",
+      "bytes": 481166,
+      "sha256": "68cf1c1a7d1a8ffa5ab645db6c410d6f0b52e73d8c0e30a99691f0b96bdf157e"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/graph_replay.py",
+      "bytes": 83024,
+      "sha256": "333c420dd29fb9cfd0400f40bb450a45071be322431b00a48d2594bdc61b800a"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/merge.py",
+      "bytes": 53395,
+      "sha256": "d2075c3d9de4411248c22041ddaa7c9f57a14a488226b5ff30b7afb75c8b0b55"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/planner.py",
+      "bytes": 91603,
+      "sha256": "d19948dae00b883fa8c0e59820e7bffdf9b8b730de05381dc681cc1128c2b6a5"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/reference.py",
+      "bytes": 16497,
+      "sha256": "392d391d2d9dd912d2dbbc1369f5f5f57b32ac3173f5d0d080d9b03a6ee8be33"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/traits.py",
+      "bytes": 22129,
+      "sha256": "2917073d277ad0744a7a2497a83528d7496d7dd26655dc00b198f273e54e6671"
+    },
+    {
+      "path": "vendor/b12x/attention/paged/workspace.py",
+      "bytes": 99541,
+      "sha256": "4c75917c9fd5c518bceaf0f99396bda8352c1b009edfddcb5390997169462dcd"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/__init__.py",
+      "bytes": 1689,
+      "sha256": "4126a79ccc8f61c57f138830695698b5da8de59ea670b64ec91aac94751ddd45"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_contract.py",
+      "bytes": 162898,
+      "sha256": "4f2a0f1b8ddb95223798dd1b3fac36c4c2796fe5453df7e3d333b189c314f981"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_dcp.py",
+      "bytes": 2560,
+      "sha256": "a4a74a32bfc1b539073a952a1a3985cc22372fa2f7f5a08da186bb9a2600d6d8"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_draft_selection.py",
+      "bytes": 7067,
+      "sha256": "ec23e6ced8b3e377366dc8473b9bd0708c7be0b11004b6a2715da6459dbfcf30"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_kernels.py",
+      "bytes": 42933,
+      "sha256": "c04c96a984d0af2d6d88c8c7133384dbc469b433e67f343d52f0043ddbd34aa5"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_score_cute.py",
+      "bytes": 16580,
+      "sha256": "51c2abd157f476909ef73a8e9add1ebfb2618ffda697f0c403baed2f117b2a62"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_sparse_gqa.py",
+      "bytes": 17309,
+      "sha256": "880238dee0b90ad960d217da9c7aa37c820181c5dc0bc6ceadf08ff6a4ae64a3"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_sparse_gqa_cute.py",
+      "bytes": 522,
+      "sha256": "5ff7c915f97a71b0d87e30c00ddc86d7cccd2a228cde1b7aa7efbae00352542f"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_sparse_gqa_cute_config.py",
+      "bytes": 4589,
+      "sha256": "6600faf82fbb00d09bbfc466b22098d48db38c818afbc119509548729ab9705a"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_stable_select_cute.py",
+      "bytes": 7641,
+      "sha256": "90de48e9fd3d69286bed26b593a09951f3ec1b2c7da8d2ce81c0cdd97bc68c8c"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/_tuning.py",
+      "bytes": 10654,
+      "sha256": "0851efd2395620eccba0d4f1ae8faf8862d8a99ef2071c3cce1ca576f2646554"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/api.py",
+      "bytes": 973,
+      "sha256": "23a9a2a064a41b4236fb5430568e19de876f360df4a484a1eba9b52135759534"
+    },
+    {
+      "path": "vendor/b12x/attention/qsa/reference.py",
+      "bytes": 19580,
+      "sha256": "9e47abfc22f5a3185c8a03c4d763062e233a75c7acc5cc9f3fcd3c96bef51a18"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/__init__.py",
+      "bytes": 2805,
+      "sha256": "296fc257fad0e8ee3edffea87d1a113f617583c8181044536cec08364906bb52"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/_paged_index_remap.py",
+      "bytes": 14598,
+      "sha256": "794b57154696f3fa67b740a2012026800793d97e49a62b7d0bed0d42ef28acba"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/_preparation.py",
+      "bytes": 17308,
+      "sha256": "5308b40979a2bc3cb584c56f9f4bce9bbe25a2958e018eb2c3cf3703248013c6"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/_scratch.py",
+      "bytes": 26051,
+      "sha256": "d6d3398257cbd2efd140936754266633eef0502625596683c730383059a537f9"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/_tuning.py",
+      "bytes": 1490,
+      "sha256": "6ca5fbdea9ce61f596b58ea6fae3308f145e2a475f1b086d81109fc00dcaaba9"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/api.py",
+      "bytes": 5728,
+      "sha256": "cab492b8db7a8d2e0d364099c25be53277bcca8a4877d7ab6c31f9f04ed8d757"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/pooled_selection.py",
+      "bytes": 12218,
+      "sha256": "46acf370bd120bc5e8484ba3f8b266651d6a617f6bfb75cce3dcff8312b7f165"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/reference.py",
+      "bytes": 168,
+      "sha256": "6a8159933971155b4466ca6535dff7c02520081eee6c6c2dc194864c12eab0ef"
+    },
+    {
+      "path": "vendor/b12x/attention/sparse_mla/strided.py",
+      "bytes": 24805,
+      "sha256": "5ace3dd747d4e5074ef9661bf2d0ae9182565abeadac694d0eec454c33d0cfd0"
+    },
+    {
+      "path": "vendor/b12x/attention/varlen/__init__.py",
+      "bytes": 944,
+      "sha256": "b7e45a752f7ed30555a097646b4acb80c5aca088dfdad4e26275d97988d5f1fd"
+    },
+    {
+      "path": "vendor/b12x/attention/varlen/_preparation.py",
+      "bytes": 18231,
+      "sha256": "0c4d0edb12022ef59b3086bab67e8f1dd45ff27539b75ff27ccc732b67c5c511"
+    },
+    {
+      "path": "vendor/b12x/attention/varlen/_tuning.py",
+      "bytes": 5864,
+      "sha256": "5521d7d72e2ae7a440d14b6e72866d927d82d09097775a646167c724188f3548"
+    },
+    {
+      "path": "vendor/b12x/attention/varlen/api.py",
+      "bytes": 755,
+      "sha256": "8f7e7e7391924eb66985cb3ceae0acc67d43c0fd8dc69ad0570e8bbfeb228e0c"
+    },
+    {
+      "path": "vendor/b12x/comm/__init__.py",
+      "bytes": 841,
+      "sha256": "0690adbbc3ca2e048f2a9c109964b82e273e7f44c40e0b1aba3da08f7523bcd8"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/__init__.py",
+      "bytes": 3308,
+      "sha256": "1359addd9c0cf017aab2eb0a8345d32f8c9fb2dac7a1331008f02343d521fcc8"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_cuda_ipc.py",
+      "bytes": 5145,
+      "sha256": "8ae32fff0537ef226253670142758731f57e75db45279ff41eca4712f34971bc"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_cute_intrinsics.py",
+      "bytes": 19754,
+      "sha256": "42cbb6a48f482088e56007bd23d31a1d22932641ff2c8b8f0c3f72c23450d5aa"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_dcp_a2a_cute.py",
+      "bytes": 80304,
+      "sha256": "f13b694c3f500ea60dabcd8e061e6dc9486b4a0c7fd37a758a05675fb2fe9af1"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_dcp_cute_common.py",
+      "bytes": 4259,
+      "sha256": "4f6442f151c3ca826e755910901ebfef4f7739058e7eef23cfae0c0fb18cfa0f"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_dcp_preparation.py",
+      "bytes": 11069,
+      "sha256": "c545f88abeef5dbba6835940cb1fd3ffb5101986d40241423394558e322fefb7"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_dcp_topk_cute.py",
+      "bytes": 11962,
+      "sha256": "d7630a1aee723bdfb518cfd2bff79b9356505e147dcae62840dea3e90524fcba"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_dma_kernels.py",
+      "bytes": 48727,
+      "sha256": "1d01269822a1a32b47fba1670d6aa02ab5d36da0750749041c644839df29ce15"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_dma_preparation.py",
+      "bytes": 8511,
+      "sha256": "cc02e5cba27a05b37d6318b93b2e522b20075c3d528866bf624daf0cc81fc290"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_hierarchical_cute.py",
+      "bytes": 33316,
+      "sha256": "233af922e6065fb0e701506c663fc190de83b6a128c8a06607cbf46fd64b11ca"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_island_rs_cute.py",
+      "bytes": 22006,
+      "sha256": "d4f356b760d0b3fb0ed495a3826cdb924cbfd27000484818024662d080720009"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_launch_geometry.py",
+      "bytes": 1288,
+      "sha256": "50712d803840215514780a25ad8722479aa0be4a7dc1f7805131105346fbf864"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_oneshot_cute.py",
+      "bytes": 54261,
+      "sha256": "d595e45a9eba95610a2df0685e4d22eb933eecb77818c277509e44e12dc8a08b"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_oneshot_preparation.py",
+      "bytes": 18071,
+      "sha256": "106d76235f6549aa906f101687e96dce45ac1601167bd11b761f9c8be4c35401"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_owner_preparation.py",
+      "bytes": 13476,
+      "sha256": "ecf5c712f791fd333fc79a599666de2675b504be503ab8e82ca0969085067398"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_preparation.py",
+      "bytes": 2060,
+      "sha256": "d2bfff83d33d3c694ccfe9181e28b376775d20f0d62f3dda5bacc684150b6c30"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_tuning.py",
+      "bytes": 3410,
+      "sha256": "7bb2064c1b8c8070850e9a56198d31e21667b3f5ab4f15e065cac3c133caa0b7"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_twoshot_bf16_cute.py",
+      "bytes": 32932,
+      "sha256": "d2eef0ba8766707e959dbb04fd7e16a3c0b54d683e228433f0218eb3fdc3ec2e"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_twoshot_cute.py",
+      "bytes": 28369,
+      "sha256": "ee61e4a3f0ba1ef97da8329e2ddcb58fd17785f25c860382723d5d35f0e70eb8"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_twoshot_preparation.py",
+      "bytes": 14580,
+      "sha256": "18e4afa1e689328d0b7c17cfc189e5197b7f216c8b14ed11d4e6b2b76f4a9e86"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/_vocab_argmax_cute.py",
+      "bytes": 19987,
+      "sha256": "314413e56581974ff6d416c39418c87c7399b0b73e951955ba66ed2b1593b7dc"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/api.py",
+      "bytes": 1987,
+      "sha256": "dc73d7e47b3b22401ca3fa0d2c9033bb8798fc112ebb42f93c04a1364f692851"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/overlap_probe.py",
+      "bytes": 61406,
+      "sha256": "bebdd3ffb1ff4e70cb76af9ef51d1a94ddb479c99d8a3c23a98ef4ec6909aa3f"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_allreduce.py",
+      "bytes": 16077,
+      "sha256": "4659580f8764fe442a188b6d5de2470e4e4df9732473744c96c3d087665e0826"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_dcp_a2a.py",
+      "bytes": 83645,
+      "sha256": "0c64de8ac3c18001b92fdc769603190e6ed371c59e37859adfdd6c866dbbaca0"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_dcp_topk.py",
+      "bytes": 19964,
+      "sha256": "c4ef19589fc495fef86a9625d6b31bb46335d9e92149314c4b6c5a822667be29"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_dma.py",
+      "bytes": 39157,
+      "sha256": "20076abe48f53084e580c95f573a9758fc7ec9b5d8cfca58a8e6a0fbc68fa7ef"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_hierarchical.py",
+      "bytes": 14151,
+      "sha256": "b0b49e83aa3acd1912b2ab0df613b37177439c656e77634228e3004a8d57d828"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_island_rs.py",
+      "bytes": 10275,
+      "sha256": "f675d8a2e6e5ee8af061ac17fae8e9e8d551da0761c0eb57f9a19bc894eb9242"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_oneshot.py",
+      "bytes": 157445,
+      "sha256": "ad4b47f2b45c2366f5bddc7742953c5b36bca25b01bb6ce42a1cc11334845f8a"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_twoshot.py",
+      "bytes": 20848,
+      "sha256": "9c449b509f11bd887adc28a4a44cfbd86c90d73c569b4f4f1de9c06b3f923ada"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_twoshot_bf16.py",
+      "bytes": 21786,
+      "sha256": "ff930077519716e5cdbe1d4a52074fc64193b89441ba1bdcdfbfd510d3d64c3e"
+    },
+    {
+      "path": "vendor/b12x/comm/pcie/pcie_vocab_argmax.py",
+      "bytes": 13972,
+      "sha256": "80ea21f1c975aa06475cf7efe50aa8a26c369c18700d1cad0fe0159ca7ce606d"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/__init__.py",
+      "bytes": 2261,
+      "sha256": "0126b2176991804142336b31395e4d5ca1567a4c0a7a6683264f7d0f4965512e"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/_allgather_cute.py",
+      "bytes": 13657,
+      "sha256": "2f621cc4abac869cba7157c7d119480f92b9466a07002e52a0e81a23b7ef801f"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/_cute_intrinsics.py",
+      "bytes": 9737,
+      "sha256": "11737796a80a0966c04ee347d5ef83a662bde16dc188022134d2cbaa1567410b"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/_oneshot_cute.py",
+      "bytes": 16672,
+      "sha256": "ec0c9b2811ce6fc0a29f66145b3b509cad43baf3d2ad4c40b74cfc68d709fa9a"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/_preparation.py",
+      "bytes": 5337,
+      "sha256": "9b77661abf4f513c77d36e8575e1f2a0190da8bc197ad17e817eff7a76dfc588"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/_proxy.py",
+      "bytes": 9871,
+      "sha256": "58ed97dd764bdb89fbb680fc439c7d20441e28dbd3b6c5c072d0b1b9472de9b5"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/_roce_proxy.c",
+      "bytes": 21487,
+      "sha256": "81a21aab6a202a86a8a2cbc4fec727506bfb738759eb6d854c50c0c9a9121b64"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/_tuning.py",
+      "bytes": 2054,
+      "sha256": "1155d882e6863d6573063cd5871999a8be8bc6eb145fe6d4d96753354a8da3e6"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/api.py",
+      "bytes": 614,
+      "sha256": "f8cadfa227d9ce3e115353ef5b5e61004ab27e83799270c210d41c32712f0d38"
+    },
+    {
+      "path": "vendor/b12x/comm/roce/roce_oneshot.py",
+      "bytes": 38778,
+      "sha256": "572429e67e0cd63c04854797fe6c27eca0ec1afe4ab24fc2b4e7f971f67e7f01"
+    },
+    {
+      "path": "vendor/b12x/gemm/__init__.py",
+      "bytes": 1997,
+      "sha256": "854f11f81f88533ea60e4bf367924f4ba6b368cfc0ad6914f0b7ab1a07e03230"
+    },
+    {
+      "path": "vendor/b12x/gemm/_bmm/__init__.py",
+      "bytes": 1878,
+      "sha256": "62176ecfa3181b56b4a1fa03cb100c089a7182e3609b295c04cec032b1f1c77e"
+    },
+    {
+      "path": "vendor/b12x/gemm/_bmm/_preparation.py",
+      "bytes": 2723,
+      "sha256": "2cfc469690bcd47bcdb82d24cb76b6805a2086a85211dcc48a703d36f1e8b916"
+    },
+    {
+      "path": "vendor/b12x/gemm/_bmm/_tuning.py",
+      "bytes": 1043,
+      "sha256": "0ac6cf28754f860fda7fc89e523c66c3b5ca257ead0fd989f695cb75492478a6"
+    },
+    {
+      "path": "vendor/b12x/gemm/_bmm/api.py",
+      "bytes": 2443,
+      "sha256": "1147cfc98634ef5906cd7808bf66b5dd6c7f261776affb7269c405ce55789e09"
+    },
+    {
+      "path": "vendor/b12x/gemm/_preparation.py",
+      "bytes": 12675,
+      "sha256": "1df643f4a3e4105e2bb17cb58c1c9061b690130a26a3355ac7c8d2223204f7c4"
+    },
+    {
+      "path": "vendor/b12x/gemm/_shared/__init__.py",
+      "bytes": 66,
+      "sha256": "1d73d0cd8f6ddf06228ff3dfea94affa0d5ddd6faff6ebe3dd1690326cbbf840"
+    },
+    {
+      "path": "vendor/b12x/gemm/_shared/block_fp8.py",
+      "bytes": 17996,
+      "sha256": "9a982c3e9abea010f063870d5595431c75755b7535f5ee3a1849b787acb8b4d2"
+    },
+    {
+      "path": "vendor/b12x/gemm/_shared/mxfp8_bmm.py",
+      "bytes": 80299,
+      "sha256": "9e059d00bf14b11e36e33d142ad3f57761a0ef91a1aeda64840f35d5897a715c"
+    },
+    {
+      "path": "vendor/b12x/gemm/_shared/wo_mxfp8.py",
+      "bytes": 111503,
+      "sha256": "c37818e1687f9e7ef9531440ca5c329d385892210bcf323a9e3bfb00112a8e3b"
+    },
+    {
+      "path": "vendor/b12x/gemm/_tuning.py",
+      "bytes": 23948,
+      "sha256": "fd515c414ddf5b8f210fefc5e45cde68a20799259ca45071afd6c9ec3c45d756"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_gemv/__init__.py",
+      "bytes": 1625,
+      "sha256": "41158b23a050d76940421e7a09788928a33e8993047ebc03bb0012f30e486965"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_gemv/_kernel.py",
+      "bytes": 21222,
+      "sha256": "f133dedffb7178d709dd0845f5c7ab221e19990697d67d509df56c54ac773dbb"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_gemv/_prefill.py",
+      "bytes": 18114,
+      "sha256": "d92cf099a097df66627a968e711a40366817b238f1efa7a68d43286e3708edc4"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_gemv/_preparation.py",
+      "bytes": 8144,
+      "sha256": "a23f7b9ceeb39637c0c01c9bf7c938c5d3ee6de4132793eae85a5138b51a63f3"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_gemv/_tuning.py",
+      "bytes": 5512,
+      "sha256": "e9ddb8116f65f9adbd487e5bd7d34da824b583cdbe6087c792f608994cf8a7eb"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_gemv/api.py",
+      "bytes": 2307,
+      "sha256": "c02d6e595547c8c0b84a3fbb61cfb91f93bc84e31b7d2a4a91fa79f786f1a7d1"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_vocab_projection/__init__.py",
+      "bytes": 1230,
+      "sha256": "3c88bd753ee43cdbb608bfbedbda2fc72cea0c29c35ccfdb4fc7bf62ec3f4cca"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_vocab_projection/_contracts.py",
+      "bytes": 3497,
+      "sha256": "2ca884cf25844a9e75b536b1e43a73fd821ecb8690087f11ff4cc86b9f845266"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_vocab_projection/_kernel.py",
+      "bytes": 2261,
+      "sha256": "9003c109ba45a9d26dfefe2fa2cbff061c87cb9bc7728afe61ae9010a9bb4181"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_vocab_projection/_preparation.py",
+      "bytes": 4068,
+      "sha256": "68a455a8e9fce3fef15a37a9eb883325d93a68483bdf256720642188c8ead79c"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_vocab_projection/_tuning.py",
+      "bytes": 6406,
+      "sha256": "b604e0cfde23ccaae12e742d5094a17607f568da1db24558105034fd7df05446"
+    },
+    {
+      "path": "vendor/b12x/gemm/bf16_vocab_projection/api.py",
+      "bytes": 675,
+      "sha256": "4a24392081e159fc98d3d203a8bd1c250e6cef8373b012e18bbe761ef6c6e6d2"
+    },
+    {
+      "path": "vendor/b12x/gemm/block_fp8_linear/__init__.py",
+      "bytes": 1536,
+      "sha256": "b13bf543116834c913191b16dd75eb3ca022d3ca173986a3ddf5ef6ed1c4b67b"
+    },
+    {
+      "path": "vendor/b12x/gemm/block_fp8_linear/_preparation.py",
+      "bytes": 9944,
+      "sha256": "002071395437a32d90e40a77e1bdf8f95a6d074c06023ed95fc45e3da65f8cc7"
+    },
+    {
+      "path": "vendor/b12x/gemm/block_fp8_linear/_tuning.py",
+      "bytes": 3214,
+      "sha256": "4327ea098d07dd4d9b5fb8efe341fb781b7e8edcf39db31742cbd30cb0173114"
+    },
+    {
+      "path": "vendor/b12x/gemm/block_fp8_linear/api.py",
+      "bytes": 1374,
+      "sha256": "de10deb845ea17b0d7520904e3032eef0cbd5f6bf47604445dc906d07f8f365f"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/__init__.py",
+      "bytes": 4700,
+      "sha256": "2c6fd5daccf7e8dcedf6d30b6ea8cd409d8e6f65e852d63855883b5c6f80ea3c"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_a16.py",
+      "bytes": 7934,
+      "sha256": "8e967040e241ff7e5f34a30d2a2ca10952b07cf49df89bf31203d9171cb46a36"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_iq2_xs.py",
+      "bytes": 3313,
+      "sha256": "277eee52bb61fcba5eaf7c3bbc809c66637cf39a50e98c2e0cd973897cb8c549"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_iq2_xs_gemv.py",
+      "bytes": 8203,
+      "sha256": "ac08b0d6fe65ff5de41c5e67bc7e96b86fcca839d29ed00c56eb0bff0fb44322"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_linear.py",
+      "bytes": 33695,
+      "sha256": "51e0b639705237411b8ee5274e7ae94d3a8cdf8dbe57a9ac07a380b776a3dbfd"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_ops.py",
+      "bytes": 7885,
+      "sha256": "6929f29f78bb879c4ef0dc4a68c0ad91957014c193184a52e94713eb175e3a3f"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_preparation.py",
+      "bytes": 44867,
+      "sha256": "41b8cd87e023dc96263fabda6972447cb994294b674562d02897a77527348add"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_quantize.py",
+      "bytes": 4314,
+      "sha256": "00dfd4c100f2c1cbde1350407edaf536d14449b5f0ae2e00952e49cbe4a3023f"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_reduce.py",
+      "bytes": 2033,
+      "sha256": "2cf530518466057f29f99816272e927b3b36f59da51a162811c0a7eb57009ffe"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/_tuning.py",
+      "bytes": 17953,
+      "sha256": "fa836cf39be836ce71864ff838c1dc634e3a18fae56f5c7b0135b6fd6c193bd9"
+    },
+    {
+      "path": "vendor/b12x/gemm/blockscaled/api.py",
+      "bytes": 3472,
+      "sha256": "fa41018c9c4bdc0d82cb630c88dd89cbc30330533b18940b3909bd0bf1e65e9d"
+    },
+    {
+      "path": "vendor/b12x/gemm/mla_query_projection/__init__.py",
+      "bytes": 1530,
+      "sha256": "8b3a7f1378532bf775fa11ff418f11a7a726f4dd7f68892aa27dc05b2775bd0d"
+    },
+    {
+      "path": "vendor/b12x/gemm/mla_query_projection/_bf16.py",
+      "bytes": 9868,
+      "sha256": "2682134c34e99dd4427d692f00909dd2d266e3305f601c70a7114e9e2443ab9e"
+    },
+    {
+      "path": "vendor/b12x/gemm/mla_query_projection/_preparation.py",
+      "bytes": 4077,
+      "sha256": "7f319ca9ec3a78df0ac9bbecb7baae296dbca27d14ae6ea389d3d1c74d31f006"
+    },
+    {
+      "path": "vendor/b12x/gemm/mla_query_projection/_tuning.py",
+      "bytes": 2159,
+      "sha256": "f103c790e46a1731626579862ab906425825e758bcf18839260e902dc5200c0f"
+    },
+    {
+      "path": "vendor/b12x/gemm/mla_query_projection/api.py",
+      "bytes": 2334,
+      "sha256": "e31dd9a2369b9d7db435817dc50291e1f11318e8c1baf55632a03a139be40523"
+    },
+    {
+      "path": "vendor/b12x/gemm/mxfp8_linear/__init__.py",
+      "bytes": 1315,
+      "sha256": "ce490ef017fbb6ba3faa071d0e507b24747925fb38ee6dff95a349b128acb2db"
+    },
+    {
+      "path": "vendor/b12x/gemm/mxfp8_linear/_kernel.py",
+      "bytes": 386,
+      "sha256": "b7f61bf03330b3c0f3da1eb838fb2e30169cb22df46fe1b5c34358fd0c60b818"
+    },
+    {
+      "path": "vendor/b12x/gemm/mxfp8_linear/_tuning.py",
+      "bytes": 356,
+      "sha256": "493978efda6f93f101ed0ff6719cda28cdcc8e6f1bbea9766f40b4cce2c0dcf8"
+    },
+    {
+      "path": "vendor/b12x/gemm/mxfp8_linear/api.py",
+      "bytes": 862,
+      "sha256": "13319a08012a0404aafe4b9cc355a4a74b0d215171fec9abd55019910362bdec"
+    },
+    {
+      "path": "vendor/b12x/gemm/tensor_fp8_linear/__init__.py",
+      "bytes": 1195,
+      "sha256": "d444afeb49a0c7a4707716b3a92faa5331603f9caed4bad1f461b4157364e0f4"
+    },
+    {
+      "path": "vendor/b12x/gemm/tensor_fp8_linear/_kernel.py",
+      "bytes": 480,
+      "sha256": "e19f88c2889e7ace4bbfb15887efbb01fc03b28f972095dd019580ad77b81b23"
+    },
+    {
+      "path": "vendor/b12x/gemm/tensor_fp8_linear/_tuning.py",
+      "bytes": 358,
+      "sha256": "5bcc1c4a2db98b52f54ad724f2af25ea9e9875b35137b197f64a8cd1a53679a7"
+    },
+    {
+      "path": "vendor/b12x/gemm/tensor_fp8_linear/api.py",
+      "bytes": 1326,
+      "sha256": "bc8a05e51bcf250c1666ed5005b2a4989c332736f6b452721c4a18d8f17ebf28"
+    },
+    {
+      "path": "vendor/b12x/gemm/trellis_linear/__init__.py",
+      "bytes": 1728,
+      "sha256": "f07a8f20ebb0ed6a78bb97880770e0f1944be94fef9c996c153bc48931c9ee07"
+    },
+    {
+      "path": "vendor/b12x/gemm/trellis_linear/_preparation.py",
+      "bytes": 13118,
+      "sha256": "287a1f4961d82fb690c12f6ceb47299effd9f18edff086e29e6bf07a04102f38"
+    },
+    {
+      "path": "vendor/b12x/gemm/trellis_linear/_tuning.py",
+      "bytes": 7131,
+      "sha256": "5c245b7428fc0abd4db11e19224546e5b2a86799638d45debec4e215d27a6a53"
+    },
+    {
+      "path": "vendor/b12x/gemm/trellis_linear/api.py",
+      "bytes": 3076,
+      "sha256": "dcebe60eeef46b902cd2b26fc5b99b1ef519003a324cc791612fc3cceae28d11"
+    },
+    {
+      "path": "vendor/b12x/gemm/wo_projection/__init__.py",
+      "bytes": 1991,
+      "sha256": "65283ca49b1835e69db483c64b321f3bfbc7b95e637e9ad9eec84a4a919cdc57"
+    },
+    {
+      "path": "vendor/b12x/gemm/wo_projection/_preparation.py",
+      "bytes": 19367,
+      "sha256": "872803d0e56d9df78db7f1137785f783ac94ae354999dd5e5e6f82e2b9589e67"
+    },
+    {
+      "path": "vendor/b12x/gemm/wo_projection/_quant_cute.py",
+      "bytes": 18871,
+      "sha256": "92f1d09ec49197946918d4e9a93b404edf686a5b15f47fd5bf45a43fb72f1bf6"
+    },
+    {
+      "path": "vendor/b12x/gemm/wo_projection/_tuning.py",
+      "bytes": 5310,
+      "sha256": "355a40c85a6d5134e0dc36c43999a86adf96fe03d1fe86aa8c452e5e2c39a18b"
+    },
+    {
+      "path": "vendor/b12x/gemm/wo_projection/api.py",
+      "bytes": 3441,
+      "sha256": "4b527a2d887d37018b72eca19316d7ba8e72282257e91ede884ac59d6eee83f8"
+    },
+    {
+      "path": "vendor/b12x/integration/__init__.py",
+      "bytes": 291,
+      "sha256": "adb536e2514af049a800cd78a5c147c32d9c3dcaee2d1fb95ea30c7c99f92520"
+    },
+    {
+      "path": "vendor/b12x/integration/vllm/__init__.py",
+      "bytes": 720,
+      "sha256": "4928525128b483fdbfc87cfb62499cdf7cfe0dbb8356a98a9a3eeed6484b480d"
+    },
+    {
+      "path": "vendor/b12x/integration/vllm/fp6_serving.py",
+      "bytes": 17890,
+      "sha256": "06483be27254e7e139b8e835259568dbedbe6bf74a3c569fc4178ed8f9505569"
+    },
+    {
+      "path": "vendor/b12x/integration/vllm/loader.py",
+      "bytes": 10961,
+      "sha256": "70a641ba32433a99997a196dd619aa644de38c47e1e36a791f750afc014a633c"
+    },
+    {
+      "path": "vendor/b12x/integration/vllm/plugin.py",
+      "bytes": 39148,
+      "sha256": "e11861b2b1d320200dc6c699dbf2c74e7568d0531aadccc1371d3602c5dcd7d9"
+    },
+    {
+      "path": "vendor/b12x/loader/__init__.py",
+      "bytes": 394,
+      "sha256": "2a8a5dc3f6def43fac7b9f2fbecec0639e51cbb2b7bdd0d6ec5831ce6e5b971f"
+    },
+    {
+      "path": "vendor/b12x/loader/_api.py",
+      "bytes": 340,
+      "sha256": "b11e7a5cc9c41e6b031e6f9f3e1128306d11506d28b95f0c7d323ce1e5fb0fdf"
+    },
+    {
+      "path": "vendor/b12x/loader/_batch.c",
+      "bytes": 9229,
+      "sha256": "76fca7284b659be0fdd6d9e6dcc77a749f0237696cd6e9a072b5bcc82e56f779"
+    },
+    {
+      "path": "vendor/b12x/loader/_bounce.c",
+      "bytes": 13607,
+      "sha256": "699c09eec0e806d105ca430483b44466eec599ac060fc8333f0446fa17166a56"
+    },
+    {
+      "path": "vendor/b12x/loader/_checkpoint.py",
+      "bytes": 22223,
+      "sha256": "6e1f57ba228dfccbcb0a0554bbd0ff66d42f362c1cb87c16bf8b8b8949881235"
+    },
+    {
+      "path": "vendor/b12x/loader/_cuda_range.h",
+      "bytes": 1016,
+      "sha256": "4b852510eac99787b89d482ae33409ba504f08c7e1426f375af2f22a0451fda1"
+    },
+    {
+      "path": "vendor/b12x/loader/_direct.c",
+      "bytes": 4923,
+      "sha256": "5044c37d598a2eac4858fcb3b102398070b4c3e0f9dfb127a17903bbc01c4b24"
+    },
+    {
+      "path": "vendor/b12x/loader/_gds_checkpoint.c",
+      "bytes": 22478,
+      "sha256": "1a1575d0319fd071b4db856c58a56eae332ed51e9c7dfa3947adc1fded2694e9"
+    },
+    {
+      "path": "vendor/b12x/loader/_gds_kernels.py",
+      "bytes": 2463,
+      "sha256": "fcbff7528eb8d902ff97bd3dec5ba1390a67990ddcbbda6a2138770ab1045361"
+    },
+    {
+      "path": "vendor/b12x/loader/_gds_native.py",
+      "bytes": 6234,
+      "sha256": "5244b24370951c8573cc3f0bfb7a2559e7d7d3c17c97fefb7f446a663cf9ddfe"
+    },
+    {
+      "path": "vendor/b12x/loader/_gds_owner.c",
+      "bytes": 22714,
+      "sha256": "dba3dd1b2616780d128f91d27b58276d8612c6a811ed4599454267c7f6567c59"
+    },
+    {
+      "path": "vendor/b12x/loader/_gds_reader.c",
+      "bytes": 26832,
+      "sha256": "c0229219a705e876833669d9fca33c68e5c4459f3904facd603977d76c564628"
+    },
+    {
+      "path": "vendor/b12x/loader/_native.py",
+      "bytes": 4414,
+      "sha256": "ad8f99d4e986bc247d99e2fafc3037bc5d7782b8fc55f02ca488e72c11f0ebe0"
+    },
+    {
+      "path": "vendor/b12x/loader/_ple_reader.c",
+      "bytes": 18881,
+      "sha256": "2ac80eddc4824b6fb610f3e00e5f49c6dfe62cae87ce409b748f847a32ece030"
+    },
+    {
+      "path": "vendor/b12x/loader/_progress.py",
+      "bytes": 10217,
+      "sha256": "f01714cf5de25c0b80d6d3b5de9766f94770564c9969e841d3e6d09b2ec4db35"
+    },
+    {
+      "path": "vendor/b12x/loader/_row_plan.h",
+      "bytes": 13161,
+      "sha256": "8ded633132e9c1903fdef2a63b44e080239ef66ad8d9a4f78d668e2d47dce753"
+    },
+    {
+      "path": "vendor/b12x/loader/_shared_checkpoint.py",
+      "bytes": 13721,
+      "sha256": "08c07c239ce17c01beb29a2e07b75925cef3f1d2d02df7cc7773b294113a8c69"
+    },
+    {
+      "path": "vendor/b12x/loader/_shared_read_plan.py",
+      "bytes": 4590,
+      "sha256": "e19c413f8eb68c27fdacf46a36c7bc42a31df7ceeed73ab3ba01a3a491e2f485"
+    },
+    {
+      "path": "vendor/b12x/loader/_storage.c",
+      "bytes": 3667,
+      "sha256": "59ae964bc63b9df1b5d270a9d41d9931bbfba1a6b4dd4f08558e8e58cc170f4a"
+    },
+    {
+      "path": "vendor/b12x/moe/__init__.py",
+      "bytes": 868,
+      "sha256": "b04f0836d24bda5c2889bedcd01171880888d666842aeee8605cc0b1ec6b4902"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/__init__.py",
+      "bytes": 233,
+      "sha256": "0f30da977628d1a031bcdf559c247fe5ee0ce01425a524b0dbf5dd399e23a378"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/execution.py",
+      "bytes": 47756,
+      "sha256": "d52a740336b6669e93bf12e9a3cbc28569fcc9176c795eeed2a0f15ef2f789bf"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/exl3_schema.py",
+      "bytes": 16478,
+      "sha256": "d29283701d7544ef728663eb55ccc1d9d2447167de850e1907d06d54777818ad"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/__init__.py",
+      "bytes": 852,
+      "sha256": "138f7d07db901b511a820f981bb97041ad1bd646deec351893a0138aaed21301"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/activations.py",
+      "bytes": 2913,
+      "sha256": "2d29c84341fcaa2df7859ad6dbcfb16ac5e3b4e48d282cc9586bffb43e906676"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/dynamic.py",
+      "bytes": 549092,
+      "sha256": "f652c191d7a653378373b7bbd0f07cad58206af9564e747d4c3da0308f34c6d3"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/dynamic_fused64.py",
+      "bytes": 549092,
+      "sha256": "9afba3c16d277b65b076f0eb989cff004cb24f5ade659f08062eaa1e39b9b360"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/micro.py",
+      "bytes": 283442,
+      "sha256": "f225a5912f39d7d1bd6a020182ab727e2d25f86fe96fa421860f200218812cc8"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/mxfp6_moe.py",
+      "bytes": 9783,
+      "sha256": "4525eefb70abd2625605b14f90cc6f8036347e7d276c75790d3ae00dd703a811"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/nvfp4_phase1.py",
+      "bytes": 29362,
+      "sha256": "62b01ad2017b1c66350bf114fe65d4ff3bd04d6020e76818d9006f18819e87a5"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/nvfp4_phase2.py",
+      "bytes": 21287,
+      "sha256": "653122f1695ec98513277e22b5f26535f591ce8947800c080d2512d91fbae519"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/reference.py",
+      "bytes": 47911,
+      "sha256": "44a2bb6aa4d797d1631a803f7c5214d674be27a18af3b44524ee1ccff035f9b1"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/reference_flashinfer.py",
+      "bytes": 13006,
+      "sha256": "c60c687972121568a97a7af49b0dec4f338229b4ec7743ae552c920ed1f45cc3"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/relu2.py",
+      "bytes": 3091,
+      "sha256": "06853fe033530b3a9bf0357d699e57759e3c8c6f8d987f6c609f12ec03948ef8"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/silu.py",
+      "bytes": 8089,
+      "sha256": "798376040e140af11eacbbcbe42d1d2eedd0c0dd37869eb4054a9c2a5a4f4464"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/situ.py",
+      "bytes": 3401,
+      "sha256": "68c8395cbd3ed0b9e1bae2a74f5999c40b853ca15cb3b7f485a5785af27125c8"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/tiny_decode.py",
+      "bytes": 23170,
+      "sha256": "39893d9c8241136cd92a197358d721448e0a12846cb6c72327c5e663b96df3db"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/trellis_materialize.py",
+      "bytes": 35767,
+      "sha256": "515875738e4c3c2ef4b616e5bb5d65f3489b63f6b4db45b1c0be07d0f28c4e56"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/trellis_ring.py",
+      "bytes": 1684,
+      "sha256": "4385a837d37f766797ca70c69b613bbb4781e99fa8f3ebf1058ef18cca20b811"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/__init__.py",
+      "bytes": 82,
+      "sha256": "3c012619efbf7c533501e7048bd9b3c6ac321859904f7a07b849631b86350357"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/exl3.py",
+      "bytes": 10953,
+      "sha256": "7116078bcf7c287518293ef5edd56a375bd0abc204864d53dbdc808ab6a20f39"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/exl3_synth.py",
+      "bytes": 11433,
+      "sha256": "58d00511f898f7e44c55e3ced9e7c0931705a0d0bb24d7a9ca6c69a7f9304ea9"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/host.py",
+      "bytes": 17510,
+      "sha256": "67fb58f1d0a86021d9055ee10d8bcc760cbb7b35fb2dd5d3f86024cd4d6b7304"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/iq2_xs.py",
+      "bytes": 7522,
+      "sha256": "5e50172700e93bb9283b41b78581a99b99beb241cd76dd5862ff63086bf6ca29"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/kernel.py",
+      "bytes": 537648,
+      "sha256": "a221ee69aac19e3ff95a1fa2668a9d53a7d195adc5674f465df67bd37fc2b617"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/mixed_trellis.py",
+      "bytes": 123773,
+      "sha256": "07b1eea2097d0a94f836259c35df74a7f6209df9d520fee167f614f91d5e319b"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/prepare.py",
+      "bytes": 93012,
+      "sha256": "2fa8b5b59575bd21513086e17c8a588ba21b94f74f728ba4b0dde4176ce03e43"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a16/route_pack.py",
+      "bytes": 27799,
+      "sha256": "329bc8dd9647a90d6af52abfeb23c466157f6c89c8b098d0d26cbc0010258ff2"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8/__init__.py",
+      "bytes": 151,
+      "sha256": "299922369ef7fb23ae46d01626e97b3d5eaed8166f97ff5e50f86fb428370324"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8/weights.py",
+      "bytes": 1850,
+      "sha256": "95378890e6d58befda88e5b81c6e9fdf92d3c5f8d598af5eb65e46c17c33243f"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8_compact_activation.py",
+      "bytes": 6151,
+      "sha256": "4e41b0c84db9d92be028fa26dc0a18b0df126fd715dfb7ebd2d73669d2d3116b"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8_compact_micro.py",
+      "bytes": 14420,
+      "sha256": "0d3630ca9d45846f7fbb57782b9f05d5a074ac408621480e6273bedb3205de9f"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8_compact_projection.py",
+      "bytes": 17385,
+      "sha256": "880d65dac6570e1795ccfef379eb3758e474d3133f469eb837146751e2bb1339"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8_phase1.py",
+      "bytes": 54953,
+      "sha256": "224038306aca2f88944bc20910a85aeb812cce395439d5bfb85dda5100cb713c"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8_phase2.py",
+      "bytes": 35765,
+      "sha256": "cb2ff6c57857add68455d3490db41976bd692ed3e634dad8d0fe293dc29292fb"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w4a8_trellis_decode.py",
+      "bytes": 9405,
+      "sha256": "42c5f0c7bb16fa93f1aae0b4f7e52872d7b97d60177e9d8aef31978b212ba06a"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w6a8/__init__.py",
+      "bytes": 226,
+      "sha256": "363cf5716975a1747014e7750bd90292f45879620dc3f9d10c9fd9120a1d812e"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/kernels/w6a8/weights.py",
+      "bytes": 10191,
+      "sha256": "e1883a2625d2e7cf59d31f357676d598858086b14f63e6719e98546823eb0756"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/routing.py",
+      "bytes": 8806,
+      "sha256": "d8dc6db4a5c3e8fbf76407484c3c331f9aae4a106e239e272ac83912a3c0e3f8"
+    },
+    {
+      "path": "vendor/b12x/moe/_shared/trellis_codebooks.py",
+      "bytes": 2299,
+      "sha256": "8d57c7469da2e73597735b79f37c436d23c6701e8863b333df1436acb140d750"
+    },
+    {
+      "path": "vendor/b12x/moe/calibration.py",
+      "bytes": 21331,
+      "sha256": "02ef189de17bdcf2f8dcf4ab82d2c18b7f9518c859740088eb33c0772c2ae90b"
+    },
+    {
+      "path": "vendor/b12x/moe/checkpoints/__init__.py",
+      "bytes": 76,
+      "sha256": "7172d9f2e928c2925a9c76d6e55a45a3e1e3e1d89f0f930fea0534ca5fe0b6a8"
+    },
+    {
+      "path": "vendor/b12x/moe/checkpoints/exl3.py",
+      "bytes": 13323,
+      "sha256": "4ca75ad167abdf8b87ca56ae99bc0c790def5b8a390020794232176c71606dcc"
+    },
+    {
+      "path": "vendor/b12x/moe/ep_moe/__init__.py",
+      "bytes": 1720,
+      "sha256": "32e91fd76c6b9e9b782a1ada87a5181ffde135090505a4795f23214d135c2616"
+    },
+    {
+      "path": "vendor/b12x/moe/ep_moe/_impl.py",
+      "bytes": 20948,
+      "sha256": "12d050bb64d8be3207c3b5bdd1c37af3e934e952390db76940819b73f9a29b5c"
+    },
+    {
+      "path": "vendor/b12x/moe/ep_moe/_preparation.py",
+      "bytes": 13377,
+      "sha256": "6a4bd3fbdcced02db43bec2a29774e0a297bf74e3f62814baa47d5f45c05af3f"
+    },
+    {
+      "path": "vendor/b12x/moe/ep_moe/_tuning.py",
+      "bytes": 825,
+      "sha256": "5d05baacc112ba715b36917edba2788f20e264e4b6a7786d38b564fe3f2fa48a"
+    },
+    {
+      "path": "vendor/b12x/moe/ep_moe/api.py",
+      "bytes": 1255,
+      "sha256": "c0c28b191017eb73cf5ff98d352aaf0929b4e5acf23af1a922324c1ded73e07d"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/__init__.py",
+      "bytes": 5117,
+      "sha256": "7a2f457a8d505a4b7ba62d3e6334945d077db0897f0424c28d6e87dceb201658"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/_compat.py",
+      "bytes": 3608,
+      "sha256": "0cd3beafc6e283290ebe3c953f02af84ff4334fa8351333a7a96ff38c2a77d50"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/_impl.py",
+      "bytes": 554416,
+      "sha256": "f06ebd75bdd24eccbcd55ea49c2bf17e9186efa74d9e81457be6a71a67dcbffb"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/_preparation.py",
+      "bytes": 56151,
+      "sha256": "438172177dfa9e756a5322e00942fa8e083683f869e5dbf785a24c31da97e122"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/_route_pack_cache.py",
+      "bytes": 1650,
+      "sha256": "253b854e9db31827b384d1a5af8a7dbb90ca6e4395e2efe7bb4ba810bad70962"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/_tp4_tile_major.py",
+      "bytes": 10249,
+      "sha256": "820ec5a66f69b6de879b01c81defa040ff96a3a38397b07fe735a7647d4ca053"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/_tuning.py",
+      "bytes": 32691,
+      "sha256": "f1a1e8cbc6f2a07a382c5d04378ce82b67154ce10576353fb87629a482329810"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/api.py",
+      "bytes": 9110,
+      "sha256": "85dac6a67b24dd125b33ca57f1a660618b310d7051e69bac936f33d5f5480932"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/config.py",
+      "bytes": 13633,
+      "sha256": "f75c047bb60e8aa86f1b112b26cb978f2a62cc5e257db603d6f3d9c1531e9f8e"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/execution.py",
+      "bytes": 2354,
+      "sha256": "18d46e075fc453a6681b43ecc2f8564be826c98dbe8a6e39150eaa0bf1eb83b5"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/planning.py",
+      "bytes": 29318,
+      "sha256": "cfb2071447c46670ecdb36fa8f49327a5cab428ddf516bbd3cdc885e4bb79718"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/source.py",
+      "bytes": 4144,
+      "sha256": "3a8075fe022494bcf4852687c51dab19798cd7970bd18f860633ba0a4bab9e70"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/trellis.py",
+      "bytes": 29046,
+      "sha256": "2351739485a990026f9d98e1f592acb0a7a16da8cec0acf272e4f25cb70292ac"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/trellis_layout.py",
+      "bytes": 6778,
+      "sha256": "10d9e43ddac925bf9eed51183f14c6d221406de3e3417a05398cc49feb2e7b3f"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/weights.py",
+      "bytes": 10407,
+      "sha256": "b341f48fb63ed48097203680d3e331cfa0f3953709de899b839db0ac25aff4fb"
+    },
+    {
+      "path": "vendor/b12x/moe/fused_moe/workloads.py",
+      "bytes": 3604,
+      "sha256": "702aae4152cb271589e90b7eebadcd32313ac1b58e8d97aa64b69d526fb32bf6"
+    },
+    {
+      "path": "vendor/b12x/norm/__init__.py",
+      "bytes": 697,
+      "sha256": "7263148dd93cd7ceb2d96cda96d6bd92b96f45f663790f0b7a02901436a2eb17"
+    },
+    {
+      "path": "vendor/b12x/norm/_vision_preparation.py",
+      "bytes": 2548,
+      "sha256": "34ba0b2aa5f3872ed702ad959821a3d95849498033cb1975c2cf48108300eaca"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/__init__.py",
+      "bytes": 2592,
+      "sha256": "bbb7d180019ce1dc079bdcd820ce4ad898eeca0340bca9d9501d6ef672e99af0"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/_cute.py",
+      "bytes": 34413,
+      "sha256": "6718773cfebee1ad5991cbc3d9876f458fd0b4d8f9a2758daa8993b8eefe7e89"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/_cute_config.py",
+      "bytes": 3967,
+      "sha256": "9f92464ef6d2ba1cdced2d24fb13be35c6110c47405e525e0245d5620045eb28"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/_impl.py",
+      "bytes": 20965,
+      "sha256": "b89e67b1ca55abcdbfe5a3bc79cb792333632c478ad08c8bb35a1f928571b683"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/_kernels.py",
+      "bytes": 12304,
+      "sha256": "54c708173249d6785c6819ea00ce1b85e8fefb9b27ca218ff4f6f4119416d95c"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/_preparation.py",
+      "bytes": 7917,
+      "sha256": "201a4d1adf35e57be7305c4fa7794153c9b45bb53009570346e6ea19902e6cc7"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/_tuning.py",
+      "bytes": 8902,
+      "sha256": "23b11b3d6307345bddb9c3ce631cc607bcb26fec63fa551576a1f8dc3d4ba7b7"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/api.py",
+      "bytes": 3496,
+      "sha256": "8dddd3cc83114383b9057a7dcc8c9ad9c6b792cd3afa0e8c7cd545f0b8599789"
+    },
+    {
+      "path": "vendor/b12x/norm/hyperconnection/reference.py",
+      "bytes": 3824,
+      "sha256": "bce230140019e2a737060a0da31b7b34b57caf3c11bbdd73eeeffa8515f57192"
+    },
+    {
+      "path": "vendor/b12x/norm/mhc/__init__.py",
+      "bytes": 2637,
+      "sha256": "02e6922783a28c476224f1405b9652c7faaa18124f48d346403a556566782cfb"
+    },
+    {
+      "path": "vendor/b12x/norm/mhc/_impl.py",
+      "bytes": 56894,
+      "sha256": "40a344267d7ee548d7148a3f089b93a000e8dbb3fd707c579d9eeda1fb2ce5a2"
+    },
+    {
+      "path": "vendor/b12x/norm/mhc/_kernels.py",
+      "bytes": 215346,
+      "sha256": "91a574e16dcdc978716f87f5deb49d2682442258653b4f8fefcf1236a4dccc06"
+    },
+    {
+      "path": "vendor/b12x/norm/mhc/_pre_prefill.py",
+      "bytes": 5151,
+      "sha256": "1e7136f5a63033cd9e9fad7abcdc3840c08d7e618b8f150d9ab4775e9a121c50"
+    },
+    {
+      "path": "vendor/b12x/norm/mhc/_preparation.py",
+      "bytes": 21003,
+      "sha256": "0fe091a58e484e305896a055fea6f60966fb04c55f8af87c1db9b3787ad06c03"
+    },
+    {
+      "path": "vendor/b12x/norm/mhc/_tuning.py",
+      "bytes": 22574,
+      "sha256": "ec4283968c300b2b5afb701db98ceb85f8d41da917307a212eaf5bd8acb06a11"
+    },
+    {
+      "path": "vendor/b12x/norm/mhc/api.py",
+      "bytes": 1699,
+      "sha256": "95290d2915f7cc0c1fe7c4fa7a31e35b911f33c6cd0214b833caa76b40b37385"
+    },
+    {
+      "path": "vendor/b12x/norm/vision.py",
+      "bytes": 9362,
+      "sha256": "4be524233be148b3f0792b9d2ac288133efd94cb66cb6f2d575ef124e4261f64"
+    },
+    {
+      "path": "vendor/b12x/preparation/__init__.py",
+      "bytes": 1387,
+      "sha256": "00a0367255799d3edaaa6de5d8acb078ea65949f065a9caa0c97386a25067708"
+    },
+    {
+      "path": "vendor/b12x/preparation/_cache.py",
+      "bytes": 7485,
+      "sha256": "8f875bbd6cb525fedd42be6c552b571118712ae2550e370f9f43518cb0738c59"
+    },
+    {
+      "path": "vendor/b12x/preparation/_efficiency.py",
+      "bytes": 436,
+      "sha256": "0e2c75a4abfb725eb8fc57a75284b7a044e6603a3678f066d75da8b2d6f1e2fb"
+    },
+    {
+      "path": "vendor/b12x/preparation/_measurement.py",
+      "bytes": 14385,
+      "sha256": "721a06687874c6a9e8dad181bab05b4426e3a23ef29a8ab62933da6081f0c9cb"
+    },
+    {
+      "path": "vendor/b12x/preparation/_memory.cpp",
+      "bytes": 788,
+      "sha256": "43a9c528848e5c5486c65370259e4b2261cab66bbc3c72a9db8e01446656e83a"
+    },
+    {
+      "path": "vendor/b12x/preparation/_memory.py",
+      "bytes": 940,
+      "sha256": "81ec9916a1dc3c8801ee0ff8987ccdc57914264b0687c3560aa304fd3cdd6e49"
+    },
+    {
+      "path": "vendor/b12x/preparation/_progress.py",
+      "bytes": 20752,
+      "sha256": "ea1b38a959b2548964ff890d6b214136d34f3ee654643654bd79c503b8cf45c3"
+    },
+    {
+      "path": "vendor/b12x/preparation/_timing.py",
+      "bytes": 1755,
+      "sha256": "97718483cc9188f02b54f64d25fe2f3fc858f9d49c9461072b69b5fd4706d605"
+    },
+    {
+      "path": "vendor/b12x/preparation/artifacts.py",
+      "bytes": 2235,
+      "sha256": "82bdc730ba8bee4531a2e804bc5bd3e85d81cfa82f5dffbf370a4909bfe2c805"
+    },
+    {
+      "path": "vendor/b12x/preparation/catalog.py",
+      "bytes": 7667,
+      "sha256": "57edc9b5c123d3601d468bab621f4c4caa18836571977f77578220bad56586b0"
+    },
+    {
+      "path": "vendor/b12x/preparation/device.py",
+      "bytes": 3425,
+      "sha256": "f27858fd196c9b486821274814dc9a72680fa2c820e107e6bf9aee97986fbe6a"
+    },
+    {
+      "path": "vendor/b12x/preparation/session.py",
+      "bytes": 83351,
+      "sha256": "97d9044174e5ee6f236948dc24ff720eb385179bc115e7b085ebab9605d44838"
+    },
+    {
+      "path": "vendor/b12x/preparation/tuning.py",
+      "bytes": 16529,
+      "sha256": "5eb916d0758733d2ea6e012cede295513cbd8add348e7880ca2ec54013713cff"
+    },
+    {
+      "path": "vendor/b12x/preparation/types.py",
+      "bytes": 27472,
+      "sha256": "d5ef6544b4844f2cbaaa627dba0cf2b871393f4a2b2d6136454d388c3a0f1fc7"
+    },
+    {
+      "path": "vendor/b12x/quantization/__init__.py",
+      "bytes": 696,
+      "sha256": "69a42dbb9d5a092062557e71e3f07b513c2298c9d9694cca9c1ab696a60c46a1"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/__init__.py",
+      "bytes": 11577,
+      "sha256": "64178e8f014ed543362867e26ff96106dc269129c603a3d309ee84994d62ac60"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/_preparation.py",
+      "bytes": 10075,
+      "sha256": "8135f529edf31842651ae110d19b5325dd75386bf022d4ff70b269a854ac51a6"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/_tuning.py",
+      "bytes": 3036,
+      "sha256": "b74161631786a99f7176964ac251e7cc7bdb5af220fbeb5f1fdb4565bcbd30e4"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/bf16_to_fp6_small_m.py",
+      "bytes": 19126,
+      "sha256": "144407f44c5d9d77004a88a291c234791f40ab8896a1ae969e26b4b0a8a13878"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/bf16_to_fp6_tma.py",
+      "bytes": 17350,
+      "sha256": "86b34f05bd70c62255a4798d9ecd7c726c917793acc5803e66f24020df358f07"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/calib_io.py",
+      "bytes": 2226,
+      "sha256": "8891f37a6929d8f3fbce6b0859e5b6ecddd15c7f07ac145e7bbb135e8cfd5ae9"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/fp6_checkpoint.py",
+      "bytes": 21347,
+      "sha256": "6b20888b97a991deac33f83ca027f701afb624b4684b81278107bfa246039597"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/fp6_dense_op.py",
+      "bytes": 2504,
+      "sha256": "e607a6fb4e67fecb1b5e01c1c1416ac3ae2bea60159b04b01724abbe3d655359"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/fp6_dense_weights.py",
+      "bytes": 31395,
+      "sha256": "6457d3f792ee8cefef97fa7eebb97d82ce9b182e6a03db04ecc978ac01a5f34a"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/fp6_moe_weights.py",
+      "bytes": 10850,
+      "sha256": "15363047d54a6f4aa9cdffb3099680bbf94f8b67580c2da05e75cff7f215b94c"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/fp6_row_gs.py",
+      "bytes": 9824,
+      "sha256": "a3963dc719b0afcabe0e19a9e9a662e08b4346a1285ef209b609752adb8c2069"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/fp6_safetensors_export.py",
+      "bytes": 31127,
+      "sha256": "7074f9e6d897bd43988ad3d95e61f0c8601a36b82efd79de6564c6749634e6a9"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/fp6_safetensors_load.py",
+      "bytes": 11028,
+      "sha256": "4041b7fbec8b3dc55bc274b6628148c8a536dc27f0ecbbec72f3c655640257f1"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp6/model_fp6.py",
+      "bytes": 21561,
+      "sha256": "42b2d7f611f2413f298d70ad6899a95a9dfe80d4ded6d7bdecaebcd57b6bc5f6"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp8/__init__.py",
+      "bytes": 1306,
+      "sha256": "ce300cc3e87fb0e295e618e0d1edb843f3c772ac09b1e0a6b0be8768dcc296a4"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp8/_preparation.py",
+      "bytes": 10532,
+      "sha256": "a08f96d0b2c4f740cfa3d07df59018fc67c3f7792eb40cbdfe84ca073c0836c5"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp8/_tuning.py",
+      "bytes": 2153,
+      "sha256": "4f7c4b7c9cb094b32d42c71b6aecfc25e26a56d82942196496b6f71f538e29c5"
+    },
+    {
+      "path": "vendor/b12x/quantization/mxfp8/api.py",
+      "bytes": 567,
+      "sha256": "e4b70226e81b852f6bcdb2a88b0b47d6018dc70e624c05dd27afb4b21e2b1f97"
+    },
+    {
+      "path": "vendor/b12x/quantization/nvfp4/__init__.py",
+      "bytes": 1914,
+      "sha256": "bb6ebcb1cfa2a8d1939cec6d1e2cadcf59a02b64a6e0ed47304139c19637720c"
+    },
+    {
+      "path": "vendor/b12x/quantization/nvfp4/_impl.py",
+      "bytes": 7080,
+      "sha256": "30c7991beea31ed66a3c9d5425dc24aa83128e16e05856fe183152eac381cfd6"
+    },
+    {
+      "path": "vendor/b12x/quantization/nvfp4/_kernel.py",
+      "bytes": 19327,
+      "sha256": "23efdfad34efc9bebb2ba337933feb93bf4d5123db1428c7a8f3157bdf273655"
+    },
+    {
+      "path": "vendor/b12x/quantization/nvfp4/_preparation.py",
+      "bytes": 2157,
+      "sha256": "e30af46c83eb62d30121924da9563f69f64dc6105c4c8ec8147b45c1bc52baad"
+    },
+    {
+      "path": "vendor/b12x/quantization/nvfp4/_tuning.py",
+      "bytes": 3417,
+      "sha256": "f39198470abd9a3ebc0ecf7ab1e9b5eb1621321f9cf7d5e682b82d9cc10f1e6b"
+    },
+    {
+      "path": "vendor/b12x/quantization/nvfp4/api.py",
+      "bytes": 1565,
+      "sha256": "a53bedecd8050801f4d4a16b6f810ca7fd9b1af5c94a2574b0de4d083640d75d"
+    },
+    {
+      "path": "vendor/b12x/sequence/__init__.py",
+      "bytes": 1306,
+      "sha256": "e0853da0e1d7e4039a2c8c6d9402e7e402f52e0efb59ed124ec285fae366e6d3"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/__init__.py",
+      "bytes": 73,
+      "sha256": "e912190a27c16c23b645968cc62bac923e5c6800658d7dd7fe7313c73ee9346f"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/_gds.py",
+      "bytes": 4584,
+      "sha256": "861d20b13b811dc2e22a24250d84ac2af5ed7caebcf4767d3d5b221420e696ed"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/delta_prefill/__init__.py",
+      "bytes": 79,
+      "sha256": "c604780b07e68041bda199c59a543676d6b1e95ba2123c5d4fd65e68a0909293"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/delta_prefill/_cute_kernels.py",
+      "bytes": 110852,
+      "sha256": "c139c38f1281c799795b6e04a41bafd6e273e386acd6e26ae89486eba26d3425"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/delta_prefill/config.py",
+      "bytes": 3313,
+      "sha256": "5d05bc26b893594eeebfa4ac607493d5bb827ff39bc45e01b23a2d780a79115b"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/delta_prefill/contract.py",
+      "bytes": 13468,
+      "sha256": "d3f72f1fb87f9524f699183c5428ae8ef121b358492347678f65cd0b4603d91b"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/delta_prefill/preparation.py",
+      "bytes": 8201,
+      "sha256": "b366689b345f6e8173483d066ff354104a9ffc5f6efdaa8200a54eca873a1c45"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/delta_prefill/reference.py",
+      "bytes": 5846,
+      "sha256": "c07e4fcac015990f62328f318067bcdd23be679cf329b6a38e5591e48a3a17af"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/delta_prefill/workspace.py",
+      "bytes": 3304,
+      "sha256": "f047ed10100203de8a68477b30bd0a76d8c670dbe9ce4400b5d5091aa2295abc"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/disk_table.py",
+      "bytes": 15599,
+      "sha256": "2940f50e04be5cc4b9a097ec97a7d422cdd189de2f2496925fbabbb463d0323d"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/kda_math.py",
+      "bytes": 1560,
+      "sha256": "b66b1c05c2d7b2b6bff11ddee983490c8f3171fe1ec994e3a1ba326e74d1eaed"
+    },
+    {
+      "path": "vendor/b12x/sequence/_shared/tensors.py",
+      "bytes": 4412,
+      "sha256": "92c141a6e42470de2befe125e15927d8bee9b767fba23323d0c579bb0758faac"
+    },
+    {
+      "path": "vendor/b12x/sequence/embedding/__init__.py",
+      "bytes": 1065,
+      "sha256": "87a5e312c42b9fbc295bac265d0df980d46a403bd26000d233509961b0227e9f"
+    },
+    {
+      "path": "vendor/b12x/sequence/embedding/_kernel.py",
+      "bytes": 5019,
+      "sha256": "ba11886abc10694fe0a8b9a5d71ab882bda0be199aa1a5104840cf2d29759ca3"
+    },
+    {
+      "path": "vendor/b12x/sequence/embedding/_preparation.py",
+      "bytes": 3230,
+      "sha256": "49f3fc787c00a8e2072489ba1480c1ffc7e4c1794bb9df84f66af0f7ed77facb"
+    },
+    {
+      "path": "vendor/b12x/sequence/embedding/_tuning.py",
+      "bytes": 1706,
+      "sha256": "69e4810d9114deccbd894d556d82c2a3d87552a2336591e450a31022fa6297d1"
+    },
+    {
+      "path": "vendor/b12x/sequence/embedding/api.py",
+      "bytes": 3876,
+      "sha256": "0c83fd60b9914e87505f50c5c6efccb9fbf1c714c9df2181845e1ef7a90cef4d"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/__init__.py",
+      "bytes": 828,
+      "sha256": "5f223e221859a187f2762cfcc0d81ffb9457610cd1891084445c0643305f66b3"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/_disk.py",
+      "bytes": 7385,
+      "sha256": "08cbbe58f9d6dc9a52ba6c653a70e6110ecabc552515c23082a0226bb3914c08"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/_impl.py",
+      "bytes": 10721,
+      "sha256": "5b6eb4c74388141303ba0a1526c61448175ab2dc73ac74f4e20de048daaf4bbd"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/_kernels.py",
+      "bytes": 5126,
+      "sha256": "5eda82d922c7b78042d63551374070865c3531757ba68261f51677546fc13b41"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/_preparation.py",
+      "bytes": 8216,
+      "sha256": "f327f7aebb92445070a4da4b41159533b5cb41e992ef7611a7e767529c290a28"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/_tuning.py",
+      "bytes": 2126,
+      "sha256": "7b14188ab7f3a0d489fde360a7234ff6c0612f7b53f9be8e72cfc30b5338ff07"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/api.py",
+      "bytes": 727,
+      "sha256": "ff31013886b089e2137b21b5b38b084438fcc70fb710b6c004c9c8f507c77858"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/geometry.py",
+      "bytes": 3306,
+      "sha256": "e54f88f127ba13b16210e7961c6eafc0cb6b22ae1bc8fa2b703c23a9f50a03ec"
+    },
+    {
+      "path": "vendor/b12x/sequence/engram/reference.py",
+      "bytes": 1270,
+      "sha256": "98465fe6de2889081b77df0e0b329e4a745ea13e96f32547c95a9270022d0b1a"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/__init__.py",
+      "bytes": 5344,
+      "sha256": "e0149296af24dad45585fbb1e33988434edcb459d28e4dcf63244ff750d31055"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/_commit.py",
+      "bytes": 5424,
+      "sha256": "e24acb9b46e2a4065919ddc62f392fcad886638206f6f37c7f16016a339fed3b"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/_cute_kernels.py",
+      "bytes": 54767,
+      "sha256": "5f24de48150387969742031e58fc1f00e0509e839b798ebbd083426b1520d53f"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/_impl.py",
+      "bytes": 32787,
+      "sha256": "856330a1b3284f252b034c5bd0c34ebb91af2a565e4aa23e1c2a1ec5fd400331"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/_kernels.py",
+      "bytes": 11192,
+      "sha256": "11bab1cda254155a7fdf79be114fac191843b4e7cf9a5f85c9d1626497e10706"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/_preparation.py",
+      "bytes": 17380,
+      "sha256": "90abf6e6c7332ff542958e82bba1187f7d4882075460bc4301b5b181b8813bb5"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/_recovery.py",
+      "bytes": 19332,
+      "sha256": "8283e4736ad3cbff936c2d55ea456e1414179a5e6983d635d94774299365c4e3"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/_tuning.py",
+      "bytes": 8940,
+      "sha256": "25da03e4391e4f8845f8d7b094236b7bc35001ea175474b6eec385842ca2905b"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/api.py",
+      "bytes": 975,
+      "sha256": "a88585389585ff24e65d4e00cc622424f254f21305a7502908985099b65d415b"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_decode/reference.py",
+      "bytes": 12858,
+      "sha256": "16d49aa7844285ee1f5d1106d0d38966201b858316388bc1af8aec10d94552b8"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/__init__.py",
+      "bytes": 2797,
+      "sha256": "e9602cbef3f5a76f04cc70671d9d9558594b2700d9ffff2ff58ee1a8d260fdad"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/_impl.py",
+      "bytes": 10410,
+      "sha256": "c807fa81f657ce2291c1e1ffbeec5fe96ac151030fc9415182a5bffe05d1027c"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/_parallel.py",
+      "bytes": 6264,
+      "sha256": "d8e1392656a4725123f33ed4557f112d3f10f9976d25dd4005f8678f6cb39a5d"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/_parallel_kernels.py",
+      "bytes": 27219,
+      "sha256": "a9554fd4457d2baf7bd3791812704d8054f32a982176c9edd956e855ec966631"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/_preparation.py",
+      "bytes": 381,
+      "sha256": "001dd0d435bcd9895728d53b350b697ec431cb2558256f0f522fd997f0a20475"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/_tuning.py",
+      "bytes": 10457,
+      "sha256": "e4eced1cb472ab0aa958cb54a32df08cfa1d167405f9c57262a75b86d9f744d2"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/api.py",
+      "bytes": 801,
+      "sha256": "0e8eb04d0f46e6cb308006f3e14c8823dec61ea815ef8f3592f40f03ea0b5002"
+    },
+    {
+      "path": "vendor/b12x/sequence/gdn_prefill/reference.py",
+      "bytes": 7721,
+      "sha256": "4bff95d7ae29896278a2ed302b3a1a3ff9c0b742f39ec487db34c9005cd517eb"
+    },
+    {
+      "path": "vendor/b12x/sequence/kda_prefill/__init__.py",
+      "bytes": 3384,
+      "sha256": "bd2aafd81f6673fba935e8a5804d6f7431003491606b552ef9f64fab6188d892"
+    },
+    {
+      "path": "vendor/b12x/sequence/kda_prefill/_impl.py",
+      "bytes": 8512,
+      "sha256": "3791ddd73ef036032971b44857af7e61619f0460092e28bd2adbbd370c4e30ca"
+    },
+    {
+      "path": "vendor/b12x/sequence/kda_prefill/_preparation.py",
+      "bytes": 381,
+      "sha256": "f49390dd80a632c1a23a4b0906bd848a7b1b3ad82b4c8049ca851c6f988d0d69"
+    },
+    {
+      "path": "vendor/b12x/sequence/kda_prefill/_tuning.py",
+      "bytes": 6149,
+      "sha256": "6a31a6c8b0b0f5c383a1c0a0fe47f6a319d19b6343920d654dbd33eaab410f11"
+    },
+    {
+      "path": "vendor/b12x/sequence/kda_prefill/api.py",
+      "bytes": 763,
+      "sha256": "f8f5bcd0cd6bd20c577f5d4d9e04b1cfc9a5b877c6cd674bf2ecfb1f0b0085c4"
+    },
+    {
+      "path": "vendor/b12x/sequence/kda_prefill/reference.py",
+      "bytes": 15584,
+      "sha256": "c8e8ea80f16608599839fb428e196e7d0b2f42559115b94ff4475977e15d27ea"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/__init__.py",
+      "bytes": 2285,
+      "sha256": "35703839c42bd1f478055eb632eec680adceae6885513a67d9dfe61202b9f485"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/_cute_norm.py",
+      "bytes": 9788,
+      "sha256": "b3eff80264eb55141c07e7034a242de2e8a2a1e746798e5d577ce6504ca5859b"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/_cute_prefill.py",
+      "bytes": 23136,
+      "sha256": "950049cd955f8feb36c7813208bbdc0a9cc29f210faed8aaeec23824ec91d0f0"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/_cute_prefill_config.py",
+      "bytes": 2896,
+      "sha256": "860400d73371e0863077b6b877a32844621e83698e8276775c885ab998c40635"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/_impl.py",
+      "bytes": 12988,
+      "sha256": "31ea93c88b1fe3aba5e0350f3fd09fa42c769c15f8dcc878aa27f7462f6f39f2"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/_kernels.py",
+      "bytes": 7984,
+      "sha256": "460dd75b633dc935e642f94ea06420c2f5a394eb5842a6cc1ea43887cec94e8c"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/_preparation.py",
+      "bytes": 6334,
+      "sha256": "b5dc17f194d2a953a8ca8420b7fe4d3d1d793bfbc92f85ff977c38df85efd30e"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/_tuning.py",
+      "bytes": 4875,
+      "sha256": "a4187bff4aa61899dc7da20a96ca2f230fd0b939c8001b1f23bace2f3039a363"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/api.py",
+      "bytes": 731,
+      "sha256": "9c687b66f14f353080edc8a5c04aeefefca80cb8d7974d81f057d58cc381631e"
+    },
+    {
+      "path": "vendor/b12x/sequence/mtp_feedback/reference.py",
+      "bytes": 4049,
+      "sha256": "fbfe10925d76c74b4c398786dff9073b907fd9e896e1aa1e858dc5934847d4a7"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple/__init__.py",
+      "bytes": 2191,
+      "sha256": "a0e2e4bb19dd70ad1f9c6f2337779f6e66a5e5f08c2800e32e2b4e8cd431c630"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple/_contracts.py",
+      "bytes": 18215,
+      "sha256": "e48b863d3b9d95167ae7a08fe351272c3439ae73f3af70da1f06cdb25366136b"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple/_kernels.py",
+      "bytes": 20009,
+      "sha256": "663a3a22cab709a7bccceff46f9fdf212393d4d55d019a3a679634163a1845a1"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple/_preparation.py",
+      "bytes": 12096,
+      "sha256": "793d25ee7835e768f74bf8b412b2f3753719090f0121f8c3821275b689b9b707"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple/_tuning.py",
+      "bytes": 3192,
+      "sha256": "110284992617c790bd5d481bf0c4b064a7ce9579c99ee8937687271666a9db27"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple/api.py",
+      "bytes": 821,
+      "sha256": "2437d00a77770047502ddc816ea5b91de9aea95b170196d639bcfc593071e1a8"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple/reference.py",
+      "bytes": 8678,
+      "sha256": "143d900fb8a324f7da9f5b0ee10e4954da2c18223dd0a692ed6a13cfe08654ab"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/__init__.py",
+      "bytes": 3308,
+      "sha256": "8410a0942da3c7ac937fe0b00feafc31a2d02b4792ea4864decf0fc9ec358e52"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/_contracts.py",
+      "bytes": 24169,
+      "sha256": "6d0e81b1eef4d2129ed1e5cd9b256d50654f64345d5ca912b69f1f7d0bb31b52"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/_disk.py",
+      "bytes": 2951,
+      "sha256": "8e4a2f6d62695b3ecfa55c2f573c5a7f585a6d9b327242d5882d90034b2e836e"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/_kernels.py",
+      "bytes": 9937,
+      "sha256": "f211e19b4619d6bb10aaa026bd577d4cf9d7d106ca18c85e33a1eae2fb90f50a"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/_preparation.py",
+      "bytes": 10262,
+      "sha256": "678c8e78547bf5a8086345a28775fe37a53d3d587af180a6e5de851e644bf8e0"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/_storage.py",
+      "bytes": 3779,
+      "sha256": "ae4e02e40a5df2e72ffa4875a7464ad24aad7061e25aee0a32e3368c933476fa"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/_tuning.py",
+      "bytes": 2737,
+      "sha256": "343dc5c21945a46f9f30ace2560cca318dbef177e1e0bebf269e6544733ef6bd"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/api.py",
+      "bytes": 1222,
+      "sha256": "51a8e08d9d052aa7731c3aedef8758479f1c7bfcc3ba5d7596eb80906552e2c3"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_embedding/reference.py",
+      "bytes": 9568,
+      "sha256": "45e6739aa91eb8b2e203c47b044360f717123d27d550a98929daa51e3c93e17e"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/__init__.py",
+      "bytes": 2539,
+      "sha256": "be0a5874682f0fcf5571f2ae6a4f34e7de276cba41c502e4541c6d54ee99bae0"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/_contracts.py",
+      "bytes": 10612,
+      "sha256": "7b408299d0f9785edfcfe1d38d34cfdfa6f76358871e209cb5bfa9dcbcd35d5a"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/_kernels.py",
+      "bytes": 6557,
+      "sha256": "2003f849501226d83dd507bc5f607e11258fe29194de82f23da27b12c03fcadb"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/_preparation.py",
+      "bytes": 7663,
+      "sha256": "2dd44331bc1e6827c6c7a1f8400db7d4f72c15ffcc9c31de56532ab940cd201c"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/_tuning.py",
+      "bytes": 2875,
+      "sha256": "91b620e8e40889a9ed4e08c16670076a86447ebbe17bb75b87b9c3054f4c1390"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/api.py",
+      "bytes": 823,
+      "sha256": "2723031b37c2b8836af2b36e59b9778f425bc7153eabe930fcb032d3f26e173f"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/geometry.py",
+      "bytes": 8304,
+      "sha256": "c287cd857fb728ffd535463ecba3883682ce8fdfe36a235b3deb504b0f9c8609"
+    },
+    {
+      "path": "vendor/b12x/sequence/ple_hash/reference.py",
+      "bytes": 10274,
+      "sha256": "df6136da09443a4e346338541b2d895fed97117cd2c1e6b66418313c84e2604e"
+    },
+    {
+      "path": "vendor/b12x/testing/__init__.py",
+      "bytes": 49,
+      "sha256": "4769c266e8055aca34bf1a9d39b9698980da67eedbb9782a012cb7fbdb2ddc46"
+    },
+    {
+      "path": "vendor/b12x/testing/attention_corpus.py",
+      "bytes": 31918,
+      "sha256": "79256cba987661241f1b5314c9d5eebccdc52273bbc2662d75ed0b253f6621b7"
+    },
+    {
+      "path": "vendor/b12x/testing/cases.py",
+      "bytes": 1651,
+      "sha256": "f7656c687470c3baa30bc3517791263b43b2a4f86d5b0de94d4b44308ad155fe"
+    },
+    {
+      "path": "vendor/b12x/testing/delta_prefill_cases.py",
+      "bytes": 9623,
+      "sha256": "7435b525a20a8c64e5ed73f87d0e81bc252270dd5207e73636737c52600ae2b8"
+    },
+    {
+      "path": "vendor/b12x/testing/iq2_xs_reference.py",
+      "bytes": 16123,
+      "sha256": "8ddc3ed7fbac2202f8458217dfb8e9828b0c321d0d9ed958cca70c9a4f399c47"
+    },
+    {
+      "path": "vendor/b12x/testing/iq2_xxs_reference.py",
+      "bytes": 7448,
+      "sha256": "6e2d666e8b7891e532f283de1f1d6e184ab1fd022374e42c573915ecb3aab951"
+    },
+    {
+      "path": "vendor/b12x/testing/memory.py",
+      "bytes": 2769,
+      "sha256": "4ad6ad8fa4ff50efd1e2e20d8df6d8cf6474b9be240a0a607547ef0de110917c"
+    },
+    {
+      "path": "vendor/b12x/testing/mhc.py",
+      "bytes": 2543,
+      "sha256": "3644b982a4febd61c94e217388eb32527487b7ae9951523cbabbc32883f0cf27"
+    },
+    {
+      "path": "vendor/b12x/testing/moe_corpus.py",
+      "bytes": 25611,
+      "sha256": "38d8c41424fec38bec6d6ef110b95ccd06961c26efc01370c097c7a7516c8875"
+    },
+    {
+      "path": "vendor/b12x/testing/q8_0_reference.py",
+      "bytes": 515,
+      "sha256": "6c2b87c2dc9ddb0ed946ed570d5082b93893583d5d7f647c17c1116d2aa65028"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/__init__.py",
+      "bytes": 2683,
+      "sha256": "1be2f8ace1704832a5f62f9375172257206ac5b62da9514114eb31e203c15ff8"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/attention.py",
+      "bytes": 32906,
+      "sha256": "61b35852f9614e3eabbe5e63191ee061e86eb90568c541c659fcd1a87cda7663"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/comm.py",
+      "bytes": 5535,
+      "sha256": "7609a46f5b347cc065539f276e04c9f140e08bf1649c9fb593709c4a6863c1cb"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/dense.py",
+      "bytes": 12596,
+      "sha256": "971a7bb1e897624e202fd7ad79f92e87d814cbf96c6800f6e0c5b1b4d9fa57a8"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/moe.py",
+      "bytes": 13048,
+      "sha256": "4a09761381a137932690a8783da68c4bcfa575d498b1874e0caf033c5eaa4cdb"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/norm.py",
+      "bytes": 14644,
+      "sha256": "08d2a65a0e64280ff1fbca248f6169d60769e9258429e6a827372de39bf9977d"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/ple.py",
+      "bytes": 17533,
+      "sha256": "eea28f1de5e780d58fc9fe1d3da02be9bf0df30fb4a42271a0024520f402d814"
+    },
+    {
+      "path": "vendor/b12x/testing/startup/sequence.py",
+      "bytes": 17081,
+      "sha256": "b26c6a0091d54ab15f8cc77546ac246768608763b92d4a2bb2135d1352caf877"
+    },
+    {
+      "path": "vendor/b12x/testing/vllm_routing_trace.py",
+      "bytes": 6722,
+      "sha256": "aeb24582e660750fcabcf1a5b17dabb718b4ff0e714b5ffaf03326b1fc730b0f"
+    },
+    {
+      "path": "vendor/b12x/tools/__init__.py",
+      "bytes": 45,
+      "sha256": "0130aeb5cc8882c85d0a5602d5f0bf55e17a4e3bcc7fcb3ccacdc2c5b7691991"
+    },
+    {
+      "path": "vendor/MODIFICATIONS.md",
+      "bytes": 1782,
+      "sha256": "29d28f860b2f80960f8381eb9e096c90929e313af47dd5915dc43cf10ace72c9"
+    },
+    {
+      "path": "vendor/native/aot/mx_0.h",
+      "bytes": 2322,
+      "sha256": "d79643f21164fd6daab8c75453f62cc40d85b89f5f5a984892f6de9106f75c67"
+    },
+    {
+      "path": "vendor/native/aot/mx_0.o",
+      "bytes": 21200,
+      "sha256": "264982493738ce34944fb618bcbf892257a9d3dab9492f5df4785a387faa96bd"
+    },
+    {
+      "path": "vendor/native/aot/mx_3.h",
+      "bytes": 2497,
+      "sha256": "882cb62128227875038ffa21603d41fb8e5f34e1c1d41571897e79c38a85cbee"
+    },
+    {
+      "path": "vendor/native/aot/mx_3.o",
+      "bytes": 98760,
+      "sha256": "a3d9a3fb1a0c3256212d2b7f1fa0f0867b9b99b9c28fa34f27cac87a9a139def"
+    },
+    {
+      "path": "vendor/native/aot/mx_6.h",
+      "bytes": 2497,
+      "sha256": "0db0694baedc68aed1b98a7db688bbcc4cae001bd7b3ba6406a880b924bcf547"
+    },
+    {
+      "path": "vendor/native/aot/mx_6.o",
+      "bytes": 98728,
+      "sha256": "62f75f1926e08e69a7c337ff5b379fc19096434d418bf010f27d0b2ab7028061"
+    },
+    {
+      "path": "vendor/native/mx_prefill.cu",
+      "bytes": 3098,
+      "sha256": "48254d19befb9d5e877cfcdc80ee5e8a83f317b1ebf960ea7fd20931201c2551"
+    },
+    {
+      "path": "vendor/native/original_mx_export_probe.py",
+      "bytes": 10765,
+      "sha256": "9efb84bb31f4ccdf6d60e5ee75aad25b75243599a382a0befd3e9d7980a68f59"
+    },
+    {
+      "path": "vendor/native/source_mx.cu",
+      "bytes": 3070,
+      "sha256": "44d01b2cf7b2edf15b8d65d6fb5629c497e735b41d9152e30030ea386d40b071"
+    },
+    {
+      "path": "vendor/tensorfold/__init__.py",
+      "bytes": 137,
+      "sha256": "388139caf4d67849e5049bd10d867c190c26b4f064a9cd37b7146811beac969d"
+    },
+    {
+      "path": "vendor/tensorfold/__main__.py",
+      "bytes": 58,
+      "sha256": "1d2c182701095903a9c668e06500dd4ad04196dcbcdc0eeb192a606519b1893d"
+    },
+    {
+      "path": "vendor/tensorfold/cli.py",
+      "bytes": 26796,
+      "sha256": "e97d8924725e78c6543c8245e77888de650859389371e7f9d88f13ff10d4ff9d"
+    },
+    {
+      "path": "vendor/tensorfold/cli_args.py",
+      "bytes": 11763,
+      "sha256": "c6d42666917c6708e5cf533ea25510bd15a245c1265c487d260bf17572e58994"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/__init__.py",
+      "bytes": 117,
+      "sha256": "c836dd0526b132b0186e20eda993055a1b6855e163ddb18f3fed8ca21c9d4578"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/build.py",
+      "bytes": 4790,
+      "sha256": "a45501dad31b09574192e40560910bed5820bbfe384c4e7932e34f1990cae7b6"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/capacity.py",
+      "bytes": 17502,
+      "sha256": "a9070032d65273fac7b69deb8b9257ecd748e5bbb0ca641254cc7a8cca79e6d1"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/chat_template.py",
+      "bytes": 2721,
+      "sha256": "d46def84be31053c2d1ce05ee79251e3149492ff702c96b1c382b9b28e47155a"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/comm.py",
+      "bytes": 7783,
+      "sha256": "92f1be63fc4bf1ba77675eb74a13716d07e39bc74839579a82ee47b34bf2f986"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/direct_read.py",
+      "bytes": 12747,
+      "sha256": "66f9d5954ce965ac053400deb0f43fc46f33ec074af51ac09fe2933789cac443"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/__init__.py",
+      "bytes": 268,
+      "sha256": "26fa342ba8a3031a5b281d6c10fcbdc9dff3a27610e511c0d7a7f536ead024b0"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/decode.cuh",
+      "bytes": 7017,
+      "sha256": "47ae013bcad00186319f5ee05d4db400ed28f61c6a677d6fdffc8448526c4a58"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/experts.cpp",
+      "bytes": 7440,
+      "sha256": "b667ff9b7dabc2b2bc5c2bf77c762ebf3acd7e89e90218e2cd370772a21348e5"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/experts.cu",
+      "bytes": 17631,
+      "sha256": "f4bb2cb7591bff9ccfe10f1ceed9b7ebc8593f0d6b863006e85657b53c68c281"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/experts.py",
+      "bytes": 9827,
+      "sha256": "ed980055a0c039a0f6f46a3853f813545512329f4e022a0e966858f4ceff4525"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/experts_cb0.cu",
+      "bytes": 293,
+      "sha256": "719ce51b1eb0218a36578adb9145358ee1271f0bbc72cfc575f3a273856bc236"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/experts_cb1.cu",
+      "bytes": 291,
+      "sha256": "dad1e479d6047d4af6b30d38dab492df4534b829f8ef34d69552f6f033ee8825"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/experts_cb2.cu",
+      "bytes": 292,
+      "sha256": "bcf5ea9c9d6f36dafa3132f52529006dfe0853425bad03040a9e37164f9266c4"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/experts_grouped.cuh",
+      "bytes": 15173,
+      "sha256": "cb2a016df23375db577ca2d9199ba145eb176e71a22295bdf386caba1cebff22"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/format.py",
+      "bytes": 16613,
+      "sha256": "25b617d65976ce9bec016f88086ed0565bd2ed56f223f9f490ecab73048145f7"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/inspect.py",
+      "bytes": 4397,
+      "sha256": "7f08c68855f0e94a8573e713eeaa04bc982d19d5f82605b2c78bea13db570c99"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/linear.cpp",
+      "bytes": 3957,
+      "sha256": "a80e17f39a7bde64ef2e8e01717d014caf72d66f535bdc9ee81160d71d17b6c5"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/linear.cu",
+      "bytes": 17504,
+      "sha256": "09b2519577d7d6c04f1c9b6b2c33d50563c5f74bf6ad1b5afdebefe7766d40eb"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/linear.py",
+      "bytes": 8772,
+      "sha256": "aa267ee0f517fa9759f21c95419942c7c1f304be1bb8899975196e945f8c33d3"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/exl3/prefill.py",
+      "bytes": 4239,
+      "sha256": "8a14f0df77b9b31512853df66d64eaf06da07da7f2184071444fab0851cd9489"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/experts.cpp",
+      "bytes": 5716,
+      "sha256": "fda05f3a84dc8f2886a0beaecbc5ae7e6fd22bb77a46c9387712cef26e0e8994"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/experts.cu",
+      "bytes": 14809,
+      "sha256": "d59f7a410794a8a58ef9c7ebb4ba392dac2d4dffaed5d2ece83f872793f8530c"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/experts.cuh",
+      "bytes": 4226,
+      "sha256": "8de734885943e6f547feae4796aa1d7bdacf119494c99c776e4d0cc165d1fec0"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/experts.py",
+      "bytes": 7509,
+      "sha256": "0d7c8217bb76b8b297978f6c0f4b13985a103d8361a41f6d525380e766f02dce"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/experts_pack.cu",
+      "bytes": 3143,
+      "sha256": "791fa672bb3f894de94d0675a097700189c98b11c1a5ad298beaa49ed38473e5"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/experts_prefill.cu",
+      "bytes": 8947,
+      "sha256": "b5457cbdd750edd93381eea8f5a09eef5a2882596525e6cf0850e17af615e3c3"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/geometry.py",
+      "bytes": 32668,
+      "sha256": "5203014980728eacef101cc3faef82af3a8f710a1b171947f73f7363b32978eb"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/health.py",
+      "bytes": 5029,
+      "sha256": "5c186f3ddce261b17b5b9408b4d6aff7d70b9abc4a6af52a6ede2e8b9e802149"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/http.py",
+      "bytes": 12753,
+      "sha256": "ed23965006d597bbffd2ac92216b9dc732a1928febb128d82106bce1228592e6"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/__init__.py",
+      "bytes": 114,
+      "sha256": "0816090b04070f2f17347bee5cd7ba0ef262e432e579dd35c40eeae353b2294a"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/affine.py",
+      "bytes": 4453,
+      "sha256": "74967b517a5a0f253f6cfaacc85ce8fc31d0eaddb5367e97985d2469140ac19d"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/affine_kernels.py",
+      "bytes": 2943,
+      "sha256": "9165d92bf0a3908ce525b69802f14b4534bf9615bc8e470f539e72f0902fa1a5"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/attention.py",
+      "bytes": 13376,
+      "sha256": "f724829c44bdf75199e97c9bb229831d85a7a775888e3ce5e4184316f1317ac9"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/gdn.cpp",
+      "bytes": 8311,
+      "sha256": "1203b16dc8a81b3fb297b8b78159692c648498b211da0ed5a9cd4267873df885"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/gdn.cu",
+      "bytes": 17068,
+      "sha256": "06347072707ee342e4bc45b2f3e9d8fea2042802745c79fd7a038e3d15a1e6e9"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/gdn.py",
+      "bytes": 7172,
+      "sha256": "84c8cebbadd11fc676ab15757d345ec7db150033e958a37ca2e3db62457264bf"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/gdn_prefill.cu",
+      "bytes": 6327,
+      "sha256": "618a7ab9b7f56083b455a02b1a90a6ce9cc6400355a72fd03e032fe4b9492ec0"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/prefill_attention.cpp",
+      "bytes": 1528,
+      "sha256": "989130131471e0f6dc6594849468c4175a99b9ab9f30d8d418a0cc69527d97aa"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/prefill_attention.cu",
+      "bytes": 13303,
+      "sha256": "e5511f4b29b2a9ec2fa0c272bd7efc83c219ca1fb2f2aed2906edb263cbbbf84"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/prefill_attention.py",
+      "bytes": 4674,
+      "sha256": "5f80885d328de29850df286541a05da584215055debddebb1566cd3999e1e994"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/qmm.cpp",
+      "bytes": 11592,
+      "sha256": "c1b72fbd0c3c8e6ad84508f1ce7ee42946b5bb5baecd717c5ead31f68f15c9d9"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/qmm.cu",
+      "bytes": 20144,
+      "sha256": "02fffe93599b1a463b570590967d25cd7675f8a3d4266b718bfe46e154cfd14b"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/qmm.py",
+      "bytes": 10745,
+      "sha256": "6d7418e6ad1680ea2ce2c512ce916f21405e1caff60a4f04c463e3a98a310135"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/qmm_frag.cuh",
+      "bytes": 3777,
+      "sha256": "836fbcb2b4d602daecf53a536cafae11dd6c98d620139f525e482187a131f466"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/qmm_prefill.cu",
+      "bytes": 9991,
+      "sha256": "be112df7a73c47530f998caaf44fd75a8490e59ec1152f89d170d72f10c13f9b"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/kernels/qmm_prefill8.cu",
+      "bytes": 15296,
+      "sha256": "b6fa59c8325f8d711937473fbb5bf03ed2000bd11f18022a485d971f35e42172"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/logprobs.py",
+      "bytes": 3316,
+      "sha256": "bc1681e7c53a6a322cb3b12ff0c3a208b17456662d84a822279de49e84ee3d42"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/markers.py",
+      "bytes": 2902,
+      "sha256": "6bacc2d9536a4339cd16d1066d54efb84d1c5eec41aa875283f3e8bc603e6f24"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/memory_gate.py",
+      "bytes": 1501,
+      "sha256": "9cbf96a789498aef35882bd1fe87d23ea643db8518c7cb9b5153e98c003a2dbd"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/moe.py",
+      "bytes": 8022,
+      "sha256": "32c16689dad01b7e10ba8b6a80bec24ad856406c3ee2c13da9f3600f89319e7e"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/__init__.py",
+      "bytes": 123,
+      "sha256": "edecfd2fbf67a9694abb16400f04e417eabf39d2e8aa8a6d24949d1f0cfcace4"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/experts.cu",
+      "bytes": 8524,
+      "sha256": "5d42a8d9e60e98b0b9b3325a20b5543f7c37c9dde1f72ce282b023a562136630"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/experts.py",
+      "bytes": 7215,
+      "sha256": "e0e8c9397c9a587a86f74c6ff937c34c6dbb410a2f7d3a495b61b3a8d71ddd5d"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/format.py",
+      "bytes": 5187,
+      "sha256": "8b5d85790d47da354a6ca4796cf123d94b10a333370d1b46d307aae772f15320"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/linear.py",
+      "bytes": 21146,
+      "sha256": "cc843a9ab9c44c43fcfd9585d1dd75215d74e2da1a4d32f0cdc71f900d00fa09"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/prompt.cpp",
+      "bytes": 2028,
+      "sha256": "605f4bb6e3baac5b00bf9e679d1ae7503f42b6a212c2b80f8c8122f250aa763d"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/prompt.cu",
+      "bytes": 11990,
+      "sha256": "89275c250aec25c6fe2abe02ca596c96b0e797d3191e0d4aef176c3b22dc0155"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/qmmf.cpp",
+      "bytes": 4507,
+      "sha256": "13364659eef86b75ba875e384a9373913671c120c3ae7dd6bc73873e05f16be4"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/nvfp4/qmmf.cu",
+      "bytes": 20380,
+      "sha256": "c8b123b8232792ea14015ed1c488d946419d81081a375f07df4ff533feae2286"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/prompt_precision.py",
+      "bytes": 1238,
+      "sha256": "2d190812ad9034fc2c0188a06f9fe814be0eab655cca08257c383160de323251"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/reply_text.py",
+      "bytes": 22774,
+      "sha256": "89044c5220fd9f41a1ce86615b29c43cc84443d005f3c11a38c87521646c706c"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/roce.cpp",
+      "bytes": 1531,
+      "sha256": "1fc1b139a0c3532e0aac0e208703b560aa3e33c7ef3c994bfb470239783bfd1b"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/roce.cu",
+      "bytes": 7842,
+      "sha256": "5f6cb67775ae1f66f4c8ba029459548033be0ff770798a31c6e28f5c1f5b095e"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/roce.py",
+      "bytes": 18827,
+      "sha256": "61a75274c9ef1c3d5bcc75bb3e0e18c883bf26a1822fe3921519d874a1b4e46e"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/roce_proxy.c",
+      "bytes": 24440,
+      "sha256": "937f24adc01349cc8e638be763030a74f3c44811b123639b3102f4e064769178"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/sampling.py",
+      "bytes": 11159,
+      "sha256": "1b7500fa22349cf4570555bba8f6f0b5ca3ebd8c80cfc3932ebf7b9f7d03bbf1"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/scheduler.py",
+      "bytes": 7772,
+      "sha256": "2588b2e170e4e258ab2ee70ce7c6d0cb4f4d8f8bb44f6268b4108aafae258153"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/server.py",
+      "bytes": 40683,
+      "sha256": "1094a34fe6bf2dcaa5f3647f6cffe26aa5a54b50513980378bf2ec58e7bc3358"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/shares.py",
+      "bytes": 1998,
+      "sha256": "13b7b3b13a3b377c030384f61333413578e6672ddcaec9358cd8825cd26cb2a1"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/stream_pacing.py",
+      "bytes": 6723,
+      "sha256": "7889ae4ddfef00653717d3ec44708b085ae891d5433a52dcae03f58a05f654c2"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/streams.py",
+      "bytes": 9061,
+      "sha256": "0d25ff39bc6eb70cd8cd9131b36bf5f1b564415c47bdf3cfeee9396a661ac251"
+    },
+    {
+      "path": "vendor/tensorfold/cuda/turns.py",
+      "bytes": 2144,
+      "sha256": "288b706a9b59a37988c248b7698bf690a0584808dde6a85f661930879c3bef5d"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/__init__.py",
+      "bytes": 95,
+      "sha256": "71c478e22a155619150574c9f40b16abc5573e0428c2705b38634cf44d311308"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/calibration.py",
+      "bytes": 3786,
+      "sha256": "9841597cebf12c5d2467e8fc58850e39570d4265fa2263edbf54f2e43c0c9ade"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/dflash_attention.py",
+      "bytes": 3137,
+      "sha256": "c06846f35c06a154c2a7480f9d0adf597cbdcadb04bfcc91e0584c015f3e4799"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/dflash_batch.py",
+      "bytes": 7090,
+      "sha256": "35eb13418bd990bbbebb1b3ad0ceed4456b5120c1771591dfd352c51f4459965"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/dflash_block.py",
+      "bytes": 1587,
+      "sha256": "f4bc997ca7214ac9d0dca50d21b93a1333e8f006f2f9847d4ec246fc323192b3"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/dflash_capture.py",
+      "bytes": 884,
+      "sha256": "6138d3b0c31b2cbc1be2ffdee3d3b66f7d32c9f17a33f01d6e700730f83e77c8"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/dflash_drafter.py",
+      "bytes": 9888,
+      "sha256": "2e8144455c28455066a5b16798d1c4a74a54b1eff6416b33eb3f5ee8a5ccfde5"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/dflash_proposer.py",
+      "bytes": 30320,
+      "sha256": "c481f340fb80e5d1847c22a6a05a59ec3a601303cae294be46c1f623ab187067"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/dflash_tree.py",
+      "bytes": 4170,
+      "sha256": "22a3d38683c7f6636e05e0f288a5f90777684f966da04a18e7bc9665a494c0e7"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/draft_ngram.py",
+      "bytes": 9554,
+      "sha256": "2d3a63a002e7eaa75eed4931b40f219677ce93d9adecaaf55a826edc6b795133"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/vendor/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/vendor/z_lab_dflash/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/vendor/z_lab_dflash/model_mlx.py",
+      "bytes": 35272,
+      "sha256": "2f8598eaca4cb814e63ea69e791c1bdf55ba82280bfd299f9141906356b7cb87"
+    },
+    {
+      "path": "vendor/tensorfold/drafters/vendor/z_lab_dflash/README.md",
+      "bytes": 304,
+      "sha256": "744e4c68de6678f15c5d947d9c5e3ef63cff3ae8f4077195156be9ebe9a31287"
+    },
+    {
+      "path": "vendor/tensorfold/engine/__init__.py",
+      "bytes": 59,
+      "sha256": "9e2112f60c994c655ab22bb186c6f9513bfbf7bd0df025a72388e83bf7412607"
+    },
+    {
+      "path": "vendor/tensorfold/engine/allocate.py",
+      "bytes": 1579,
+      "sha256": "c8ed5520012d406387dcfc8e23c7460d3d778dd37dc9f3aaefa8ffed7f1b555d"
+    },
+    {
+      "path": "vendor/tensorfold/engine/alternating_kv.py",
+      "bytes": 4465,
+      "sha256": "2d7b0a9708b23a3995d36073b4b560a774b7ff8c028f317d792750e9ca572dd9"
+    },
+    {
+      "path": "vendor/tensorfold/engine/call_gate.py",
+      "bytes": 9389,
+      "sha256": "945be1ce7d5ea3a16f774e5acccf748b94b8a9c8071ac2a22926c8c741e6d4a3"
+    },
+    {
+      "path": "vendor/tensorfold/engine/exact_sampling.py",
+      "bytes": 8544,
+      "sha256": "70c87e6a8a0ebfd816473b88737c6b4d381ce635af4234a80501f73fb46a49bc"
+    },
+    {
+      "path": "vendor/tensorfold/engine/family_common.py",
+      "bytes": 1229,
+      "sha256": "d5f89886c0f9bc14755fee711f005e6806f47835fbab6b894f0eddb49ba177f9"
+    },
+    {
+      "path": "vendor/tensorfold/engine/family_depth.py",
+      "bytes": 8236,
+      "sha256": "8aa9a63778b11a4a3bc751bbbb3423b712981d4a35a06f5e3346e1eda4058f0b"
+    },
+    {
+      "path": "vendor/tensorfold/engine/family_prefill.py",
+      "bytes": 13991,
+      "sha256": "0ea48524519fa5658f3a257430ec4c010ef05e52491431d01c17b0ea7142cceb"
+    },
+    {
+      "path": "vendor/tensorfold/engine/family_shared.py",
+      "bytes": 10386,
+      "sha256": "50bb01678d97d871ee80a2b9ef5e0f4ff7e658a23ce42aa3b2ec1ed2a4468dcc"
+    },
+    {
+      "path": "vendor/tensorfold/engine/gpu_sampling.py",
+      "bytes": 15520,
+      "sha256": "ec8a9711080f480f24f5169ae38086e8b1a263cf8c81273b366a2a14b716bf22"
+    },
+    {
+      "path": "vendor/tensorfold/engine/grammar.py",
+      "bytes": 18501,
+      "sha256": "e66430edbeac3321503e816d91ea1e7a9f6acd746f1631a38c4c4074ece286f7"
+    },
+    {
+      "path": "vendor/tensorfold/engine/lane_engine.py",
+      "bytes": 18601,
+      "sha256": "96d8efe5be45495539a047f064ff0ecd188ae80d6a6f4b3ad1373bd71d9d24b8"
+    },
+    {
+      "path": "vendor/tensorfold/engine/lane_family.py",
+      "bytes": 25053,
+      "sha256": "da59903769be4c63eb48958700717d7d3c2d8e07abcef5f87f4210af39a87fee"
+    },
+    {
+      "path": "vendor/tensorfold/engine/memory.py",
+      "bytes": 7210,
+      "sha256": "e3994337d228089ad10b1e09529f9d6be8252b51aa2ce4b6d9ad5c330c5e5cb4"
+    },
+    {
+      "path": "vendor/tensorfold/engine/prefill_plan.py",
+      "bytes": 8533,
+      "sha256": "28f917f14f9e33ffa4e88c4ec81267bde99cb1520633e9718f3a14d1d7625c1d"
+    },
+    {
+      "path": "vendor/tensorfold/engine/prefill_step.py",
+      "bytes": 2177,
+      "sha256": "dbf0486c6c8a13dd68465c7a19f367155c340c1cffabe6a25521838300e7562f"
+    },
+    {
+      "path": "vendor/tensorfold/engine/prefix_snapshots.py",
+      "bytes": 10984,
+      "sha256": "8bc5d20bdd66cd3603c1c2f96e772077ee1a130b752abe2f3e3dba6a77c38c76"
+    },
+    {
+      "path": "vendor/tensorfold/engine/probabilities.py",
+      "bytes": 1256,
+      "sha256": "5dd98df214ee4a477db38f7503d79b3eac153e2c1e0a356e513c56428741bb90"
+    },
+    {
+      "path": "vendor/tensorfold/engine/tool_draft.py",
+      "bytes": 16606,
+      "sha256": "6a210e5f1fda5e1f26ca2603c0eb57dcdf3c6f1ee832428aeb83675d7441b9a3"
+    },
+    {
+      "path": "vendor/tensorfold/engine/topk.py",
+      "bytes": 5939,
+      "sha256": "f110effbad4dd13c96f658c0be5ea3e9709ef7d9e25fa1156d9e4dfe0923458d"
+    },
+    {
+      "path": "vendor/tensorfold/families/__init__.py",
+      "bytes": 9815,
+      "sha256": "bead5cf9edfdb0a078ea334209235773fde2724c6596e4052583c927d9d979dd"
+    },
+    {
+      "path": "vendor/tensorfold/families/bonsai/__init__.py",
+      "bytes": 3457,
+      "sha256": "10fe624ba196334e2f7cab59a8cc83f01dfda7d9e2ae5c84a919927358befdca"
+    },
+    {
+      "path": "vendor/tensorfold/families/bonsai/modules.py",
+      "bytes": 3217,
+      "sha256": "a60946169666b8db026c307bea825f6427516c83db7d039d09a9870e43d85e01"
+    },
+    {
+      "path": "vendor/tensorfold/families/bonsai/pack.py",
+      "bytes": 12631,
+      "sha256": "11e835a5dd62231af9ca30b208ca93238dabb730e7f2d7f1ff6627fc34c7da2e"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/__init__.py",
+      "bytes": 4021,
+      "sha256": "ac0186734578cd59e3297a9d4a9d31693bf268e5c95d1494d172fc91d28ef396"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/attention.py",
+      "bytes": 14530,
+      "sha256": "3135495fc88672fd099512421a681487ea4384c3d42041144cd3499284fbb880"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/caches.py",
+      "bytes": 4875,
+      "sha256": "808efbc7a59e92453399d03b44085716d8cfe46b7804d927bfcc9b586f5d1097"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/compressor.py",
+      "bytes": 7261,
+      "sha256": "e6a2ac9e6f46da2a2c85aa44524f59903d95fd8eabbc02c772d7ee684846899c"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/config.py",
+      "bytes": 6118,
+      "sha256": "1aef3c6650d04a1ab3821221105dabd8380c3de264e5d34c065bfecdec07abd8"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/convert.py",
+      "bytes": 7343,
+      "sha256": "056c3b173c9cd5720d28a4e161e146844d57813161b92c099a088ff885a36ef9"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/dense.py",
+      "bytes": 1400,
+      "sha256": "cfd45ce899496f2711dab94f36f2bec8856db9ba5c14c9722b5e5b0e60cbb39b"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/dspark.py",
+      "bytes": 6843,
+      "sha256": "15c652ceae228ded41220705a9880cb7380aba75906c2f2de356526705315d38"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/model.py",
+      "bytes": 8306,
+      "sha256": "0ac0279aba85126d233f3b03c61c0b3140a25752337d11f12bd5839ca3d94bae"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/moe.py",
+      "bytes": 7737,
+      "sha256": "83c3492bd1e6922b845f994024b43def11bc5e530b532d3a647927dc6d98e255"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/mtp.py",
+      "bytes": 3766,
+      "sha256": "e2bc3f9c59ccf5e675e83eceeb9238fee7d1d3a00e07ec7517f23b53b13ce6af"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/prompts.py",
+      "bytes": 3243,
+      "sha256": "430acf50757a0bae1e8e5137326729cc3eae123d72835c2a4567a84af4b513de"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/runtime.py",
+      "bytes": 10165,
+      "sha256": "a0b2105f2479fe0121fb3d335440ebd463eac854915984bd61530296b0d95729"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/vendor/__init__.py",
+      "bytes": 100,
+      "sha256": "7e25674e0e425e861bf413de66db5a0b8be5eea43392166ff0cf61571b5308f1"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/vendor/encoding_dsv4.py",
+      "bytes": 27908,
+      "sha256": "bdbd57c132a1b3725042323d02b98b9d1df28e5f388f134399555d041f5055e0"
+    },
+    {
+      "path": "vendor/tensorfold/families/deepseek_v4/weights.py",
+      "bytes": 7417,
+      "sha256": "cd3fdb7c9a80e6f021c9e56d62e58017ab9685bb16cbe4d0b2c133c018d74e04"
+    },
+    {
+      "path": "vendor/tensorfold/families/gemma4/__init__.py",
+      "bytes": 2981,
+      "sha256": "6fa58a7fb90c675d67b4721995556f39f6bc4a32e568b2581c56edc28accd97e"
+    },
+    {
+      "path": "vendor/tensorfold/families/gemma4/cache.py",
+      "bytes": 9917,
+      "sha256": "b069e6108634ef01208457e12038046fd9c33f67df174bc66a06b9c771bc5977"
+    },
+    {
+      "path": "vendor/tensorfold/families/gemma4/drafts.py",
+      "bytes": 896,
+      "sha256": "2bed0fb8563d4ac5aeb55fcd13f1709fb8b84efd7890b47b1c66b72457b10ddc"
+    },
+    {
+      "path": "vendor/tensorfold/families/gemma4/model.py",
+      "bytes": 15723,
+      "sha256": "27c113d5f5fc7870c508329dccca22a637fbb473d242b8a1e5458ef11e69095a"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/__init__.py",
+      "bytes": 13254,
+      "sha256": "6edacacfa4af18d7a4e3778ea54e2b7fd1bb431604421d90f9f818ab28c8abda"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/caches.py",
+      "bytes": 5730,
+      "sha256": "d918025267634f1ca89ce91018b3692adf0550b1f4876ea0cd9313f00b49d40f"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/config.py",
+      "bytes": 5592,
+      "sha256": "34cca0310e880c85b983747ae9c4f0d6acadfc73281a2dbf524b72e125c147f6"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/__init__.py",
+      "bytes": 249,
+      "sha256": "41547ad715dbdd580105692d394b8d4d380c4a78e0cf5ce42ed13119cbc6d0ad"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/adapted/common.cuh",
+      "bytes": 6685,
+      "sha256": "a11d53d3258e8cbb67b32a23546afadd359d6524067f8f802a87a9b1380a931f"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/adapted/k1.cuh",
+      "bytes": 16307,
+      "sha256": "c7f42144158444b4b2423b17b75ad20b8b2f5105efe1b941b8e3f381ecf33f10"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/adapted/k1args.cuh",
+      "bytes": 6813,
+      "sha256": "c4b8d3f9a21f873a0d3b4bbe9348db580c6035ae0ceece17d6fde9f8f689f504"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/adapted/tr3.cuh",
+      "bytes": 32496,
+      "sha256": "e39e76311025146919fcad94a0a20bc83cbc113af9a61a4bcbada28384b62651"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/adapted/tr3_wide.cuh",
+      "bytes": 10342,
+      "sha256": "6653e4f57a2ebb0824806785c0ba95eca02c1e5656265a1ef1d7fcad78873fea"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/adaptive_depth.py",
+      "bytes": 7318,
+      "sha256": "39081670a2483af7ac03d8982ed8251fe1202d01d8b6bfe113868ea030052dd6"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/app.py",
+      "bytes": 7026,
+      "sha256": "310ca54a6ee8705036939ec8eb12f92234d96427c9a13c7173c0ea217a18b627"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/atlas_adapter.py",
+      "bytes": 3421,
+      "sha256": "5abc4f5acfc88c9cd2d33460e7ebecb76db3cc506bf9c9fe6cd04e89a6aeba3f"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/atlas_mla.py",
+      "bytes": 1115,
+      "sha256": "7b6ccb902a26efbfd52ff0520fc5646c04bbff0d2505aea6229eb1a9e2577a7a"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/atlas_selection.py",
+      "bytes": 244,
+      "sha256": "47e3b9e613114cc63790039760a4acda1b6efc20e9c7adc2deb72d7b1cf8be40"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/attention.py",
+      "bytes": 5425,
+      "sha256": "8cc84e7db2c0062a5b29475a0cbc30ef3a4b63a3a4c36590fb31e690b4d362f7"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/cache_budget.py",
+      "bytes": 2529,
+      "sha256": "d02807fca571d183d0345add1f0934f6fb30b20a5afa16799918fcaff7e79218"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/copy_drafts.py",
+      "bytes": 10048,
+      "sha256": "a8ab7c52f7ba5d7466f27aaef1dba6120930f9fee7e579a0fa32ea74fc591161"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/csf_utils.py",
+      "bytes": 4450,
+      "sha256": "af9258b2d7a48a61905d92c201118dc789ed6260af1326ad7844bf032a51d590"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/decode.py",
+      "bytes": 47890,
+      "sha256": "4fe7950e5cd8403d087c3d2f8007cf3bbc225585c88a25e6e1069813421393a1"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/dflash2.py",
+      "bytes": 31341,
+      "sha256": "cb1cd3a6bdc8b26e014f20b42a221609e899000e6b9ad90f9572760add6cbb3f"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/dflash2_multi.py",
+      "bytes": 22793,
+      "sha256": "99e29ddb006d9dc3ff0bc9a40d79be9270fc73687a1216b03f18af41841d6969"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/display_kv.py",
+      "bytes": 11645,
+      "sha256": "edd91aa30b09247596cfa0370519604e4f3fb343674b7a9e20237c1b365b9736"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/draft_checkpoints.py",
+      "bytes": 3713,
+      "sha256": "6bbc55f877132c58566849e480f98569f704797a12d2bd501f62347dc7a251d5"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/draft_dump.py",
+      "bytes": 9315,
+      "sha256": "656d06f2b0ed057a6e88f35a82fa4072ee5a1f788fff86ee34f163704af62f11"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/draft_sim.py",
+      "bytes": 34406,
+      "sha256": "330401d30e39dcf0dfa7d74c42fc8685a045b2b925bc3e526a7ec446625128e9"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/drafter_choice.py",
+      "bytes": 7823,
+      "sha256": "65f4259e5f309cc2cca1835c69756f42a48fe995c584fb09d5e4c1d83ea71dfb"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/empirical_depth.py",
+      "bytes": 6106,
+      "sha256": "f578d39bbe0a94ff2b34f753dfd73de5dee0c5dff92d558ae3056d5a00660e77"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/engine.py",
+      "bytes": 82812,
+      "sha256": "4a5c02078a63bfa8f432641adafd3f4b28055cf13ec0f14f3752506b9857669d"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/exl3.cpp",
+      "bytes": 8865,
+      "sha256": "ebbe4494a3e0475420f57d881854858f727b76729ec6a6240eaffb9682a6dac9"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/exl3.cu",
+      "bytes": 60443,
+      "sha256": "84590478b2f9db38e1303f113cd4b10b52bda5c27245867a023e0090ac0146f2"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/exl3.py",
+      "bytes": 4271,
+      "sha256": "fcd0707d0f1ac6e0a060df4d8adf53a2ce32a7112e04211e44089c49f9bacd86"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/exl3_mm.py",
+      "bytes": 12705,
+      "sha256": "facc60770b98100fb782461f955c87c5d0db8587771a76db91263c34cd5b156f"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/exlr8_reader.py",
+      "bytes": 9002,
+      "sha256": "a631e4317d7264cb2a4ced1eb421ce0e3dfd6f831fe2545155786d9488c1538f"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/expert_major.cpp",
+      "bytes": 2404,
+      "sha256": "fdd3b285fca6eff410b674496b8296d29ef1245be8901ec74b92c56df13948e4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/expert_major.cu",
+      "bytes": 24662,
+      "sha256": "16948f22bc13f2d9db0884dba739e6ef99efddb388c3406df445d52bf4861371"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/expert_order.py",
+      "bytes": 505,
+      "sha256": "eecc2aa32522c2c2e8f45871979fbb940ea66fb0598d43cdf997569547c79776"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/forward.py",
+      "bytes": 62477,
+      "sha256": "3b4d2baa0a2a8e9f69c639951721b1cc60ca5919c4dd5d5e38317b9fa5e19e54"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/glue.py",
+      "bytes": 24008,
+      "sha256": "cf6402f2a791619d9b47cb797b262c380718dd120c532cb1ad6a0f0f78cc8f3d"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/gr8_adapter.py",
+      "bytes": 1706,
+      "sha256": "17c79b1bfb3704ddce69fe92301a86074fb9d392ffa95ad9816491ef29128445"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/gr8_bind.cu",
+      "bytes": 2374,
+      "sha256": "3d7c836e38ddd66cf031c096195bf5f537a92688e2493ff7664a529b5568d138"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/GR8_LICENSE",
+      "bytes": 1080,
+      "sha256": "70d01af48be4eca4e9d91c1199d2d7dddce0bc6846b9e99fdc68d35f437adef4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/graphs.py",
+      "bytes": 3484,
+      "sha256": "43e31efc653c61d3e0c0a6fef4bc78afaa057582d16c7a8613986d3a73a4465d"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/hc.cpp",
+      "bytes": 1122,
+      "sha256": "ed3743cecb9e2000b34cf2aed6fd83b42b24a7bd50a85f8214cab622bf587bd7"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/hc.cu",
+      "bytes": 4714,
+      "sha256": "24e2539482504c5b5cfa126288d6beecb490c03b620825c5f6be7c5f929e3fcd"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/hcsplit.py",
+      "bytes": 19787,
+      "sha256": "fb5c8e31820859b621e7da8d9aa7edc296b87c56d1a4f09adf43bc8647c52232"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/head_gemv.py",
+      "bytes": 1122,
+      "sha256": "5d481c7e358c61e1e18ee495cdb7619d37c6d3adb4c7d7a66e9424ce683aa76d"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/head_multi.py",
+      "bytes": 1456,
+      "sha256": "5f9c65fd8aa4f7c29caa4a07e58ee2f6e7aa60339dba5b24bf62e2e7ed26384e"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/index_split.py",
+      "bytes": 2082,
+      "sha256": "2bd755bb21d8ff9d6948cb34c6c5a1f147ef15082eb540720bad56ceeef28d0e"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/k4_fast.py",
+      "bytes": 1922,
+      "sha256": "19629231fa79412d11aa9313715c8afaeb8a704c600d98ac66dba9e23a1049b4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda.cpp",
+      "bytes": 12109,
+      "sha256": "1a70050a1a4977fe67f68117c56e6177417100edf80bf9e217f0333adfb9add8"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda.cu",
+      "bytes": 33767,
+      "sha256": "f74056a38e6f18a5d1995cf994e0f3e0231b24a530da827a350f221aedfbdafc"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda.py",
+      "bytes": 10084,
+      "sha256": "65d522d5d0f9c70d77445d1485ebd4b876529d46001b2b857997b03eef8e2af4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda_chunk.cpp",
+      "bytes": 3152,
+      "sha256": "5e1645aa4cc2efde4b065244817ecf3e0febb33a293ad1bf0f3faa94a67a7ec3"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda_chunk.cu",
+      "bytes": 36993,
+      "sha256": "aa6530d28d3adbc847654b939b30e58fb7b06235b88cd95561236953c800a29c"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda_chunked.py",
+      "bytes": 10187,
+      "sha256": "be488eaf7ec13c81ebca055904f1a6c9493dfa5693dc27467edd864afd7986fc"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda_mxfp8.py",
+      "bytes": 8622,
+      "sha256": "10040221936b2ca33e755bfc9252c0dc7ee2b41ee25fe8db9f29c0e2b4f8395d"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kda_source.py",
+      "bytes": 5948,
+      "sha256": "7da7f7e099c895b842e3da308df55908368ba8192916e81460b605bda528f80e"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kept_reasoning.py",
+      "bytes": 6928,
+      "sha256": "a7878f3c737859898d83de953a0a4e6eafffa3f5930bbac0b96073994a3be9fa"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/kv8.py",
+      "bytes": 6934,
+      "sha256": "a6c1886a1a4b7ef6000a62aa4bf829837738b96a0f573a20e211c5fb224b25e8"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/l2pf.cpp",
+      "bytes": 1118,
+      "sha256": "8f7adb20ce099f0740ccc2538a0d6ebc6a33c07e398e44f031f86435deb83418"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/l2pf.cu",
+      "bytes": 3453,
+      "sha256": "58e918083a287b217a365c54e408802dfec9c143bcf787bb7036921e94abdf8c"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/l2pf.py",
+      "bytes": 14694,
+      "sha256": "eaa85310d62205d9f46448b8c5773b61418b2c0f72b13e425574565b53e2dd90"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/latent.py",
+      "bytes": 44537,
+      "sha256": "339a022532060726ba6e4bc2a11f45917f3a1cc732b89602d6132ce94db76901"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/libatlas_experts.so",
+      "bytes": 3708992,
+      "sha256": "18d8c53359baa38625e5c652cbe3b4fed83f70d545825084e6c45ae2c0d5cc7c"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/libatlas_mla.so",
+      "bytes": 1195496,
+      "sha256": "a7cd29664a9ba97a7df3f473c4960eaf5adf785f674fb48af5394e5c2bd4f0ee"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/merged.cpp",
+      "bytes": 8865,
+      "sha256": "ebbe4494a3e0475420f57d881854858f727b76729ec6a6240eaffb9682a6dac9"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/merged.cu",
+      "bytes": 60571,
+      "sha256": "ac25c43b683aa52b515a8de6f55301278ab8f64288cc20b7632be99deba353dc"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/mtp.py",
+      "bytes": 2806,
+      "sha256": "5d75bfcc93cd4eebdb54d1b5053e3b9c0295745e2a813fd2f6726be0af3c8657"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/multi.py",
+      "bytes": 111310,
+      "sha256": "fa0271ad785d8642902d9e63f7a4cfb9a59bbe918c672d39109ae5658bfe0ef9"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/multi.py.orig",
+      "bytes": 94806,
+      "sha256": "50dee44482b52dffdef9197b34e1d9fa1b8a08c1602e3c963c68b0acaf2c4616"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/multi_prefill.py",
+      "bytes": 10626,
+      "sha256": "f1966c23a9e8bcb0ced539190b2fdc5f9bb54def7a5c91dc961c224d87b0e432"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/multi_tune.py",
+      "bytes": 16033,
+      "sha256": "26e3d22036b1043ca600015d81bb635934f529f96c210fb49413e2926a11a2a7"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/mx_prefill.py",
+      "bytes": 2191,
+      "sha256": "f0e550ec41b277b78f3b352b38bac561bc67ac66c2a6afcc5f8f0b7374fd2844"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/mx_prefill_kernel.so",
+      "bytes": 1268936,
+      "sha256": "8a69a64541da31a6fe9f3432dfa04ada7315a5ad3758155b50112b8f89175ea1"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/nvfp4_capacity.py",
+      "bytes": 1034,
+      "sha256": "8defd133b9f311de3c598b2375a5490bced5f8612475b1a199f8dad77dbbeb85"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/nvfp4_csf_loader.py",
+      "bytes": 9816,
+      "sha256": "d2df6d9c63a6aba4bce22b57a9e0a761ce5a43da1cc0e05514eee9155e239198"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/nvfp4_decode_policy.py",
+      "bytes": 1191,
+      "sha256": "01b9170f365c107a1f55c9348514559c819a630500c21a49a4d641aa10841bfa"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/nvfp4_memory.py",
+      "bytes": 5382,
+      "sha256": "d9bea8b26ef1d6191364fbe3a55833f1922de6551144c911799d8d81d5229776"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/nvfp4_moe.py",
+      "bytes": 12430,
+      "sha256": "0dbeef7b25364dada450a4a6e0e78ffa8aba1c4c59144057ce55184d61c6d03b"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/nvfp4_prefill_policy.py",
+      "bytes": 1429,
+      "sha256": "eff0cab7e98b71042faeb7581fea826aac7ba32128213202047ca76446424e2f"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/order_old.cpp",
+      "bytes": 2404,
+      "sha256": "fdd3b285fca6eff410b674496b8296d29ef1245be8901ec74b92c56df13948e4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/order_old.cu",
+      "bytes": 24632,
+      "sha256": "b3f0a3b3775b62e6eee9261c3a33aec3f8bb5101851e889757a2010eee70312b"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/pool.py",
+      "bytes": 10109,
+      "sha256": "b59af2537bfb0cdbe9954d0e6440d02c0f295e057b47c6e19fb52424d04c3a6e"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/prefetch_filter.py",
+      "bytes": 3119,
+      "sha256": "65c64e2dabb7ec2b7e0d2bbb2a8a1a2005e8ce30c5c9087ce6159009ceec998b"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/prof.py",
+      "bytes": 1779,
+      "sha256": "b62f4814f8cbaf36a65b8e42ed04d49a129232ea90700c91c76fd5ae33d16bf7"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/q4_pair.cpp",
+      "bytes": 328,
+      "sha256": "40e830ba9f7cdf330487281e5999c9882c0c216b1fdabf2fb76a5b2fa53d3ce9"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/q4_pair.cu",
+      "bytes": 14907,
+      "sha256": "67963796d20291d386c722a31d2c3bfdd192bc632a00a99d6a95960c04a2b8bb"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/qmm.py",
+      "bytes": 28592,
+      "sha256": "40771c4f044d6c29fd85ec9aeb1c8ab53709e60b98d872a189b3ce003ba7e0e4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/qmm_frag.cuh",
+      "bytes": 3777,
+      "sha256": "836fbcb2b4d602daecf53a536cafae11dd6c98d620139f525e482187a131f466"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/quant_audit.py",
+      "bytes": 1532,
+      "sha256": "0e3764610d537cf46ec7f46aa520cef6e8c0b040814d281f585591dfc011ab63"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/rrs.py",
+      "bytes": 6993,
+      "sha256": "201589e09b7bcdc8deef5b0fa44a8534da27f6d72a14773e30b7e21bc0c4152e"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/sampling_reuse.py",
+      "bytes": 3710,
+      "sha256": "f92fd48cce0ae2636ed6a2bb8987f1ff120014814aed8757871ac316d1d7d38a"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/segments.py",
+      "bytes": 7877,
+      "sha256": "afdb4891ec8071dfddb73426beb8f9d075eb018a1bf6aea68a9e3e750cb27339"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/shared_fusion.py",
+      "bytes": 3089,
+      "sha256": "1837b2483af974aa8385427e4e8f32c2f6b507145eb22c9840834abbb329777b"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/sliced_fill.py",
+      "bytes": 7304,
+      "sha256": "1437c79cb18db33329eb5647a18bd4e3f5b5edab13a356f5435f656cac7f550e"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/source_fp8.py",
+      "bytes": 10144,
+      "sha256": "234be152ce57bd79482972f989a3782c6c005c834d2353c918f2b6c63654b1b2"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/source_k4.py",
+      "bytes": 2040,
+      "sha256": "c23072fe89b8505fa307eb17f457983ba4644b455099c941e9f79570331bc8b9"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/source_mx.py",
+      "bytes": 3969,
+      "sha256": "66a0a2d851b238c82cb6c44a171e98a48519dc784aa408aa96f613b2855bc5e1"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/source_mx_kernel.so",
+      "bytes": 1064408,
+      "sha256": "11afbc3795bf37999e8f3af5f2c6f93ebd9d96f2d180824ea4406f6865169e8a"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/sparse.py",
+      "bytes": 46258,
+      "sha256": "5075e2e6504eb354c8480c40c5a52a25982aae235329b7f8c146b42a7cd8698d"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/spec_trials.py",
+      "bytes": 3130,
+      "sha256": "e0c0939e2232283c7dd307e1f4cf6a0caa97c95fb0da610856c2a83768d4c101"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/split.py",
+      "bytes": 16878,
+      "sha256": "9b007ef6fc3ebf894830124d3f003ebd5729d7600f064fa80094a49ab79c18b4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/tp.py",
+      "bytes": 7715,
+      "sha256": "f57fc7df4613c4a21abf7de390f174cd59a4711f95ee0bd995f011cfb81d0933"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/trial_control.py",
+      "bytes": 15054,
+      "sha256": "33fca0300c305ecd6faf98bb3961258412c19cf3801cd28928194c9d27279847"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/trial_kernels.py",
+      "bytes": 2411,
+      "sha256": "ffb3fa8adf9ca4543db13308fa05faca41edb67ee9a1d4cd831c46a6f10eb7d6"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/verify.py",
+      "bytes": 14957,
+      "sha256": "1765b0e8d17ff42281f374922a1bf316709f39f9daaf290ddd5cb98476e2c291"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/weights.py",
+      "bytes": 25718,
+      "sha256": "7efcc7ca0f05b65d1b9d6ec055d3b0d7dd8ad3beb292691ec43a866b05df4ba3"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/zip_k4.py",
+      "bytes": 5163,
+      "sha256": "61e57ac76925b73d6b19676e3dec1dad762628eba295157a1e83d7c2974ebe4b"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/kda.py",
+      "bytes": 8320,
+      "sha256": "93e85b8d217d7af6fea297f47afd8b11253b404810b0f1f6f3c64f2561e563b5"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/layouts.py",
+      "bytes": 2857,
+      "sha256": "9ddf6d37a3634cf1e9f8d01ff273abde9bd137ffe2320c7ff9e4e2deb15e15d4"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/linear.py",
+      "bytes": 6568,
+      "sha256": "7d98c757281ea3f26daff0f9298496976318670b21d766e47a9d02630f77d2c2"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/mla.py",
+      "bytes": 18200,
+      "sha256": "98a7888178498dbcafdf34837969dbd75c03551815bf1b01f4d60d2f15b8fc35"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/mlp.py",
+      "bytes": 10420,
+      "sha256": "dd2e39bfb21e925dee54f9a2b105f4bff5f8ad285d33a863f0c2a68da02673b1"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/model.py",
+      "bytes": 12054,
+      "sha256": "6fb551d75d7fdad937c9b2b3eedfccfbf5e8ab2ce27790a8d37ae07af64c1c9c"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/mtp.py",
+      "bytes": 2425,
+      "sha256": "59dd056369025dc2c9ea79e80a03c96ff9033a4f3d532fd800dc4b885c059f8c"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/prompts.py",
+      "bytes": 4816,
+      "sha256": "02592186c6b9065f73499078b0d3bfd6174ee3967d6d246bb62631ec115fc77d"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/runtime.py",
+      "bytes": 21895,
+      "sha256": "a0263c2ed3de77e920e1b04a8723bf282d9c0570279ddc21240a79fbfe366ce0"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/stream.py",
+      "bytes": 3699,
+      "sha256": "bbe46d507c60c0e3ae99512913bfdd5f4c0e78037652e5e0dce00f0c0a3d58be"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/weights.py",
+      "bytes": 11411,
+      "sha256": "cbf7c66e479a970f3f73277737a25e02c48206e85ece5cee1e18accbf71219f1"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/__init__.py",
+      "bytes": 5581,
+      "sha256": "49460414f6641e8ada689071dd5eb8d904efb3f2a30f478401fd9a0ed9310cb2"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/__init__.py",
+      "bytes": 372,
+      "sha256": "d4907f8335e9126ffe995a7af7376b66d088028468362acf54b437d0c17a2810"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/app.py",
+      "bytes": 16365,
+      "sha256": "1a880fea4035eb316bf78581c1cccde65b8e992bf6efe5e86857df3a385b8eb3"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/attention.py",
+      "bytes": 5623,
+      "sha256": "e6e5a9cf263546d22651d51d18575a0dc72bd980c97c222379deeb873320db65"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/decode.py",
+      "bytes": 10055,
+      "sha256": "4b11670efe6e6d61dd69fc8b07043c3f0dff46dcf813dc9adf0a8f8303b14e95"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/engine.py",
+      "bytes": 17849,
+      "sha256": "1dd8380b7da17301909c4c9c199a4fa9246e60d2b9e8c5ec75de9537131e5c4c"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/glue.py",
+      "bytes": 7433,
+      "sha256": "afb6009ea74277dd92d47c4d896afd9ab7bf82a2288b3c180f85d4550f0cd99d"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/mamba.py",
+      "bytes": 11141,
+      "sha256": "7019a276e7c43b44e724c767ae4857658525d58b9af7943389983715d6695a38"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/mtp.py",
+      "bytes": 10722,
+      "sha256": "06ccb84706b4b90d4be19270bfa2400f1db895a93047101e790a2b80de662d0c"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/reference.py",
+      "bytes": 6530,
+      "sha256": "e3c05a918b088e8da66c36b088bfae654ffed3638d2f19210bf7a141c9292895"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/sampler.py",
+      "bytes": 9306,
+      "sha256": "95d527ac019b57fb872ea00c95a88d5ea52ae81110b1636d9c1a019f7f1584d1"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/scan_rows.cpp",
+      "bytes": 1512,
+      "sha256": "8843649be3814dd0bbb1b351d15743d4cea045c3093d196fd7eab281c08a7bc4"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/scan_rows.cu",
+      "bytes": 5889,
+      "sha256": "2c7544fdc81a53ae4865c45245bc97b32110516d67f65d051de93b812e6a6db2"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/tp.py",
+      "bytes": 13016,
+      "sha256": "263364435126a4099c85e7099a6fea935df95b23f0a334b49fc06eb582ce618a"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/cuda/weights.py",
+      "bytes": 10364,
+      "sha256": "39205e6ba846b0e30ba9430ddd9cc6fde8d8dd217cbe28069449d9128acedbc0"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/draft_ids.txt",
+      "bytes": 191325,
+      "sha256": "436840405e3507339efe85c410bb87a927ede7eb44eae620c0dda225c392d45f"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/model.py",
+      "bytes": 29544,
+      "sha256": "898897bdcd05763bf177a73a412e3acd33994057baf4c6c07175d41bfa7ea660"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/mtp.py",
+      "bytes": 4542,
+      "sha256": "114636958adb803e0fb448109c19e377732dfa7172cddae3f0c785202dbe1557"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/prompt_pass.py",
+      "bytes": 5213,
+      "sha256": "9cb76ae934efb7c7042e0d2dbd60ffc3ca48b646de12c46cacc3ad8c019f2314"
+    },
+    {
+      "path": "vendor/tensorfold/families/nemotron_h/state_cache.py",
+      "bytes": 1400,
+      "sha256": "30ba804848c8b607db459e9736ae68ab4e10456231cbef1298484f88818a380b"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/__init__.py",
+      "bytes": 16842,
+      "sha256": "68e4b6c0c61824b75d9f62d4e275394211401f5a64da6f2ae4a996deabe028e8"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/__init__.py",
+      "bytes": 106,
+      "sha256": "e711d4bedc9d5b25998402856564701db0fb20634dab3508a332e79ed2665382"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/affine_memory.py",
+      "bytes": 3939,
+      "sha256": "b5ff72f41eccb0232b1a973a0f50a5782fdee8fbfc85a29cc50541f49e4992e1"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/b16.cpp",
+      "bytes": 377,
+      "sha256": "430442eb379c00d73eacad9a690a0802925a6fd45867c8d60c9cc142251f6912"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/b16.cu",
+      "bytes": 4788,
+      "sha256": "0bec736dc74620610db028d4abf4c17ee81e9b1e5f379daf9d4f73e6d2fb2dc0"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/b16.py",
+      "bytes": 926,
+      "sha256": "fc3eae7d082cfec197a1993ea9b3e1b469408ade16fff02f81775d29f4fd79bf"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/decode.py",
+      "bytes": 13793,
+      "sha256": "ea82808d22c3d2b2c6c6ffc05174fa27bcf21d810182be694661cd0ec08a8331"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/decode_tp.py",
+      "bytes": 14222,
+      "sha256": "2bd080771e85aced1a2ab5df6b32251f8c954b6f1ba41f24c4597cd4d9003dd8"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/dflash2.py",
+      "bytes": 31323,
+      "sha256": "0c431838c131afaa80eba1f68c380adea38c0c2fee815b1c7727b2870585cca9"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/distributed.py",
+      "bytes": 13198,
+      "sha256": "a06828d788faeb29087e3c2c07211b85785a01d22a96fdae1192cf9bf06301ad"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/draft_attention.py",
+      "bytes": 7323,
+      "sha256": "125722129cfb857fe2134505c0c05c44dc6b1feef8dafe8ed0a0aae2904c37d2"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/draft_tree.py",
+      "bytes": 3802,
+      "sha256": "0ab39b30804948d291f736018228e4c52c39c050b1c90d1a25f211178737bbca"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/engine.py",
+      "bytes": 20040,
+      "sha256": "5dce4403adf9008d833bb5101a5de73645ffe9a887e245b705827d52ec796aa4"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/exl3_load.py",
+      "bytes": 7644,
+      "sha256": "0830153489493411b09f7066b771c6f29a43dec8f7f5536d7c4f6f5576d1dcbc"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/forward.py",
+      "bytes": 23366,
+      "sha256": "37c10e6e0dcbcba902304e47e82f7b5b4c810410c4d1807c0c783a9d0a72aa63"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/glue.py",
+      "bytes": 12460,
+      "sha256": "980223c7d160e71b2a0aa05c8b135bf64a5ff213ee4ae22ececbf466c827c1a3"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/multi.py",
+      "bytes": 28031,
+      "sha256": "d69d8d85185d25636193d46b5cd566c16d239d321ee72b38c959264e7114e22b"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/nvfp4_load.py",
+      "bytes": 7492,
+      "sha256": "ffa2c7a0d7154cc3cf27e74512d5e414f5556c10a6ff57cf35656c11773e3031"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/prefill.py",
+      "bytes": 9652,
+      "sha256": "11b60b473cfacaa6bd49e9e5cdde569f84d1e605650ad07ca94575d99451164f"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/prefill_bf16.py",
+      "bytes": 539,
+      "sha256": "c5ba8e900a1b90007a6d500e18f8aa6448acd1d9178a03203dd234d4c24728cd"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/prefill_glue.py",
+      "bytes": 5137,
+      "sha256": "a335920b5e044f6ad62e16abe8fc5ea0022cbd3d15bc015ddb6de64a7459b886"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/qmm.py",
+      "bytes": 5996,
+      "sha256": "d66ce7754bb35cbece46992b352422bc873a6a15c8fdabbd78c13a700ce00bea"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/qmm_fast.py",
+      "bytes": 4932,
+      "sha256": "9cfdb5424f60a0ce4f94f406e5cf9b920c786a5df87e3d416a2c29bad0f5504c"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/reference.py",
+      "bytes": 6984,
+      "sha256": "759fff7aac78c47579134a2a7aadcfa5b950918e82da4058898b6d7dd5726da6"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/cuda/weights.py",
+      "bytes": 14776,
+      "sha256": "7e33f312dd6b65885e8db376f6bc5d18c4bdbe2a6c69b95a09c2be43b6876abb"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/dflash2_calibration.json",
+      "bytes": 5708,
+      "sha256": "b6542f456c37f2e986e82e2d595f84f21125f8e4e8db382e8d5f20d80b364915"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/dflash_head.py",
+      "bytes": 10575,
+      "sha256": "f08fe2c3af9034ca5af8d17a7bd8fe25a7c8a69ad80e77a1f47e59fd79c16763"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5/family.py",
+      "bytes": 15684,
+      "sha256": "a4f185c004ac71f6f86298609a03a62a87e5c199cd3cc35476eecc9a03232415"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/__init__.py",
+      "bytes": 2358,
+      "sha256": "f61d3240987dda04424ba20d4b32f274ad0666e7628bacfa03dbe6592057a38e"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/cuda/__init__.py",
+      "bytes": 182,
+      "sha256": "4a89aece08391e937fe9a804c2f42ac2b7c686fe8ec4f9d1fb5bf7147d2c662f"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/cuda/decode.py",
+      "bytes": 11643,
+      "sha256": "19e026fde3b52dc2f350225a1a87bc13bf431e0f047197ccea2133d747b2d59b"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/cuda/engine.py",
+      "bytes": 9637,
+      "sha256": "0c3f8f6661788e83463d988648385aa8be37151fdb8ee5e7e4f1390991eb3014"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/cuda/graphs.py",
+      "bytes": 4564,
+      "sha256": "d47d21cffcfada099e911828ae5a51062fdc93a0f03403c334449be93f2ccd5d"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/cuda/mtp.py",
+      "bytes": 9103,
+      "sha256": "3ef18047392b0fe701d293eaf2727ed63bed8953dcbffb5cded5d64e1d006a30"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/cuda/multi.py",
+      "bytes": 16398,
+      "sha256": "bd5d6a44e0925c98de9172593b1b840f46a89e162b567a7cc5ad494815123df2"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen3_5_moe/cuda/weights.py",
+      "bytes": 5624,
+      "sha256": "6f10b6d633464477c1cd6ba9c191976be1fff6ca8583c1023d6e5ebd0b91ee77"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/__init__.py",
+      "bytes": 10427,
+      "sha256": "de9dc0370041f6fc1055851704f0cab2d0a8e6d0616dbf61b7b7d0e933ff9991"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/__init__.py",
+      "bytes": 327,
+      "sha256": "73d91783f3a7b2df1a1093f4a7fdc010c424b37f4ce4fbe1bce30b7f96b2ef08"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/attention.py",
+      "bytes": 19995,
+      "sha256": "6e8caa3c3ba44bc20947cd083fa099d20796be59e6b7dcb819c415b4ebf63b9b"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/attn_multi.py",
+      "bytes": 7836,
+      "sha256": "6f29b0914c5da3806616c7f03eeca03ca769ae5c3a6940f10e518bd57e8c7aa3"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/bf16.py",
+      "bytes": 6619,
+      "sha256": "f82e49e29e5d5f2c1430c48f00878af0715303debf023c401a1f840a727fa45d"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/decode.py",
+      "bytes": 22401,
+      "sha256": "360de6157648212bc58fd6abc6503bc684c256b43b75cf8f9157cccabf0a7a3f"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/draft_vocab.txt",
+      "bytes": 467348,
+      "sha256": "88d5b483a849ae9245b78b69f41f11cdfc8b5c024f0786c1c8196263857cc93e"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/engine.py",
+      "bytes": 20499,
+      "sha256": "bbdc7943e2c8dda30adb60f61e1d56237e8d5a886947f0f9a953e3a82d43e269"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/exl3.py",
+      "bytes": 12227,
+      "sha256": "1cd791ce7c43aa74de1902946e7fca5e8b0e373244a818f73b27989969c08c6e"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/exl3_mm.py",
+      "bytes": 12974,
+      "sha256": "0c1f4b024b5e3750fa8b8eadda0addd30216dc9702b98712fe03f346b46e590d"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/exl3_pack.py",
+      "bytes": 8475,
+      "sha256": "309696f9c3361d0bd0c71837d82b280331954530dc01b517793ecec71e967a3c"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/forward.py",
+      "bytes": 28981,
+      "sha256": "317ce19316e3ef598b069be0d3803961c71ece96c593151b8ba10398b6f993ce"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/gdn.cpp",
+      "bytes": 2478,
+      "sha256": "2c84d93bdd38ddb254e1d2dd1c979e5486ad0fa0f09dae58c6c326fc70f39937"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/gdn.cu",
+      "bytes": 10380,
+      "sha256": "9c280d8389c8732d709e2786e99c44d70b66621f95a23909f28a3c0439314bbd"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/gdn.py",
+      "bytes": 2149,
+      "sha256": "7f4f7deed17e0d0e764828a543be29b140476714f0f85992507a8b2dfd31f0a6"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/gdn_io.cpp",
+      "bytes": 2288,
+      "sha256": "28c777bd85454cb47730545105d5c837f303c242550400496a66d9f7ba78af20"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/gdn_io.cu",
+      "bytes": 6839,
+      "sha256": "fd834e01a4cb181290312bdc02c753518044ce8cf419ac603beb5b13d1e2f63c"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/gdn_io.py",
+      "bytes": 1664,
+      "sha256": "8516b19320df5044e8eea1c5a896aaf14f46b3f7ef294a163661f212b8d384e0"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/gdn_multi.py",
+      "bytes": 4350,
+      "sha256": "8f9721bf2510b312c475d107637e0ee3fba427205d305947a6031700367e90d4"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/glue.py",
+      "bytes": 26623,
+      "sha256": "b3cf887f71589e99753d2040c0e52309135fabdd64774d6735a930d2a604154f"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/graphs.py",
+      "bytes": 3684,
+      "sha256": "dc8b583b55e8c9bbc21b0100c0a24c68747027551ce52dc60e2db69508be647f"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/kvcache.py",
+      "bytes": 7000,
+      "sha256": "091bb547edfe75612f098cbd54af581dd4274c84df9551112084365bc4ce3f19"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/kvquant.py",
+      "bytes": 3042,
+      "sha256": "b893b9841117629f3e6f37eb9e3c3994242bf8d3476657f7cc6885d3bb6c8123"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/mtp.py",
+      "bytes": 3572,
+      "sha256": "49700f7aacbf74d78f34efd9a66ac5851c2bfc1472c111a19858ad4273b2eb01"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/multi.py",
+      "bytes": 30057,
+      "sha256": "fb3a790d0727e727674d7a3912a9481a18233398a804e8af5b71bcba22e159da"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/ngram.py",
+      "bytes": 4411,
+      "sha256": "cf3c061978f1dc33ea2d714807763524c6498e30a2373123829af41fcf790736"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/nvfp4.py",
+      "bytes": 18888,
+      "sha256": "d92b93a48a5980111e36636c1c762879347091f3c58c081141df52315a34248b"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/nvfp4_moe.py",
+      "bytes": 4754,
+      "sha256": "46ca1c6de3a682af5aeac7861be10e8b66700dbdb1be383ef3233c6c9e70563d"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/qmm.py",
+      "bytes": 18236,
+      "sha256": "772123811351485844054504ecd27c3398cef8d043420c000b16b26d3a986e11"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/reader.py",
+      "bytes": 5125,
+      "sha256": "c06b340443e5aa862d6ffafedffe5282587e1f9d9ae08f5387ab34022af7e437"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/state.py",
+      "bytes": 16239,
+      "sha256": "9aac2ee9ddc4431beddce361bad1092030ed7c709a7d4d111540bfe1821f056a"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/weight_types.py",
+      "bytes": 10543,
+      "sha256": "38690afd1b748277ff01960057f6722452a459ff2154cb52ce6decf0fa75e0a3"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/cuda/weights.py",
+      "bytes": 24379,
+      "sha256": "de9247b98ce4734bfee2c2af080b061f493bdbd6f0689b3e2e646ed4a6a1e23e"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/decode.py",
+      "bytes": 31577,
+      "sha256": "9784e792eafd85535ea9e944da999db10dc61ece9c06c32746045eca90801b74"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/draft_head.py",
+      "bytes": 1954,
+      "sha256": "3e0d42d877b288d501b747dce3650cc6e78972baab5f9b81af1419472cd82b5a"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/host_table.py",
+      "bytes": 20102,
+      "sha256": "5e67f394bb2cb04f0caaa1f43f5a34860ff8c26f15cbf1585b82433bfae43d00"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/model.py",
+      "bytes": 21375,
+      "sha256": "94f641cd0f25cd81917c11ced2680e62d4c4b70a1051279d7476d9079172d7a8"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/model_layers.py",
+      "bytes": 23855,
+      "sha256": "8c3ab3a4890a37014ee201128f0abc8fa78dce206c377a48bd7dbc723a79de01"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/mtp.py",
+      "bytes": 4009,
+      "sha256": "943b6fc5a6eb962329c7ddf455ef8572ec389d23cb443d57db74090021685d91"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/runtime.py",
+      "bytes": 28411,
+      "sha256": "fb455b2e32e993cf0e0de65bb4766241bce8810a9615cfa26d563985f1fcb892"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/ssd_table.py",
+      "bytes": 7824,
+      "sha256": "b3fabaee9cdfbb6ce5d69bf216f63afe98ae54abc88b222a0c8f1312dd6af45e"
+    },
+    {
+      "path": "vendor/tensorfold/families/qwen4_exp/stream.py",
+      "bytes": 5708,
+      "sha256": "576893a097431effe811804d79e3e2f04d12eccffc7b8f79e3b3c90b0138f2d5"
+    },
+    {
+      "path": "vendor/tensorfold/families/tokenizer.py",
+      "bytes": 1663,
+      "sha256": "f60ce9a9154ed003b29ad693b152c070b8c983c50e0f8f769df6f21631c13955"
+    },
+    {
+      "path": "vendor/tensorfold/hub.py",
+      "bytes": 4453,
+      "sha256": "5f8f3492c6181da50c4d18b75cd3ff3c4cfd02d2b2494512f5657ca72290332f"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/__init__.py",
+      "bytes": 75,
+      "sha256": "97660617bb545f562401ffec52f9aa2de4c3071c3127314657b017eca379b94c"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/deepseek/__init__.py",
+      "bytes": 24,
+      "sha256": "c6ae2dabdd79dc31662b1139b9d66fed27858327f36b506bed5ae539334e44e4"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/deepseek/v4/__init__.py",
+      "bytes": 77,
+      "sha256": "91499c686446db91cd87550ab1d76e228e49a6941b19683484250814853fe208"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/deepseek/v4/attention.py",
+      "bytes": 10549,
+      "sha256": "cb92058675de42c574a90e4906836566d18f5d1b5eb42c1dbf18f3a13d9b046b"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/deepseek/v4/moe.py",
+      "bytes": 8827,
+      "sha256": "28c627d24923bc3729fef2ff42b9fe6427259cb80da6e8abb9bc2a22a004bbc0"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/deepseek/v4/pool.py",
+      "bytes": 3895,
+      "sha256": "98c2e04bfe80a546c9cf0032c47bfae7c4fa21e124fddda73c51243e5d31bcfe"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/deepseek/v4/rope.py",
+      "bytes": 2873,
+      "sha256": "487b0709866a751e20bd61a98fb2bd70305c4d10f8ce19667d661e698943c018"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/deepseek/v4/rows.py",
+      "bytes": 9525,
+      "sha256": "95982410e4e8a8e42f92d1962e9e813d0f6ac0a5897e56dc8ee47e7e0c1acf01"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/__init__.py",
+      "bytes": 21,
+      "sha256": "7b02b8e92a4a65e86a4a02828a337951366096bcdafb2f8e1ba1d87716e4b622"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/v1/__init__.py",
+      "bytes": 101,
+      "sha256": "7888d62af39c89e6bae567c9cfc5ff8c91231ef38732c0bdb8299d853128374b"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/v1/attention.py",
+      "bytes": 7625,
+      "sha256": "3c4574223716355e0e9ecd307e2facaeb5bb898aa5e3c7f4561062f4e74dc69d"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/v1/base.py",
+      "bytes": 1343,
+      "sha256": "96ca22545a067f6295ef02f464363cd21fc88a56903638730b1955e5fbc63556"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/v1/decode.py",
+      "bytes": 9594,
+      "sha256": "767799340761ca3383f980176ea33bcb2dbcdb6363afe44e293519b5823b513b"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/v1/glue.py",
+      "bytes": 12033,
+      "sha256": "72c830b9d2b31ed70479b2f17d5f1f29b5b8decc609ae75e6ac0ec82b40b1003"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/v1/matmul.py",
+      "bytes": 3180,
+      "sha256": "a597e03c8796bf5d01bc122b908d4aae21f641c5ad1bea11735331b3a10da37b"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/gemma/v1/moe.py",
+      "bytes": 11940,
+      "sha256": "362f9cb70d7b72edc1fb886881a722ff9b1a28611904ce9af6fd0b9d6213a802"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/__init__.py",
+      "bytes": 19,
+      "sha256": "d2f498ba4427965d3554e590771e3bcb224c7b0c4e4397fbcb6c6060d22f340e"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/__init__.py",
+      "bytes": 29,
+      "sha256": "2bc60dc973a15113f4f08191e8cf0f75d302931f6c366602edff97c61ed46612"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/__init__.py",
+      "bytes": 73,
+      "sha256": "346f056d49027beebb11011df02dcfc6c46818f24ab1f2af7899985e295ce56a"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/fused.py",
+      "bytes": 1918,
+      "sha256": "99f443fc52c9e4ce0bd3f8e0bad9a620edaf2778ddb73dc46ce32d86239d888b"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/hc.py",
+      "bytes": 12153,
+      "sha256": "5d76fc06f00be8fab50d789ae13aac00a9c861b7547e34e6cbcbeeb6e649945f"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/kda.py",
+      "bytes": 15539,
+      "sha256": "302c8aaee20ad2232b72b29902cae27a8198825d39cbcdb8d272054e21eaf300"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/kernels.py",
+      "bytes": 26367,
+      "sha256": "606717cfdb93953df08f76f806b21537e25d8bac662a463f27801157ccb5b0d7"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/moe.py",
+      "bytes": 23413,
+      "sha256": "7d5629d315d5415b33d835469545d09871a35cece2a3b109782c576aa0311b9c"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/prompt.py",
+      "bytes": 16579,
+      "sha256": "0b2a72b219e39a8cda0a5cbf893fd983ddf3be400c2925802a56ebcf7026250c"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/sparse_attention.py",
+      "bytes": 5541,
+      "sha256": "adc4571e03ce29e990baf027bc021f607ebbb301b667d784d4a4448aecbbd4e0"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/stream_moe.py",
+      "bytes": 6509,
+      "sha256": "4d763b9e1017148305554c71f97ce527b2b5287d608824a3f16f1d6dbf70937b"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/glm/flash/v1/widths.py",
+      "bytes": 10366,
+      "sha256": "e948ca920480f8fabfdc7a8d5d74ac2f0ec1abaaa3f2b36381220494c821fa68"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/inputs.py",
+      "bytes": 1091,
+      "sha256": "e13ffabe1a413781c846f50aeb69181ecb668a2ef8860311ae1222f96fcaf32c"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/nemotron/__init__.py",
+      "bytes": 31,
+      "sha256": "27ad1ed92286229263edfe7f7dfb50e66d3fbc829d70dd1b179db4a406d8bfed"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/nemotron/lightning/__init__.py",
+      "bytes": 38,
+      "sha256": "f9cbb431f8c0f946a0b942aa1a495ec4672e78c6b8c8808d49b9f3c87200c355"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/nemotron/lightning/v1/__init__.py",
+      "bytes": 77,
+      "sha256": "c4c28073475817fe5a7a356928c49e914a5464e2018a11f72827d10bea2dcaea"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/nemotron/lightning/v1/kernels.py",
+      "bytes": 28141,
+      "sha256": "f4d9070d2cfc25f999047168aee08062dac4539df7f58dd07f3c46ef03a3a1f0"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/nemotron/lightning/v1/rows.py",
+      "bytes": 18452,
+      "sha256": "648eb82a2352ca016c9f59ee2069414eb5d658f8a01911f6f6946fdb93f59b44"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/nemotron/lightning/v1/sources.py",
+      "bytes": 8504,
+      "sha256": "77a57a4863bd538b926cf6aff9232d8e2c8043fd39b94f897f816af3377bb158"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/__init__.py",
+      "bytes": 20,
+      "sha256": "8487b88ef59af4a723e5afa6614e13b8f3d686e41fc6c9e9cedb52cd5e9d1597"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/__init__.py",
+      "bytes": 34,
+      "sha256": "2b6eec726d2f3a31fdc313639288a61d5aa9848db000ada0d10b36de5050b227"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/__init__.py",
+      "bytes": 67,
+      "sha256": "95ab120332366704fc5aeaac38a96c4cd85695e96d151eae6f8374028bdb855c"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/affine_rows.py",
+      "bytes": 8104,
+      "sha256": "294427f3660b32492535f73c3c4d7c012110d50726cc80a434833ea4cd0a03b2"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/exact_attention.py",
+      "bytes": 2759,
+      "sha256": "c130be13a44c0ab0b608e8dca024954c5c125e92f9035b11e69aaaff8e5466e7"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_attention.py",
+      "bytes": 14542,
+      "sha256": "fc66173e75b660c069011eb15d63ca51368132f017c55fc49d5c91c6529efd91"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_fuse.py",
+      "bytes": 16295,
+      "sha256": "86f44e410f564871067946f0470ac6bcad74317f88097ee1fb38cd70767a8656"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_gdn.py",
+      "bytes": 19930,
+      "sha256": "f9636470b8600289cff1c891b7d50ed66b5402d31a1cb5dfcdb1178dcfa03056"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_glue.py",
+      "bytes": 12021,
+      "sha256": "8bc27eac7309d7003ddaab2876eb4e27c637b855df524902b27e7e30633071f7"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_multi.py",
+      "bytes": 12025,
+      "sha256": "053180f7653eac56d6146c97455a787fed8c0667b76c8a0c00aa71799340ef5f"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_qmm.py",
+      "bytes": 23609,
+      "sha256": "bfa521c881bf8d05ef5bf18669b6eb18a9689bb0a4e0c06f3245e082f9f4fae4"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_tree.py",
+      "bytes": 10245,
+      "sha256": "59f88ea97fd61af306ace5da89c4af86558910c502e976d5d65aa804414f5a75"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/lane_widen.py",
+      "bytes": 9848,
+      "sha256": "4be4a6c3b7ac40d76832cfdfba20a8e59f22ebb62bb46d01e9b9260986228b39"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/prompt_attention.py",
+      "bytes": 1602,
+      "sha256": "af5560a373fcc6e8a94114b3ad92032c44faf0e3f743297d435bc8354613841e"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/row_attention.py",
+      "bytes": 8911,
+      "sha256": "836293dad254efd35bc60171e6d9c0ece76de38f080340b9e71cc0dd9bdf34d7"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/row_forward.py",
+      "bytes": 20240,
+      "sha256": "4888d78e83ea0dddc5be1ba28cd362cc45c472306e5f08fc3dc74de25b99ef1f"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/row_glue.py",
+      "bytes": 14306,
+      "sha256": "4861406804152b8e23acd8fb3ced578aaef9fff3e31faeac847a6d60240933ec"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/row_matmul.py",
+      "bytes": 11726,
+      "sha256": "deb3bc135b21cbb30df70d55d256e7d2558880bc5c625b126d5434e301d38a99"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/row_streams.py",
+      "bytes": 6986,
+      "sha256": "525d5277ea9a28f5c4ad8b5d1393e396651fad7e80dc7a45e9b6b664bef8fd38"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/simd_qmm.py",
+      "bytes": 23484,
+      "sha256": "06fb5c696c20a9ab74e38ac07f8760ca261ad0aab62903953ce12e442289cba9"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/simd_qmm_bits.py",
+      "bytes": 15031,
+      "sha256": "c8aab12180295bdcb54f044ea4246657049594b5feeee15eedebcf8a2543b8e4"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/stream_attention.py",
+      "bytes": 22908,
+      "sha256": "3381971a3d6db63c805b45805abea3fd463fa6b730e0bf28028369ecb0b4f655"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/dense/v1/stream_gdn.py",
+      "bytes": 17064,
+      "sha256": "4b626c300c2ed9e0119e404b0f46521cf518fa2e0a144c4c8360875429390824"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/__init__.py",
+      "bytes": 34,
+      "sha256": "5db707813b8903b18a0dee1fd17195a71a97708fb1d85e31a681f070053d8609"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/__init__.py",
+      "bytes": 73,
+      "sha256": "43a04be8a694786de1e0b0342a7a9039e767fb4377d5bec132f523ec8b754b79"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/attention.py",
+      "bytes": 22935,
+      "sha256": "be58c5cbe812274b7451c3f1b082e3c6375d9943e1e8dcf2a30e32482d2289d1"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/base.py",
+      "bytes": 22455,
+      "sha256": "4bc2d10334b792d0b83aab7d9685d44d38b91cb4c9a3a5934264ea4bb27705cc"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/embed.py",
+      "bytes": 15856,
+      "sha256": "171107eea64b8bfc464de8703b32d0d5452b99ee6d61f9b273740878b7fc9f97"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/experts.py",
+      "bytes": 17811,
+      "sha256": "826aea869bbc4d9d37914a2659aed832e66754facc4c50a91dd4ba527e9a5700"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/gdn.py",
+      "bytes": 15548,
+      "sha256": "abcd9b6aeb4f98783a30a695820041a008af26d98fe1453b58a213edfeee07dc"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/hc.py",
+      "bytes": 21305,
+      "sha256": "ab01535b27cbc36f5ec821d90d00a3b397c8ec39266de1f26ad2ef2181372068"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/prefill.py",
+      "bytes": 9765,
+      "sha256": "2ee1bc01eb9c5db32189fa0264e79eb06212cc73ec21862458330052d341dbaf"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/prefill_hc.py",
+      "bytes": 8754,
+      "sha256": "aa65e126ee73d6dd05d9b968aa24c9cfdb1eb04dcc93d96a7a05ab90d147af63"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/prefill_mm.py",
+      "bytes": 24577,
+      "sha256": "1d00f1021d121acbe7d63c1625bb8fd41dd82bcc416aeec21a33b656398dbc7b"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/row_tiles.py",
+      "bytes": 8378,
+      "sha256": "0cc9cb006cc473939b2e3d491929304ef0da25ea0f7ad06c015c359bc81d480a"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/rows.py",
+      "bytes": 19893,
+      "sha256": "bd1f285abafbb1142f12c24a68d41f57ede8f879cf5b7e55927604a6dfc2b0bf"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/flash_next/v1/stream_experts.py",
+      "bytes": 5438,
+      "sha256": "fd727646a57611aee41b43fec40da13ec277348b3a0794e8e0a15d8b06a7539d"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/prism/__init__.py",
+      "bytes": 68,
+      "sha256": "884f99d2af89bbc47b498057181ee81776eb93b4d5b011a37a6ad803f4812420"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/prism/v1/__init__.py",
+      "bytes": 63,
+      "sha256": "d4633de61e62264b15eefb5c9e3e582c5c59d1680e92936e323118b8300670f7"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/qwen/prism/v1/rotate.py",
+      "bytes": 5422,
+      "sha256": "5145b9db55d2145234332880e4bc2319717ded38278d68baa62c483ce68a6900"
+    },
+    {
+      "path": "vendor/tensorfold/kernels/threads.py",
+      "bytes": 3566,
+      "sha256": "b735aa57892d1318e7478bb27989bbc98920ab45286876b62b58ca567ec17899"
+    },
+    {
+      "path": "vendor/tensorfold/quantization.py",
+      "bytes": 3925,
+      "sha256": "45a9f76010a42f59631c926af4534ed0fd72ef7d48f0040bcf123a2cb4f70e22"
+    },
+    {
+      "path": "vendor/tensorfold/serve_options.py",
+      "bytes": 3942,
+      "sha256": "8a2a3db195bb2886e6872466a56989508991abf19272c40c90678995eda65985"
+    },
+    {
+      "path": "vendor/tensorfold/server/__init__.py",
+      "bytes": 110,
+      "sha256": "e08d86d206c2b9089993e28ebef2c965a8b9c9ff267d0e657f7d0eccba16a37b"
+    },
+    {
+      "path": "vendor/tensorfold/server/admission.py",
+      "bytes": 1875,
+      "sha256": "f2bfda8b15f1673531de42c07378a90f2de71210fced6a757874c9f719b2e3ed"
+    },
+    {
+      "path": "vendor/tensorfold/server/app.py",
+      "bytes": 27922,
+      "sha256": "fabb116e0490f83b57ab2e09e9f2d5c931449389236b933f1bc74b8b46c3652c"
+    },
+    {
+      "path": "vendor/tensorfold/server/cancellation.py",
+      "bytes": 3078,
+      "sha256": "5baed0a061bcab4b7880c2cbd70e85e19a2708912eb77097082cdaf1c2dd1174"
+    },
+    {
+      "path": "vendor/tensorfold/server/checkpoints.py",
+      "bytes": 12116,
+      "sha256": "7ceb92612e636aae3dae0ba3cc02efc77f187e61f17bbd547545d687fce92308"
+    },
+    {
+      "path": "vendor/tensorfold/server/errors.py",
+      "bytes": 1949,
+      "sha256": "d0f5adb14d977cab6a6facf8c28d7ee039956fa4f5a3bb836452bf7a79f62a2b"
+    },
+    {
+      "path": "vendor/tensorfold/server/http.py",
+      "bytes": 24042,
+      "sha256": "ac56f072503d40e1539644256a9df5adbd44b094195d61716363c1fd8a157677"
+    },
+    {
+      "path": "vendor/tensorfold/server/live.py",
+      "bytes": 5507,
+      "sha256": "a39c27fead0857eeff2f6658b24fd3739b4548f84bd5a2fce01fc344acb928c0"
+    },
+    {
+      "path": "vendor/tensorfold/server/memory_budget.py",
+      "bytes": 10157,
+      "sha256": "e632385a99befd634321094cce44422eb386f41b40f528eb1596f7c17ae9654d"
+    },
+    {
+      "path": "vendor/tensorfold/server/messages.py",
+      "bytes": 6495,
+      "sha256": "074fc366b2db22c3f2b87a344b84fbde8e2f20b53ec3367d3a6c760db6a7bce4"
+    },
+    {
+      "path": "vendor/tensorfold/server/metrics.py",
+      "bytes": 14269,
+      "sha256": "4f9677f9e38b3c4b423c7db291d165177215c7c6a9914c56d1faf47657e15cb0"
+    },
+    {
+      "path": "vendor/tensorfold/server/probabilities.py",
+      "bytes": 2957,
+      "sha256": "0c8ca2c72c72786e5759da1c642c49eb1b7f2533d40ee2af7f793fc537bc08d0"
+    },
+    {
+      "path": "vendor/tensorfold/server/prompt_blocks.py",
+      "bytes": 4744,
+      "sha256": "8aad2ef8a225ce23b0dd54d936d0efc7c964dd21d211e879d02b16dd0aff9c34"
+    },
+    {
+      "path": "vendor/tensorfold/server/prompt_fill.py",
+      "bytes": 12325,
+      "sha256": "5de336ddc908c49381f6b83ee3e7c5b8c2cc9002f9408255627f4d4997b4f378"
+    },
+    {
+      "path": "vendor/tensorfold/server/prompt_memory.py",
+      "bytes": 25758,
+      "sha256": "b89171487ce19e72f8ac53f0009d943a0ba402bf66f289ac624595a10654cb70"
+    },
+    {
+      "path": "vendor/tensorfold/server/prompts.py",
+      "bytes": 9246,
+      "sha256": "1b9a1cf5c52b14db02c1c0ab823ab1356e9a38461567a8253d77e8da04565e96"
+    },
+    {
+      "path": "vendor/tensorfold/server/request_body.py",
+      "bytes": 3244,
+      "sha256": "12f677642b9cc9e51603396a21bf914710d55ebac770d6eda6a1e0921176dbf1"
+    },
+    {
+      "path": "vendor/tensorfold/server/request_options.py",
+      "bytes": 11930,
+      "sha256": "0516688e1ee6d412ad2df398c72564e35baef445426ecaaf820b5fe469c6fc23"
+    },
+    {
+      "path": "vendor/tensorfold/server/residency.py",
+      "bytes": 1597,
+      "sha256": "cd74db253f2413d1f7cc4f47f053aa868a41178fbd97643252a411036287a5fa"
+    },
+    {
+      "path": "vendor/tensorfold/server/responses.py",
+      "bytes": 10222,
+      "sha256": "5d1be6b3eabcf27fa82d79857559118dacb24f5769583c209c6c6bea65cc5de5"
+    },
+    {
+      "path": "vendor/tensorfold/server/responses_translate.py",
+      "bytes": 21280,
+      "sha256": "ceebfa3cc513d3dc7541778944e8c72b6c51b59fd636934065f526f2e1f7ab68"
+    },
+    {
+      "path": "vendor/tensorfold/server/scheduler.py",
+      "bytes": 25420,
+      "sha256": "aed11346bc6769dc91a3be4f1322a0498ba4f3a64cbd2e39ec745f4449f97960"
+    },
+    {
+      "path": "vendor/tensorfold/server/stacks.py",
+      "bytes": 1241,
+      "sha256": "a4394612b473832edd52b051b08ebee6c71b07b637b489b94c10f3b519c61328"
+    },
+    {
+      "path": "vendor/tensorfold/server/stopping.py",
+      "bytes": 2544,
+      "sha256": "f92a962065d31ff13a6680e876562ecff1fcd672a1988754008595ead9030de4"
+    },
+    {
+      "path": "vendor/tensorfold/server/stream_gate.py",
+      "bytes": 3017,
+      "sha256": "2d85f71b041dee9116f0a10f0d3a9df238c86998d5aa8886520efa27d4b4516c"
+    },
+    {
+      "path": "vendor/tensorfold/server/text.py",
+      "bytes": 9943,
+      "sha256": "e29a1f857db44b1b49c780d7ba33eb3d49715f7eacb9606250c15c17f21d5deb"
+    },
+    {
+      "path": "vendor/tensorfold/server/tool_policy.py",
+      "bytes": 4016,
+      "sha256": "219722aa61d2094542a10a1c028b4807a393522711691b1b9f693b63280bc083"
+    },
+    {
+      "path": "vendor/tensorfold/server/tools.py",
+      "bytes": 16846,
+      "sha256": "37776ad9a168a1df63668e17ab802620bd4f3f6d256938a3629f15f8f494e9dc"
+    },
+    {
+      "path": "vendor/tensorfold/streaming/__init__.py",
+      "bytes": 107,
+      "sha256": "69fa58f426672a4a69bde1d46075e600ac91ad685ae916fe96b1e69184e8e8e8"
+    },
+    {
+      "path": "vendor/tensorfold/streaming/build.py",
+      "bytes": 3354,
+      "sha256": "90887a97d11b697690172fd5679d0637f49a8c8fc3c52d20d6656bbfa8d5fe25"
+    },
+    {
+      "path": "vendor/tensorfold/streaming/checkpoint.py",
+      "bytes": 1057,
+      "sha256": "3e5c477d0947ca8c90196224ce825b2ea4e77e9900f8ab2af3976505f925cb02"
+    },
+    {
+      "path": "vendor/tensorfold/streaming/hostsync/__init__.py",
+      "bytes": 61,
+      "sha256": "024fdb0ca48d0b311b1def6526e6081cf00f55ea2e82ca9a896b256f12ff1cc1"
+    },
+    {
+      "path": "vendor/tensorfold/streaming/hostsync/CMakeLists.txt",
+      "bytes": 823,
+      "sha256": "a4778fed8d32db483f3c0660ff90966c70d2dd17332412b5045fcb5f7d39d307"
+    },
+    {
+      "path": "vendor/tensorfold/streaming/hostsync/hostsync.cpp",
+      "bytes": 4675,
+      "sha256": "748078eb3d7d24ef5cc394058b772f19c795941b8fb81a48225a92807d532fe2"
+    },
+    {
+      "path": "vendor/tensorfold/streaming/pool.py",
+      "bytes": 9569,
+      "sha256": "5300c0c86f9e51b731eeb56b551fe5a8a04445f2fca20ec85ec51d387c5183e8"
+    },
+    {
+      "path": "vendor/tensorfold/tool_parameters.py",
+      "bytes": 6667,
+      "sha256": "e4f9149fe587f3d9f8d519a04f4a83023813ccef70b041fd6b2968e918e966b0"
+    },
+    {
+      "path": "vendor/tensorfold/update.py",
+      "bytes": 8654,
+      "sha256": "9f9eb86e5f33ac3ebbf72742a09360adb495283391420d2b560a1f116e020fe7"
+    },
+    {
+      "path": "vendor/tensorfold/vision/__init__.py",
+      "bytes": 82,
+      "sha256": "5332f770e6777b0da800665db0ab270579795708d619dfd2901e91c276890afe"
+    },
+    {
+      "path": "vendor/tensorfold/vision/config.py",
+      "bytes": 1094,
+      "sha256": "d5101e7e8507acda5f9068ccf0f06fd2132e0aaace4d69ce220575e846132538"
+    },
+    {
+      "path": "vendor/tensorfold/vision/glm.py",
+      "bytes": 34684,
+      "sha256": "ec937304acc986a5acde22abc71c2157bfdcda1b70e600272014c6fa83165666"
+    },
+    {
+      "path": "vendor/tensorfold/vision/glm_mlx.py",
+      "bytes": 4622,
+      "sha256": "0129431a624097da7486bab6cdf3ff9c8d94d357ba5728f4372160a58958ee2e"
+    },
+    {
+      "path": "vendor/tensorfold/vision/glm_picture_cache.py",
+      "bytes": 5236,
+      "sha256": "ec39c60a94a924fa2590cdc0653ba4b818ae5bd41507c5fdc5b21079dba2bc3a"
+    },
+    {
+      "path": "vendor/tensorfold/vision/glm_processing.py",
+      "bytes": 7293,
+      "sha256": "eccad40923a9e60c2be630a5cf4d6af004687e19c51c8433a2bbf9ac08fa6662"
+    },
+    {
+      "path": "vendor/tensorfold/vision/images.py",
+      "bytes": 12956,
+      "sha256": "33521ea50f592c6aba9640dfda362a2049f12fa7bc717cc7b19fada0232e4bd3"
+    },
+    {
+      "path": "vendor/tensorfold/vision/images_http.py",
+      "bytes": 8086,
+      "sha256": "b4e6f94fe8c18fa1a22a884654911bc8d2851534c4677c47ea70760c8655e56c"
+    },
+    {
+      "path": "vendor/tensorfold/vision/qwen_checkpoint.py",
+      "bytes": 5699,
+      "sha256": "f9afa95394fb0c3282f5c1f851b543c11cff1aa62d4fb0a2ad4b1842e783a2ae"
+    },
+    {
+      "path": "vendor/tensorfold/vision/qwen_cuda.py",
+      "bytes": 13995,
+      "sha256": "69fb9f39d0552109a59087cc5b49fd6bf24dcb351ae69df80af20c70ae727e52"
+    },
+    {
+      "path": "vendor/tensorfold/vision/qwen_mlx.py",
+      "bytes": 5436,
+      "sha256": "15b8f8c0b996c7743892cfb96a6cb126ece7e317d0d93a0d9bfcb10c729d969d"
+    },
+    {
+      "path": "vendor/tensorfold/vision/qwen_processing.py",
+      "bytes": 10954,
+      "sha256": "79cfae9b59b1749ab920b463350502e44492c587fc0c4e9783f35ef701ac9a1e"
+    },
+    {
+      "path": "vendor/tensorfold/vision/rotary.py",
+      "bytes": 3085,
+      "sha256": "e1eb3eff11d195bbeb2b0009f1106cd593f94dd23638081f9b750925c6d7f69f"
+    },
+    {
+      "path": "vendor/tensorfold/vision/videos.py",
+      "bytes": 8359,
+      "sha256": "268c3391bbbef78cd1855af98273bc3dd44102be9db1e28062826e9a8a517601"
+    }
+  ]
+}
