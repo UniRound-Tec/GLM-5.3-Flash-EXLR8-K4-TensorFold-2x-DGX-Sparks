@@ -22,6 +22,21 @@
       "sha256": "b71c807d14379f190fafd88ba2c99e2b811e20ce1e6d259b5688baadd4e3dc43"
     },
     {
+      "path": "assets/promo-banner.png",
+      "bytes": 2292755,
+      "sha256": "3cea2c566633a0be5fb0b86d8b0b972a4b1f874fd4f8f716421eaf30cbf4eede"
+    },
+    {
+      "path": "assets/promo-banner.prompt.txt",
+      "bytes": 2087,
+      "sha256": "e6b635ca2e258af726e122979a85b7f55d9d5edb34f4179a942289f9006e0721"
+    },
+    {
+      "path": "assets/README.md",
+      "bytes": 763,
+      "sha256": "14a156ebb01e20443087f9b7f26b462a6113db5d70467c5d7c2102a27ff8b6c9"
+    },
+    {
       "path": "config/defaults.json",
       "bytes": 356,
       "sha256": "cb95fbb9ed88d10b524120ff00f4db0e4620bbf80318cccd199045d90eb04b8a"
@@ -128,8 +143,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8329,
-      "sha256": "3fe82bce469b128183c33aaa87b6a3ea3decdcffb2b42dbb96f334e2a6d42248"
+      "bytes": 11693,
+      "sha256": "f9e6ce40bbc5de70d13669f827c6f96fd25f6d56ea05b5f1e7b49bc98a51f348"
     },
     {
       "path": "requirements-runtime.txt",

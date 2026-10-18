@@ -1,0 +1,23 @@
+Use case: ads-marketing.
+Asset type: a premium landscape GitHub README hero poster, wide 16:9 composition, ideally 2048x1152.
+Primary request: beautiful, bold, spectacular promotional artwork for the open-source GLM-5.3-Flash EXLR8 K4 deployment on two DGX Spark computers using TensorFold. Exaggerate the visual energy, NOT the measured data. Luxurious high-end technology campaign: near-black background, metallic silver, electric amber light and subtle cool highlights; dramatic light trails, controlled sparks, deep cinematic contrast. Two compact desktop AI supercomputers as a stylized 3D illustration, connected by an illuminated data link, clearly two machines, no invented logos. Elegant technical typography with oversized numbers, crisp layout and generous spacing, no clutter.
+Composition: strong model title and two-machine illustration in upper half; a row of three equally prominent performance panels below. The benchmark label and qualifiers must remain readable, not microscopic. English only, accurately typeset.
+Exact text to render, with no additional claims:
+Main title: "GLM-5.3-FLASH"
+Secondary title: "EXLR8 K4"
+Hardware line: "2 × DGX SPARK  /  TENSORFOLD"
+Label above the metric panels: "SELECTED BEST SAMPLES"
+Panel 1 label: "CODE DECODE"
+Panel 1 value: "119.06"
+Panel 1 unit: "tok/s"
+Panel 1 qualifier: "Repetitive Python · FNC7"
+Panel 2 label: "PROSE DECODE"
+Panel 2 value: "62.13"
+Panel 2 unit: "tok/s"
+Panel 2 qualifier: "English prose · FNC7"
+Panel 3 label: "COLD PREFILL"
+Panel 3 value: "2,480"
+Panel 3 unit: "tok/s"
+Panel 3 qualifier: "32K input · Historical K0"
+Readable footer: "Single request · Selected historical runs · Not a unified benchmark"
+Constraints: no comparative bar charts, no claim that numbers are averages or from a unified test, no quality or accuracy score, no speedup percentage, no NVIDIA endorsement, no extra performance numbers, no watermark. Keep every text element legible with clear hierarchy. The effect should be arresting and polished, like a launch poster, suitable for display in a technical open-source README.
