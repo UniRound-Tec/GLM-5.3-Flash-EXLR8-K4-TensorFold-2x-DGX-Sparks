@@ -2,13 +2,13 @@
 import argparse,hashlib,json,time,urllib.request,uuid
 from pathlib import Path
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--case',choices=['code','prose','algorithm','prefill8k','prefill32k'],required=True);p.add_argument('--seed',type=int,default=42);p.add_argument('--key-file',type=Path,required=True);p.add_argument('--url',default='http://127.0.0.1:8888');p.add_argument('--policy',default='fnc7:0.3');p.add_argument('--out',type=Path,required=True)
+    p=argparse.ArgumentParser();p.add_argument('--case',choices=['code','prose','algorithm','prefill8k','prefill32k','prefill197k'],required=True);p.add_argument('--seed',type=int,default=42);p.add_argument('--key-file',type=Path,required=True);p.add_argument('--url',default='http://127.0.0.1:8888');p.add_argument('--policy',default='fnc7:0.3');p.add_argument('--out',type=Path,required=True)
     a=p.parse_args()
     if a.out.exists():raise FileExistsError('Preserve previous measurements; choose a new --out')
     prompts=json.loads((Path(__file__).resolve().parents[1]/'evidence/prompts.json').read_text())
     is_prefill=a.case.startswith('prefill');tokens=32 if is_prefill else 512
     if is_prefill:
-        size=8192 if a.case=='prefill8k' else 32768
+        size={'prefill8k':8192,'prefill32k':32768,'prefill197k':196608}[a.case]
         filler='The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. '
         prompt=f'recipe-cold-{uuid.uuid4().hex}-{size}: '+filler*(size//22)+'\n'+prompts['zh_prose']
     else:prompt=prompts[{'code':'mia_code','prose':'mia_prose','algorithm':'logic_code'}[a.case]]

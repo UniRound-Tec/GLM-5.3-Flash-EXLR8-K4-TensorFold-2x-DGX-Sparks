@@ -7,7 +7,7 @@
 `bash quickstart.sh init`创建被Git忽略的`config/local.json`。两台分别填写：
 
 - `model_dir`：原始Kindling K4 snapshot，不能填运行时checkpoint-view。目录须含47个dense文件、各层K4及index、config/tokenizer。
-- `draft_dir`：31日草稿snapshot绝对路径，末级名必须为固定revision；旧27/28日snapshot可缺省，已同步在线容器的缺失跳过补丁；若另有保留且放在同父目录仍会预加载。当前在线旧银行仍驻留，仓库未为此重载或调整池。
+- `draft_dir`：31日草稿snapshot绝对路径，末级名必须为固定revision；旧27/28日snapshot可缺省，已同步在线容器的缺失跳过补丁；若另有保留且放在同父目录仍会预加载。2026-10-19在线加载已跳过被删除的旧银行，实际池仍1699840；本次仓库发布不重载服务。
 - `vision_dir`：rank0使用的旧BF16视觉来源checkpoint/view，需包含完整config、processor及safetensors index；可指向保留的视觉view及独立完整分片，无需恢复已删除的NVFP4主体。rank1可空。设置`vision=false`可显式选择纯文本部署，但不是所记录的完整视觉配置。
 - `data_dir`：新的专用运行目录。metadata view、编译缓存、日志型ledger、默认配置和私有key均放这里；不要指向根目录或现有服务目录。
 - `api_key_file`：head已有key文件，或留空生成新key；内容不进入CLI参数、源码或镜像。`prepare`不会覆盖已生成的私有key。
@@ -19,7 +19,7 @@
 
 ## 构建
 
-原环境优先：`bash quickstart.sh build --base-image glm-mxprefill:20261018`。构建离线、无GPU、不会重载在线模型。新名字`glm53-exlr8-recipe:20261018`避免覆盖原镜像。
+原环境优先：`bash quickstart.sh build --base-image glm-mxprefill:20261018`。构建离线、无GPU、不会重载在线模型。新名字`glm53-exlr8-recipe:20261019`避免覆盖原镜像。
 
 公共基础镜像固定在`sources.lock.json`。若使用全新机器，先准备该镜像及`requirements-runtime.txt`依赖，再运行离线build。也可显式用Dockerfile的`INSTALL_DEPS=1`进行联网构建，例如：
 
@@ -27,7 +27,7 @@
 docker build --build-arg INSTALL_DEPS=1 \
   --build-arg HTTP_PROXY=http://127.0.0.1:7890 \
   --build-arg HTTPS_PROXY=http://127.0.0.1:7890 \
-  --network host -t glm53-exlr8-recipe:20261018 .
+  --network host -t glm53-exlr8-recipe:20261019 .
 ```
 
 这一步会下载依赖，和默认离线build不同；本次未执行、未声称全新基础镜像安装验收。Docker daemon拉镜像的代理也需单独配置；build参数不控制daemon拉取。

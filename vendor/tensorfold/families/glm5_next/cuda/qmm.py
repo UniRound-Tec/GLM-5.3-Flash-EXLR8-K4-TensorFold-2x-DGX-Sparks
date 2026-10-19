@@ -331,6 +331,52 @@ def _bmm(X, W, OUT, PART, M, x_stride, N: tl.constexpr, K: tl.constexpr, SK: tl.
         tl.store(PART + (pid_s * M + rm[:, None]) * N + rn[None, :], acc, mask=out_mask)
 
 
+# Optional BF16 accumulator path: small arithmetic changes, no new quantization.
+@triton.jit
+def _bmm_acc(X, W, OUT, PART, M, x_stride, N: tl.constexpr, K: tl.constexpr, SK: tl.constexpr, BM: tl.constexpr,
+         BLOCK_N: tl.constexpr, BK: tl.constexpr, F32: tl.constexpr, SEQ: tl.constexpr = False):
+    """Multiply bf16 rows over a fixed K slice in order with fp32 sums, independently of other rows; SEQ: one program
+    runs every slice and sums them as _reduce does (the same bits, without the fp32 partials' round trip)."""
+
+    PER: tl.constexpr = K // SK
+    pid_n = tl.program_id(1)
+    pid_s = tl.program_id(2)
+    rm = tl.program_id(0) * BM + tl.arange(0, BM)
+    rn = pid_n * BLOCK_N + tl.arange(0, BLOCK_N)
+    rk = tl.arange(0, BK)
+    m_ok = rm < M
+    n_ok = rn < N
+    if SEQ:
+        acc = tl.zeros((BM, BLOCK_N), dtype=tl.float32)
+        for s in tl.static_range(SK):
+            part = tl.zeros((BM, BLOCK_N), dtype=tl.float32)
+            for k0 in range(s * PER, s * PER + PER, BK):
+                x = tl.load(X + rm[:, None] * x_stride + (k0 + rk)[None, :], mask=m_ok[:, None], other=0.0)
+                w = tl.load(W + rn[:, None].to(tl.int64) * K + (k0 + rk)[None, :], mask=n_ok[:, None], other=0.0)
+                part = tl.dot(x, tl.trans(w), part)
+            if s == 0:
+                acc = part
+            else:
+                acc = acc + part
+    else:
+        acc = tl.zeros((BM, BLOCK_N), dtype=tl.float32)
+        for k0 in range(pid_s * PER, pid_s * PER + PER, BK):
+            x = tl.load(X + rm[:, None] * x_stride + (k0 + rk)[None, :], mask=m_ok[:, None], other=0.0)
+            w = tl.load(W + rn[:, None].to(tl.int64) * K + (k0 + rk)[None, :], mask=n_ok[:, None], other=0.0)
+            acc = tl.dot(x, tl.trans(w), acc)
+    out_mask = m_ok[:, None] & n_ok[None, :]
+    if SK == 1 or SEQ:
+        if F32:
+            tl.store(OUT + rm[:, None] * N + rn[None, :], acc, mask=out_mask)
+        else:
+            tl.store(OUT + rm[:, None] * N + rn[None, :], acc.to(tl.bfloat16), mask=out_mask)
+    else:
+        tl.store(PART + (pid_s * M + rm[:, None]) * N + rn[None, :], acc, mask=out_mask)
+
+
+B16_PREFILL_TABLE = {(1024, 12576, 4096, False): (64, 128, 8, 3), (2048, 12576, 4096, False): (64, 128, 8, 3), (1024, 4096, 4096, True): (128, 128, 8, 3), (4096, 4096, 4096, True): (128, 128, 8, 3), (1024, 2048, 4096, False): (64, 128, 8, 3), (2048, 2048, 4096, False): (64, 128, 8, 3), (4096, 2048, 4096, False): (64, 128, 8, 3), (1024, 4096, 1024, True): (64, 64, 4, 3), (2048, 4096, 1024, True): (64, 64, 4, 3), (4096, 4096, 1024, True): (64, 64, 4, 3), (1024, 8192, 1536, False): (128, 128, 8, 3), (4096, 4096, 8192, True): (128, 64, 8, 4), (2048, 12288, 4096, False): (64, 128, 4, 3), (1024, 4096, 6144, True): (128, 64, 4, 3)}
+
+
 # (warps, stages) for the BF16 matmul by row bucket: no choice changes bits
 B16_CONFIG = {16: (4, 3), 32: (4, 3), 64: (4, 2), 128: (8, 2)}
 
@@ -389,6 +435,20 @@ def b16_split_k(n: int, k: int) -> int:
     return sk
 
 
+B16_BLAS_SHAPES = {(4096, 12576, 4096, False), (1024, 4096, 8192, True), (4096, 4096, 8192, True), (1024, 4096, 6144, True), (2048, 4096, 6144, True), (1024, 4096, 4096, True), (4096, 4096, 1024, True), (2048, 8192, 1536, False), (1024, 2048, 4096, False), (4096, 8192, 1536, False), (4096, 4096, 6144, True), (4096, 4096, 4096, True), (2048, 4096, 8192, True), (4096, 2048, 4096, False), (1024, 4096, 1024, True), (4096, 12288, 4096, False), (2048, 4096, 4096, True), (2048, 2048, 4096, False)}
+
+def _bf16_blas(x, weight, out, f32):
+    """Keep BF16 operands and FP32 accumulation; never alter decode or global defaults."""
+    old = torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction
+    try:
+        torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = False
+        if f32:
+            return torch.ops.aten.mm.dtype_out(x, weight.T, torch.float32, out=out)
+        return torch.mm(x, weight.T, out=out)
+    finally:
+        torch.backends.cuda.matmul.allow_bf16_reduced_precision_reduction = old
+
+
 def _matmul_b16(x: torch.Tensor, q: B16, *, out: torch.Tensor | None, f32: bool,
                 part: torch.Tensor | None) -> torch.Tensor:
     m, k = x.shape
@@ -396,19 +456,31 @@ def _matmul_b16(x: torch.Tensor, q: B16, *, out: torch.Tensor | None, f32: bool,
         raise ValueError(f"matmul: x {tuple(x.shape)} {x.dtype} does not match K={q.k}")
     bm = bucket(min(m, 128))              # a prompt chunk runs as 128-row blocks: no bucket changes a row's bits
     warps, stages = B16_CONFIG[bm]
+    bn, kernel = B16_BN, _bmm
+    mode = 0
+    if m >= 1024:
+        from . import trial_control
+        mode = trial_control.ACTIVE.get('bf16_prefill', 0)
+        config = B16_PREFILL_TABLE.get((m, q.n, k, f32))
+        if mode and config is not None:
+            bm, bn, warps, stages = config
+            if mode == 2:
+                kernel = _bmm_acc
     sk = b16_split_k(q.n, q.k)
     seq = _seq(sk, m, q.n, q.k)
     if out is None:
         out = torch.empty((m, q.n), dtype=torch.float32 if f32 else torch.bfloat16, device=x.device)
     elif out.shape != (m, q.n) or not out.is_contiguous():
         raise ValueError(f"matmul: out {tuple(out.shape)} must be a contiguous ({m}, {q.n})")
+    if mode == 3 and (m, q.n, k, f32) in B16_BLAS_SHAPES:
+        return _bf16_blas(x, q.weight, out, f32)
     if sk > 1 and not seq:
         need = sk * m * q.n
         if part is None or part.numel() < need:
             part = torch.empty((need,), dtype=torch.float32, device=x.device)
-    grid = (triton.cdiv(m, bm), triton.cdiv(q.n, B16_BN), 1 if seq else sk)
-    _bmm[grid](x, q.weight, out, part if sk > 1 and not seq else out, m, x.stride(0), N=q.n, K=k, SK=sk, BM=bm,
-               BLOCK_N=B16_BN, BK=B16_BK, F32=f32, SEQ=seq, num_warps=warps, num_stages=stages)
+    grid = (triton.cdiv(m, bm), triton.cdiv(q.n, bn), 1 if seq else sk)
+    kernel[grid](x, q.weight, out, part if sk > 1 and not seq else out, m, x.stride(0), N=q.n, K=k, SK=sk, BM=bm,
+               BLOCK_N=bn, BK=B16_BK, F32=f32, SEQ=seq, num_warps=warps, num_stages=stages)
     if sk > 1 and not seq:
         total = m * q.n
         _reduce[(triton.cdiv(total, 1024),)](part, out, total, SK=sk, BLOCK=1024, F32=f32, num_warps=4)

@@ -826,12 +826,16 @@ def moe_block(layer: LayerW, w: Weights, b: Buffers, R: int, done: tuple[int, in
             # bits), while the L2 still holds what site "a" prefetched for it
             shared_front(layer, w, b, 0, R)
             done = (0, R)
+        atomic_active = b.prefill and R >= 1024 and m.experts.shared_suh is None and trial_control.ACTIVE.get('prefill_atomic',False)
         gr8_active = R == 1 and not b.prefill and trial_control.ACTIVE.get('gr8',False)
         with prof.timed("moe: routed (gr8)" if gr8_active else "moe: routed (exl3)"):
             if gr8_active:
                 from . import gr8_adapter
                 if not hasattr(b,'gr8_scratch'): b.gr8_scratch=gr8_adapter.Scratch(b.normed.device)
                 gr8_routed=gr8_adapter.run(b.normed[:R],b.pick,b.wts,m.experts,b.gr8_scratch)
+            elif atomic_active:
+                from . import prefill_atomic
+                prefill_atomic.routed(b.normed[:R], b.pick, b.plan, m.experts, b.exl3, b.ey, b.wts[:R], R, c.limit)
             else:
                 exl3_mm.routed(b.normed[:R], b.pick, b.plan, m.experts, b.exl3, b.ey.view(-1, c.hidden), R, c.limit)
 
@@ -844,6 +848,9 @@ def moe_block(layer: LayerW, w: Weights, b: Buffers, R: int, done: tuple[int, in
                 # TF_GLM_COMBINE_SY=0
                 if gr8_active:
                     torch.add(gr8_routed[lo:hi],b.sy[lo:hi],out=b.part[lo:hi])
+                elif atomic_active:
+                    from . import prefill_atomic
+                    prefill_atomic.add_shared(prefill_atomic.output(b.ey, R, c.hidden)[lo:hi], b.sy[lo:hi], b.wts[lo:hi], b.part[lo:hi])
                 elif b.prefill or __import__("os").environ.get("TF_GLM_COMBINE_SY", "1") != "0":
                     glue.combine_shared(b.ey[lo:hi], b.sy[lo:hi], b.wts[lo:hi], b.part[lo:hi])
                 else:
@@ -967,7 +974,7 @@ def split_layers(w: Weights, st: State, b: Buffers, R: int, nch: int | None, hos
 
 def compute_steps(*args, **kwargs):
     from .kda_mxfp8 import prefill_scope
-    with prefill_scope():
+    with prefill_scope(), prof.event_scope(args[0].rank, args[3]):
         return (yield from _source_compute_steps(*args, **kwargs))
 
 
@@ -1040,7 +1047,7 @@ def stage(w: Weights, st: State, b: Buffers, tokens: Sequence[int]) -> int:
 def compute(w, st, b, R, **kwargs):
     if b.prefill:
         from .kda_mxfp8 import prefill_scope
-        with prefill_scope():
+        with prefill_scope(), prof.event_scope(w.rank, R):
             return _source_compute(w,st,b,R,**kwargs)
     return _source_compute(w,st,b,R,**kwargs)
 

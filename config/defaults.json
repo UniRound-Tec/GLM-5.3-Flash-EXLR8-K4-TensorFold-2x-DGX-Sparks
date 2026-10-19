@@ -16,5 +16,10 @@
   "expert_order": 2,
   "draft_noise": 1.0,
   "rrs_k": 0,
-  "mx_prefill": false
+  "mx_prefill": false,
+  "bf16_prefill": 3,
+  "prefill_pieces": 1,
+  "prefill_schedule": 2,
+  "prefill_atomic": false,
+  "prefill_profile": false
 }

@@ -16,6 +16,15 @@ peaks: dict[str, int] = {}         # the most memory a block allocated on top of
 
 @contextmanager
 def timed(name: str):
+    if event_active:
+        start, end = torch.cuda.Event(enable_timing=True), torch.cuda.Event(enable_timing=True)
+        start.record()
+        try:
+            yield
+        finally:
+            end.record()
+            event_pairs.append((name,start,end))
+        return
     if not (ENABLED and active):
         yield
         return
@@ -41,3 +50,34 @@ def report(tokens: int) -> None:
           f"{torch.cuda.memory_reserved() / 2**30:.1f}; most a block added: {big}", flush=True)
     totals.clear()
     peaks.clear()
+
+
+# Diagnostic only: opt-in per request, main-stream events, one synchronization per chunk.
+# Nested intervals overlap; these measurements are not used as benchmark throughput.
+event_active = False
+event_pairs = []
+
+@contextmanager
+def event_scope(rank, rows):
+    global event_active
+    from . import trial_control
+    if not trial_control.ACTIVE.get('prefill_profile', False):
+        yield
+        return
+    if event_active:
+        raise RuntimeError('nested prefill profile scope')
+    event_pairs.clear()
+    event_active = True
+    try:
+        yield
+    finally:
+        event_active = False
+        torch.cuda.synchronize()
+        values = {}
+        for name,start,end in event_pairs:
+            v = values.setdefault(name, {'ms':0.0,'count':0})
+            v['ms'] += start.elapsed_time(end)
+            v['count'] += 1
+        import json
+        print('TF_PREFILL_EVENTS '+json.dumps({'rank':rank,'rows':rows,'schedule':trial_control.ACTIVE.get('prefill_schedule',0),'parts':values}),flush=True)
+        event_pairs.clear()

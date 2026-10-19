@@ -1,4 +1,20 @@
-# 打包验证范围
+# Packaging validation
+
+## Update — 2026-10-19
+
+- Seven runtime artifacts (including the disabled native atomic extension) were matched by SHA-256 against both running TP ranks.
+- All 921 packaged Python source files passed syntax checks. Eight CPU tests passed locally and inside the ARM64 package image: retained defaults, TP payload compatibility, cache-tag separation, source hashes, dated evidence arithmetic, and existing deployment/key/vision contracts.
+- Offline build from the already installed `glm-mxprefill:20261018` base passed. A CPU-only container imported the captured native library and its `prompt_atomic` entry point with CUDA uninitialized. Shell syntax checks passed.
+- The first container test invocation could not discover tests because `.dockerignore` deliberately excludes them; mounting the same test directory read-only fixed the validation runner. No runtime change was needed.
+- Online container identity/start time/restart state was unchanged. Health remained idle, requests stayed at 10, and the pool remained 1,699,840 tokens. This packaging task generated **zero requests** and performed **zero model reloads**.
+- The build was checked before final documentation/hash-manifest refresh; runtime source, scripts, defaults, and tests are the validated versions. No image was pushed by this source-repository update.
+
+**Not validated in this packaging task:** a fresh public-base dependency install, rebuilding the native binary, GPU/model startup from this public recipe, full 1M context, video, new decode/prefill runs, or model capability. Performance numbers are dated results from the already tested running deployment. See [validation-20261019.json](../evidence/validation-20261019.json), [source verification](../evidence/prefill-source-20261019.json), and [prefill results](PREFILL_20261019.md).
+
+## Original package — 2026-10-18
+
+The following is the original validation record. References to the running process and its retired draft banks apply to that date, not the updated 2026-10-19 deployment.
+
 
 2026-10-18，本次只整理仓库，不重载在线模型、不生成请求、不追加测速。
 

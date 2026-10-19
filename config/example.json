@@ -9,7 +9,7 @@
   "head": {"data_dir": "~/.local/share/glm53-exlr8-recipe", "model_dir": "", "draft_dir": "", "vision_dir": ""},
   "peer": {"data_dir": "~/.local/share/glm53-exlr8-recipe", "model_dir": "", "draft_dir": "", "vision_dir": ""},
   "api_key_file": "",
-  "image": "glm53-exlr8-recipe:20261018",
+  "image": "glm53-exlr8-recipe:20261019",
   "container": "glm53-exlr8-recipe",
   "model_name": "GLM-5.3-Flash-EXLR8-K4",
   "api_host": "0.0.0.0",

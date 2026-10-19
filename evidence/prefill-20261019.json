@@ -1,0 +1,1188 @@
+{
+  "measurement_date": "2026-10-19",
+  "timezone": "Asia/Taipei",
+  "scope": "Single isolated cold requests; not repeated means; existing running-deployment results, no new packaging benchmark.",
+  "settings": {
+    "temperature": 1,
+    "top_p": 0.95,
+    "top_k": 20,
+    "min_p": 0,
+    "seed": 42,
+    "max_tokens": 32,
+    "ignore_eos": true,
+    "thinking": false,
+    "policy": "fnc7:0.3"
+  },
+  "prompt_recipe": {
+    "prefix": "prefill2000-20261019-a-{nominal}: ",
+    "filler": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. ",
+    "repeats": "nominal // 22",
+    "suffix": "newline + evidence/prompts.json:zh_prose",
+    "note": "Earlier 1800 paired records use a different nonce; source prompt hashes are preserved."
+  },
+  "bf16_paired": [
+    {
+      "nominal": 32768,
+      "usage": {
+        "prompt_tokens": 32832,
+        "completion_tokens": 32,
+        "total_tokens": 32864,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 18.9998,
+        "decode_s": 0.3284,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 29,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 0,
+          "prefill_pieces": 0
+        },
+        "verify_graph_paths_total": {
+          "2": 34,
+          "3": 5,
+          "6": 1,
+          "16": 1,
+          "9": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "1c3dd9c6ecf26acb2488cb7c625b898754890cdee6bea58635f8eab018a8eff9",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 19.060717100976035,
+      "wall_s": 19.390939550008625,
+      "isolated": true,
+      "prefill_tps": 1728.0181896651543,
+      "source": {
+        "path": "glm-prefill1800-20261019/pieces32-original.json",
+        "sha256": "b4fee6e56a1e6bc5207546061700a1496326b9369b16149ba7bb196ed55b6d49",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-18T22:57:34.784044+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 32768,
+      "usage": {
+        "prompt_tokens": 32832,
+        "completion_tokens": 32,
+        "total_tokens": 32864,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 17.5036,
+        "decode_s": 0.3292,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 29,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1
+        },
+        "verify_graph_paths_total": {
+          "2": 35,
+          "3": 6,
+          "6": 2,
+          "16": 3,
+          "9": 3,
+          "7": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "1c3dd9c6ecf26acb2488cb7c625b898754890cdee6bea58635f8eab018a8eff9",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 17.55651718005538,
+      "wall_s": 17.887419716920704,
+      "isolated": true,
+      "prefill_tps": 1875.728421581846,
+      "source": {
+        "path": "glm-prefill1800-20261019/pieces32-candidate.json",
+        "sha256": "002d905959923f6dad13a7cf7fccf595cfaba57f684e768965ee5885a8faeb60",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-18T22:58:12.425120+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 196608,
+      "usage": {
+        "prompt_tokens": 196666,
+        "completion_tokens": 32,
+        "total_tokens": 196698,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 117.3843,
+        "decode_s": 0.8421,
+        "rounds": 17,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 24,
+        "accepted": 14,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 0,
+          "prefill_pieces": 0
+        },
+        "verify_graph_paths_total": {
+          "2": 63,
+          "3": 13,
+          "6": 2,
+          "16": 3,
+          "9": 3,
+          "7": 1,
+          "5": 1,
+          "4": 1
+        },
+        "sha256": "bbcb7614586da847",
+        "tokens_per_round": 1.824,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "45cc33e2f774"
+      },
+      "prompt_sha256": "b8ee2bae1a4e0c0114fbd6b1c63e52028a6a1efc0aa2eefc8a9ebebfbee72a4a",
+      "output": "先说结论：缓存命中提高的是**系统内部的计算成本**，而用户感受到的是**端到端总时长**。这两者之间隔着排队",
+      "ttft_s": 117.7536956500262,
+      "wall_s": 118.60531893302687,
+      "isolated": true,
+      "prefill_tps": 1675.4029286710404,
+      "source": {
+        "path": "glm-prefill1800-20261019/pieces196-original.json",
+        "sha256": "5bd9b222c93482c3bcf399b95a4e1a217b3f01dce028b0459462b38c35e60203",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-18T23:00:19.549232+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 196608,
+      "usage": {
+        "prompt_tokens": 196666,
+        "completion_tokens": 32,
+        "total_tokens": 196698,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 107.7365,
+        "decode_s": 0.9711,
+        "rounds": 20,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 25,
+        "accepted": 11,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1
+        },
+        "verify_graph_paths_total": {
+          "2": 52,
+          "3": 8,
+          "6": 2,
+          "16": 3,
+          "9": 3,
+          "7": 1,
+          "5": 1
+        },
+        "sha256": "a715554bc94709f0",
+        "tokens_per_round": 1.55,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "90ac229e149b"
+      },
+      "prompt_sha256": "b8ee2bae1a4e0c0114fbd6b1c63e52028a6a1efc0aa2eefc8a9ebebfbee72a4a",
+      "output": "## 先说结论\n\n缓存命中率提高只说明“计算量少了”，但用户感受到的延迟是一条链：**排队 → 预填充（pref",
+      "ttft_s": 108.11413665604778,
+      "wall_s": 109.09586697421037,
+      "isolated": true,
+      "prefill_tps": 1825.4352053389518,
+      "source": {
+        "path": "glm-prefill1800-20261019/pieces196-candidate.json",
+        "sha256": "3c6d03d5db0936f53af3ee512f93072e65f97c62662de843d9ab8a5f830e9e79",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-18T22:58:30.375673+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    }
+  ],
+  "schedule_paired": [
+    {
+      "nominal": 32768,
+      "usage": {
+        "prompt_tokens": 32829,
+        "completion_tokens": 32,
+        "total_tokens": 32861,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 17.5138,
+        "decode_s": 0.3382,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 0,
+          "prefill_profile": false
+        },
+        "verify_graph_paths_total": {
+          "2": 43,
+          "3": 5,
+          "4": 1,
+          "8": 1,
+          "16": 1,
+          "9": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "2230270f6268168bf87876b45c16f547fef12a58d80da1637b2b7bd42fd76e17",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 17.578552227001637,
+      "wall_s": 17.917999670142308,
+      "isolated": true,
+      "prefill_tps": 1874.4647078303967,
+      "source": {
+        "path": "glm-prefill2000-20261019/schedule0-32k.json",
+        "sha256": "339c6e91ce4e63505b9ba57b983becd26d918b346e48aa1540a60d0cfe74b253",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-19T05:23:06.373776+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 8192,
+      "usage": {
+        "prompt_tokens": 8255,
+        "completion_tokens": 32,
+        "total_tokens": 8287,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 4.6373,
+        "decode_s": 0.3418,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false
+        },
+        "verify_graph_paths_total": {
+          "2": 61,
+          "3": 6,
+          "4": 2,
+          "8": 3,
+          "16": 3,
+          "9": 3,
+          "5": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "99ed760fff3d7065e59f92f21b6824be49ae0100fec54857238cef191dbdf3ed",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 4.660199926001951,
+      "wall_s": 5.003489959053695,
+      "isolated": true,
+      "prefill_tps": 1780.1306794902207,
+      "source": {
+        "path": "glm-prefill2000-20261019/schedule2-screen.json",
+        "sha256": "fdbe794fb9c4837bc866ca7d1b4c1df99bec8673b9610b07ae21ff0ef907d914",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-19T05:24:12.201546+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 32768,
+      "usage": {
+        "prompt_tokens": 32829,
+        "completion_tokens": 32,
+        "total_tokens": 32861,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 17.3364,
+        "decode_s": 0.3424,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false
+        },
+        "verify_graph_paths_total": {
+          "2": 62,
+          "3": 6,
+          "4": 2,
+          "8": 4,
+          "16": 4,
+          "9": 4,
+          "5": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "2230270f6268168bf87876b45c16f547fef12a58d80da1637b2b7bd42fd76e17",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 17.400434783892706,
+      "wall_s": 17.74458744795993,
+      "isolated": true,
+      "prefill_tps": 1893.6457395999169,
+      "source": {
+        "path": "glm-prefill2000-20261019/schedule2-screen.json",
+        "sha256": "fdbe794fb9c4837bc866ca7d1b4c1df99bec8673b9610b07ae21ff0ef907d914",
+        "request_index": 1
+      },
+      "run_started_utc": "2026-10-19T05:24:12.201546+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 196608,
+      "usage": {
+        "prompt_tokens": 196663,
+        "completion_tokens": 32,
+        "total_tokens": 196695,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 107.1878,
+        "decode_s": 1.1833,
+        "rounds": 25,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 27,
+        "accepted": 6,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 0,
+          "prefill_profile": false
+        },
+        "verify_graph_paths_total": {
+          "2": 85,
+          "3": 8,
+          "4": 2,
+          "8": 4,
+          "16": 4,
+          "9": 4,
+          "5": 1
+        },
+        "sha256": "8bafd3002d99674d",
+        "tokens_per_round": 1.24,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "a9e40af771aa"
+      },
+      "prompt_sha256": "5b5813346d8031e48ba11b3b80f54de8295600f0156ccc3a6d2fd732981674ef",
+      "output": "用户感受到的延迟其实由一整条链路组成，缓存命中只是其中一个环节。下面用一条完整的时间线来解释为什么缓存命中率上去了",
+      "ttft_s": 107.59618743299507,
+      "wall_s": 108.79040811210871,
+      "isolated": true,
+      "prefill_tps": 1834.7517161468004,
+      "source": {
+        "path": "glm-prefill2000-20261019/schedule0-197k.json",
+        "sha256": "ed13258a34677e868aa6ae4f43e668cb1364385f86b5e9181ae1eea555ee39dd",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-19T05:27:01.603574+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 196608,
+      "usage": {
+        "prompt_tokens": 196663,
+        "completion_tokens": 32,
+        "total_tokens": 196695,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 106.0364,
+        "decode_s": 1.1934,
+        "rounds": 25,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 28,
+        "accepted": 6,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false
+        },
+        "verify_graph_paths_total": {
+          "2": 108,
+          "3": 9,
+          "4": 3,
+          "8": 4,
+          "16": 4,
+          "9": 4,
+          "5": 1
+        },
+        "sha256": "8bafd3002d99674d",
+        "tokens_per_round": 1.24,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "a9e40af771aa"
+      },
+      "prompt_sha256": "5b5813346d8031e48ba11b3b80f54de8295600f0156ccc3a6d2fd732981674ef",
+      "output": "用户感受到的延迟其实由一整条链路组成，缓存命中只是其中一个环节。下面用一条完整的时间线来解释为什么缓存命中率上去了",
+      "ttft_s": 106.43754894286394,
+      "wall_s": 107.64221185888164,
+      "isolated": true,
+      "prefill_tps": 1854.6744325533496,
+      "source": {
+        "path": "glm-prefill2000-20261019/schedule2-197k.json",
+        "sha256": "0b5348a8e49866c5883ef2f45e8d4d4c2964cc8de8881030643d70eb8689b772",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-19T05:32:46.212297+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    }
+  ],
+  "retained": [
+    {
+      "nominal": 8192,
+      "usage": {
+        "prompt_tokens": 8255,
+        "completion_tokens": 32,
+        "total_tokens": 8287,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 4.8887,
+        "decode_s": 0.3996,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false,
+          "prefill_atomic": false
+        },
+        "verify_graph_paths_total": {
+          "2": 1,
+          "8": 1,
+          "16": 1,
+          "9": 1
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "99ed760fff3d7065e59f92f21b6824be49ae0100fec54857238cef191dbdf3ed",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 4.918486944865435,
+      "wall_s": 5.3210136408451945,
+      "isolated": true,
+      "prefill_tps": 1688.5879681714976,
+      "source": {
+        "path": "glm-prefill2000-20261019/atomic-baseline-screen.json",
+        "sha256": "2af7b09f92977ff9b181a920fdb7ed94037b1e8a210725740b0c327285a8a643",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-19T05:45:34.138238+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 32768,
+      "usage": {
+        "prompt_tokens": 32829,
+        "completion_tokens": 32,
+        "total_tokens": 32861,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 17.3267,
+        "decode_s": 0.3409,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false,
+          "prefill_atomic": false
+        },
+        "verify_graph_paths_total": {
+          "2": 2,
+          "8": 2,
+          "16": 2,
+          "9": 2
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "2230270f6268168bf87876b45c16f547fef12a58d80da1637b2b7bd42fd76e17",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 17.39595704106614,
+      "wall_s": 17.738780393032357,
+      "isolated": true,
+      "prefill_tps": 1894.7058585881905,
+      "source": {
+        "path": "glm-prefill2000-20261019/atomic-baseline-screen.json",
+        "sha256": "2af7b09f92977ff9b181a920fdb7ed94037b1e8a210725740b0c327285a8a643",
+        "request_index": 1
+      },
+      "run_started_utc": "2026-10-19T05:45:34.138238+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 196608,
+      "usage": {
+        "prompt_tokens": 196663,
+        "completion_tokens": 32,
+        "total_tokens": 196695,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 106.0426,
+        "decode_s": 1.1964,
+        "rounds": 25,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 28,
+        "accepted": 6,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false,
+          "prefill_atomic": false
+        },
+        "verify_graph_paths_total": {
+          "2": 27,
+          "8": 4,
+          "16": 4,
+          "9": 4,
+          "4": 1,
+          "3": 1
+        },
+        "sha256": "8bafd3002d99674d",
+        "tokens_per_round": 1.24,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "a9e40af771aa"
+      },
+      "prompt_sha256": "5b5813346d8031e48ba11b3b80f54de8295600f0156ccc3a6d2fd732981674ef",
+      "output": "用户感受到的延迟其实由一整条链路组成，缓存命中只是其中一个环节。下面用一条完整的时间线来解释为什么缓存命中率上去了",
+      "ttft_s": 106.44853900698945,
+      "wall_s": 107.65536981006153,
+      "isolated": true,
+      "prefill_tps": 1854.565995175524,
+      "source": {
+        "path": "glm-prefill2000-20261019/atomic-baseline-197k.json",
+        "sha256": "149d21f4928bdb01ae12d695f5eb8fc5e4ba762ff76d7918289333862f0a2af6",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-19T05:50:24.495059+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    }
+  ],
+  "rejected_atomic": [
+    {
+      "nominal": 8192,
+      "usage": {
+        "prompt_tokens": 8255,
+        "completion_tokens": 32,
+        "total_tokens": 8287,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 4.7183,
+        "decode_s": 0.3355,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false,
+          "prefill_atomic": true
+        },
+        "verify_graph_paths_total": {
+          "2": 3,
+          "8": 3,
+          "16": 3,
+          "9": 3
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "99ed760fff3d7065e59f92f21b6824be49ae0100fec54857238cef191dbdf3ed",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 4.7348231768701226,
+      "wall_s": 5.073677456006408,
+      "isolated": true,
+      "prefill_tps": 1749.5708199987282,
+      "source": {
+        "path": "glm-prefill2000-20261019/atomic-candidate-screen.json",
+        "sha256": "560aec513d13436cafc4789d422af5e81c06684e42f880a473680c0a5952bd7f",
+        "request_index": 0
+      },
+      "run_started_utc": "2026-10-19T05:46:08.328577+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    },
+    {
+      "nominal": 32768,
+      "usage": {
+        "prompt_tokens": 32829,
+        "completion_tokens": 32,
+        "total_tokens": 32861,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "stats": {
+        "prefill_s": 17.4608,
+        "decode_s": 0.3396,
+        "rounds": 4,
+        "drafts": true,
+        "cached": 0,
+        "min_rows": 2,
+        "drafted": 31,
+        "accepted": 27,
+        "multi_prefill_rows": 0,
+        "direct_prefill_tap_rows": 0,
+        "tf_trials": {
+          "gr8": false,
+          "quant": "mse",
+          "kda": false,
+          "taps": false,
+          "prefill": 0,
+          "asyncmsg": false,
+          "sampler": false,
+          "prefill_taps": true,
+          "index_split": true,
+          "chunk8k": false,
+          "mla_variant": 1,
+          "spec": 0,
+          "draft_noise": 1.0,
+          "pf": 1,
+          "d30": 7,
+          "draft_checkpoint": 31,
+          "verify8": true,
+          "rrs_k": 0,
+          "expert_order": 2,
+          "rrs_mode": 0,
+          "fnc_zero": 0,
+          "shared_fusion": false,
+          "mx_prefill": false,
+          "bf16_prefill": 3,
+          "prefill_pieces": 1,
+          "prefill_schedule": 2,
+          "prefill_profile": false,
+          "prefill_atomic": true
+        },
+        "verify_graph_paths_total": {
+          "2": 4,
+          "8": 4,
+          "16": 4,
+          "9": 4
+        },
+        "sha256": "90375ffa65ebc9f6",
+        "tokens_per_round": 7.75,
+        "parallel": 4,
+        "policy": "fnc7:0.3",
+        "token_sha": "74266b861d23"
+      },
+      "prompt_sha256": "2230270f6268168bf87876b45c16f547fef12a58d80da1637b2b7bd42fd76e17",
+      "output": "The quick brown fox jumps over the lazy dog. This is a sentence about systems, memory, and computation. The quick brown fox jumps over the lazy dog.",
+      "ttft_s": 17.525846973992884,
+      "wall_s": 17.86872246605344,
+      "isolated": true,
+      "prefill_tps": 1880.1544030055898,
+      "source": {
+        "path": "glm-prefill2000-20261019/atomic-candidate-screen.json",
+        "sha256": "560aec513d13436cafc4789d422af5e81c06684e42f880a473680c0a5952bd7f",
+        "request_index": 1
+      },
+      "run_started_utc": "2026-10-19T05:46:08.328577+00:00",
+      "measurement_date": "2026-10-19",
+      "timezone": "Asia/Taipei",
+      "seed": 42
+    }
+  ]
+}

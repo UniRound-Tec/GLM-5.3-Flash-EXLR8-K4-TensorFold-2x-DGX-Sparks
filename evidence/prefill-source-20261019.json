@@ -1,0 +1,43 @@
+{
+  "snapshot_date": "2026-10-19",
+  "verified_ranks": [
+    0,
+    1
+  ],
+  "runtime_files": {
+    "qmm.py": "4455f2040a2b10056153da797818260f845eda05ea54fa15e4c5c31b6576ae10",
+    "trial_control.py": "7f0fcb1ce550785d757f3ca253f7ba59d976b502dc58633d8d0b1b03a9fd9d42",
+    "forward.py": "30b02e6948f53aab4d3071e0ca483e0d21e10ff1d0e846458db22b5b4c69e890",
+    "prof.py": "18ea2cd6e2869e56ac1c27ffac7e78367a5ce987e52ab247f5174c901931d583",
+    "prefill_atomic.py": "ab188e140bd8c7391e8def7db3ef2e486a7c79c9f2b5403e553e3d553785e50b",
+    "prefill_atomic_kernel.so": "ae3620ca28ec89475b41567b03b9b8bab0832b92eb4079d48450575cc77ad151",
+    "draft_checkpoints.py": "6bbc55f877132c58566849e480f98569f704797a12d2bd501f62347dc7a251d5"
+  },
+  "defaults": {
+    "quant": "mse",
+    "kda": false,
+    "taps": false,
+    "prefill": 0,
+    "asyncmsg": false,
+    "sampler": false,
+    "prefill_taps": true,
+    "index_split": true,
+    "mla_variant": 1,
+    "chunk8k": false,
+    "gr8": false,
+    "pf": 1,
+    "d30": 7,
+    "verify8": true,
+    "expert_order": 2,
+    "draft_noise": 1.0,
+    "rrs_k": 0,
+    "mx_prefill": false,
+    "bf16_prefill": 3,
+    "prefill_pieces": 1,
+    "prefill_schedule": 2,
+    "prefill_atomic": false,
+    "prefill_profile": false
+  },
+  "new_weight_or_activation_quantization": false,
+  "verification": "Each runtime artifact SHA256 matches both live TP ranks; no deployment mutation."
+}

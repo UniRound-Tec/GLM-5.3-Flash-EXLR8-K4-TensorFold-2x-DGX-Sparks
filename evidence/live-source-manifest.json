@@ -1042,8 +1042,8 @@
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/forward.py",
-      "bytes": 62477,
-      "sha256": "3b4d2baa0a2a8e9f69c639951721b1cc60ca5919c4dd5d5e38317b9fa5e19e54"
+      "bytes": 64293,
+      "sha256": "30b02e6948f53aab4d3071e0ca483e0d21e10ff1d0e846458db22b5b4c69e890"
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/mtp.py",
@@ -1072,8 +1072,8 @@
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/prof.py",
-      "bytes": 1779,
-      "sha256": "b62f4814f8cbaf36a65b8e42ed04d49a129232ea90700c91c76fd5ae33d16bf7"
+      "bytes": 3180,
+      "sha256": "18ea2cd6e2869e56ac1c27ffac7e78367a5ce987e52ab247f5174c901931d583"
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/weights.py",
@@ -1132,8 +1132,8 @@
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/qmm.py",
-      "bytes": 28592,
-      "sha256": "40771c4f044d6c29fd85ec9aeb1c8ab53709e60b98d872a189b3ce003ba7e0e4"
+      "bytes": 32929,
+      "sha256": "4455f2040a2b10056153da797818260f845eda05ea54fa15e4c5c31b6576ae10"
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/latent.py",
@@ -1162,8 +1162,8 @@
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/trial_control.py",
-      "bytes": 15054,
-      "sha256": "33fca0300c305ecd6faf98bb3961258412c19cf3801cd28928194c9d27279847"
+      "bytes": 17996,
+      "sha256": "7f0fcb1ce550785d757f3ca253f7ba59d976b502dc58633d8d0b1b03a9fd9d42"
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/mx_prefill_kernel.so",
@@ -1242,8 +1242,8 @@
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/draft_checkpoints.py",
-      "bytes": 3564,
-      "sha256": "6319556f30223ba192cb20d53fe1346bb2e51bafa5b8baea557420ead858c0f2"
+      "bytes": 3713,
+      "sha256": "6bbc55f877132c58566849e480f98569f704797a12d2bd501f62347dc7a251d5"
     },
     {
       "path": "tensorfold/families/glm5_next/cuda/dflash2_multi.py",
@@ -4999,6 +4999,16 @@
       "path": "b12x/testing/startup/moe.py",
       "bytes": 13048,
       "sha256": "4a09761381a137932690a8783da68c4bcfa575d498b1874e0caf033c5eaa4cdb"
+    },
+    {
+      "path": "tensorfold/families/glm5_next/cuda/prefill_atomic.py",
+      "bytes": 1686,
+      "sha256": "ab188e140bd8c7391e8def7db3ef2e486a7c79c9f2b5403e553e3d553785e50b"
+    },
+    {
+      "path": "tensorfold/families/glm5_next/cuda/prefill_atomic_kernel.so",
+      "bytes": 5003544,
+      "sha256": "ae3620ca28ec89475b41567b03b9b8bab0832b92eb4079d48450575cc77ad151"
     }
   ],
   "packages": [
@@ -5922,5 +5932,20 @@
       "name": "zipp",
       "version": "4.1.0"
     }
-  ]
+  ],
+  "snapshot_provenance": {
+    "original_capture_date": "2026-10-18",
+    "prefill_update_date": "2026-10-19",
+    "refreshed_paths": [
+      "tensorfold/families/glm5_next/cuda/qmm.py",
+      "tensorfold/families/glm5_next/cuda/trial_control.py",
+      "tensorfold/families/glm5_next/cuda/forward.py",
+      "tensorfold/families/glm5_next/cuda/prof.py",
+      "tensorfold/families/glm5_next/cuda/prefill_atomic.py",
+      "tensorfold/families/glm5_next/cuda/prefill_atomic_kernel.so",
+      "tensorfold/families/glm5_next/cuda/draft_checkpoints.py"
+    ],
+    "refreshed_hashes_verified_on_both_ranks": true,
+    "other_entries": "Original captured runtime manifest; not recaptured in this update."
+  }
 }

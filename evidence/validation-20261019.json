@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-19",
+  "complete": true,
+  "started": 1792396672.318218,
+  "finished": 1792396674.8431637,
+  "offline_build": true,
+  "base_image": "glm-mxprefill:20261018",
+  "image_tag": "glm53-exlr8-recipe:20261019",
+  "image_id": "sha256:ebb0ffe8fc605bae855ec7c7f0807741d6a9305308c39eaa064f7549be6b79bd",
+  "checks": {
+    "runtime": true,
+    "tests": true,
+    "shell_syntax": true
+  },
+  "cpu_tests": 8,
+  "cuda_initialized": false,
+  "new_model_loads": 0,
+  "generated_requests": 0,
+  "online_container_unchanged": true,
+  "health_before": {
+    "ok": true,
+    "busy": false,
+    "requests_running": 0,
+    "requests_total": 10,
+    "pool_tokens": 1699840
+  },
+  "health_after": {
+    "ok": true,
+    "busy": false,
+    "requests_running": 0,
+    "requests_total": 10,
+    "pool_tokens": 1699840
+  },
+  "limitations": [
+    "No fresh public-base dependency install",
+    "No GPU startup from this package",
+    "No new inference or benchmark",
+    "Native rebuild script not executed; captured library import validated"
+  ]
+}

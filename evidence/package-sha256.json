@@ -38,13 +38,13 @@
     },
     {
       "path": "config/defaults.json",
-      "bytes": 356,
-      "sha256": "cb95fbb9ed88d10b524120ff00f4db0e4620bbf80318cccd199045d90eb04b8a"
+      "bytes": 485,
+      "sha256": "02f6f5061fb86aab58664f17b8477223c68f8a0953890e22b5c40b31bb390ef1"
     },
     {
       "path": "config/example.json",
       "bytes": 774,
-      "sha256": "daa6eee98f7d2470bba1e8552b39683721d2132275a029e8ba9e2dd8ed7345a4"
+      "sha256": "241ee0473c51c75f0a9b1a45bd2e3e2e1c0bc84ccc8f50bb3bf1733b506aa973"
     },
     {
       "path": "config/policy.txt",
@@ -59,27 +59,32 @@
     {
       "path": "Dockerfile",
       "bytes": 1036,
-      "sha256": "2224cbf56b284750840b7ff9142c3f2df2a3426bc5095ac1097d5565f7ca4c17"
+      "sha256": "4183c79301545a14d7cea8dd468e29611244bb749498404a8a9e90a8b0231673"
     },
     {
       "path": "docs/BENCHMARKS.md",
-      "bytes": 2149,
-      "sha256": "0d0cd04c86b576fb9e3fae9d8ab95dc2ca33ef1b152a7c0fa3c1ed8100b4a0fe"
+      "bytes": 2664,
+      "sha256": "7faeed91acb602d9626ca7bd6378b6f77502f8ce20bec1294ef8b9c3c3b9428c"
     },
     {
       "path": "docs/BUILD.md",
-      "bytes": 1713,
-      "sha256": "0a1221979ea8629ec71acc42de447563dd9a0430bb81f2307c2ab9afe57e3358"
+      "bytes": 2299,
+      "sha256": "aa57bbb421580cb4866ae09ed7c7e7a8c52830e426e2066d0d22cc7ca126b778"
     },
     {
       "path": "docs/DEPLOYMENT.md",
-      "bytes": 4067,
-      "sha256": "c4185d87568e03b0eb39b2065247afb1907e1069e99bcc4cd5a04065b11efdfd"
+      "bytes": 4111,
+      "sha256": "fae08708258347dffa7294aaf33abc3705952ad2cbae9f40e5794aeb22fb57f6"
+    },
+    {
+      "path": "docs/PREFILL_20261019.md",
+      "bytes": 4862,
+      "sha256": "0e78ce5c9fd74097bc00c4054f879c36534bfa176d671b82a3e5fb0b2f6d6022"
     },
     {
       "path": "docs/VALIDATION.md",
-      "bytes": 1857,
-      "sha256": "4f5103cf32a214b64486e10967bb455beac81599083016003c86def6b8665caa"
+      "bytes": 3879,
+      "sha256": "03b033ea0c7c71975dec9b262a9c15a656d66573048661bd9bdb2842ae1306df"
     },
     {
       "path": "evidence/benchmarks.json",
@@ -88,8 +93,28 @@
     },
     {
       "path": "evidence/live-source-manifest.json",
-      "bytes": 187733,
-      "sha256": "24a445c7875903af0820189d75c3670edf923dc1c7a543aaddebac4662934958"
+      "bytes": 188823,
+      "sha256": "31be704915c12db5824dfa99cbca79713d20b9a948924fcab44af3b8acd304be"
+    },
+    {
+      "path": "evidence/prefill-20261019.json",
+      "bytes": 35231,
+      "sha256": "f20fb704aad46814aa6f4f5bdb46dcff005f799274a5a8bc39e937004ff20dfb"
+    },
+    {
+      "path": "evidence/prefill-blas-selection-20261019.json",
+      "bytes": 1360,
+      "sha256": "940c3b927559a960c2d8c2ce62c5b1691b3ab815cb3350a0901c39f4b70f3a67"
+    },
+    {
+      "path": "evidence/prefill-partition-check-20261019.json",
+      "bytes": 26087,
+      "sha256": "50ff4dc1423ace804d55b8c600774f44b3ff2f8f82d05517a9104a834bdf886d"
+    },
+    {
+      "path": "evidence/prefill-source-20261019.json",
+      "bytes": 1408,
+      "sha256": "b58b2ea37d7d4ff23547e5065a019aab5ccc0029e57185dd8e152dba82ab6a46"
     },
     {
       "path": "evidence/prompts.json",
@@ -100,6 +125,11 @@
       "path": "evidence/runtime-source-update.json",
       "bytes": 419,
       "sha256": "90e084ff18f33a604933eda173acc453bd1b5b2409aa49463ef2215bf258ed98"
+    },
+    {
+      "path": "evidence/validation-20261019.json",
+      "bytes": 1040,
+      "sha256": "9fc22f54c178c63ca812a6ed29d0f450edf6121fe89b61db47c8720e37458d7c"
     },
     {
       "path": "evidence/validation.json",
@@ -143,8 +173,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11693,
-      "sha256": "f9e6ce40bbc5de70d13669f827c6f96fd25f6d56ea05b5f1e7b49bc98a51f348"
+      "bytes": 14014,
+      "sha256": "0287faa6087724e79bc04d99c38aaa8c6ff922bf0a4295a76d08e128a2f5c27e"
     },
     {
       "path": "requirements-runtime.txt",
@@ -168,13 +198,13 @@
     },
     {
       "path": "scripts/benchmark.py",
-      "bytes": 3930,
-      "sha256": "616cc434ffca49a3b334163822be348719814db10f7e813a862ef2ce862cfb41"
+      "bytes": 3972,
+      "sha256": "baa9d5b12aca317c3bfc0fc697a77346cfffa97dd09887083f66159a2661b11a"
     },
     {
       "path": "scripts/check_runtime.py",
-      "bytes": 958,
-      "sha256": "e2024921ecfc0af1f3c90d052c714def4af6d875c41424574138cc53d5fcf10b"
+      "bytes": 1294,
+      "sha256": "4c6c0ec1752ec447237d8ab113dad67162508d0520a28992ac56a76f16bdf3b9"
     },
     {
       "path": "scripts/prepare_view.py",
@@ -182,9 +212,14 @@
       "sha256": "8d8719e44921934448c7a8b21cd59eb035e5d6cde3692d76cefd88168d750550"
     },
     {
+      "path": "scripts/rebuild-atomic.py",
+      "bytes": 711,
+      "sha256": "cd7d2c7d864ea472e2cae07a275f4d57d52a5431ed78dbb517278a71b1b97066"
+    },
+    {
       "path": "scripts/rebuild-native.sh",
-      "bytes": 1012,
-      "sha256": "e3af66ac6454022ad4df95585b096b3f180dba6881db7c5f92df1df2d830e61f"
+      "bytes": 1095,
+      "sha256": "da77a82fe7c71f102fa4e9de4176e4e6b64ed12bd1af10a83bcd6a4dec2b3766"
     },
     {
       "path": "scripts/recipe.py",
@@ -194,12 +229,12 @@
     {
       "path": "sources.lock.json",
       "bytes": 2038,
-      "sha256": "3c8007bc2d573e85188978e4792e6c4426024bee6004b104d891e6b4d4ed6129"
+      "sha256": "585dd6c1f00f4bc72d9e3cbb5a0631a5f5a97ddf6cd0bd371431f66f97bb83b5"
     },
     {
       "path": "tests/test_recipe.py",
-      "bytes": 2900,
-      "sha256": "87ea2f57a2bded2fcfa5e43c01d65a6d25eb3fed1640c3933b75390ce6f34b36"
+      "bytes": 5258,
+      "sha256": "89613f767a8cdd071a83414b755eb9591e98e4ee460c91c0f2e44dae92681fa2"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -2853,8 +2888,8 @@
     },
     {
       "path": "vendor/MODIFICATIONS.md",
-      "bytes": 1782,
-      "sha256": "29d28f860b2f80960f8381eb9e096c90929e313af47dd5915dc43cf10ace72c9"
+      "bytes": 2898,
+      "sha256": "4a8d6165d78615fa93218a6b2aee5f1cbdbab4e64a990d6dc32d9d1a2cb4fda0"
     },
     {
       "path": "vendor/native/aot/mx_0.h",
@@ -2885,6 +2920,16 @@
       "path": "vendor/native/aot/mx_6.o",
       "bytes": 98728,
       "sha256": "62f75f1926e08e69a7c337ff5b379fc19096434d418bf010f27d0b2ab7028061"
+    },
+    {
+      "path": "vendor/native/expert-atomic.cpp",
+      "bytes": 577,
+      "sha256": "7123378dd62cce86f709a3dc6b5d2194774fb0e53f0148729c50c57a7ccf45ac"
+    },
+    {
+      "path": "vendor/native/expert-atomic.cu",
+      "bytes": 60774,
+      "sha256": "4b8b985ebbe092f7405542340b12e71ada8f506ed21f7ade786fd371e87c20f9"
     },
     {
       "path": "vendor/native/mx_prefill.cu",
@@ -3758,8 +3803,8 @@
     },
     {
       "path": "vendor/tensorfold/families/glm5_next/cuda/forward.py",
-      "bytes": 62477,
-      "sha256": "3b4d2baa0a2a8e9f69c639951721b1cc60ca5919c4dd5d5e38317b9fa5e19e54"
+      "bytes": 64293,
+      "sha256": "30b02e6948f53aab4d3071e0ca483e0d21e10ff1d0e846458db22b5b4c69e890"
     },
     {
       "path": "vendor/tensorfold/families/glm5_next/cuda/glue.py",
@@ -3997,9 +4042,19 @@
       "sha256": "65c64e2dabb7ec2b7e0d2bbb2a8a1a2005e8ce30c5c9087ce6159009ceec998b"
     },
     {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/prefill_atomic.py",
+      "bytes": 1686,
+      "sha256": "ab188e140bd8c7391e8def7db3ef2e486a7c79c9f2b5403e553e3d553785e50b"
+    },
+    {
+      "path": "vendor/tensorfold/families/glm5_next/cuda/prefill_atomic_kernel.so",
+      "bytes": 5003544,
+      "sha256": "ae3620ca28ec89475b41567b03b9b8bab0832b92eb4079d48450575cc77ad151"
+    },
+    {
       "path": "vendor/tensorfold/families/glm5_next/cuda/prof.py",
-      "bytes": 1779,
-      "sha256": "b62f4814f8cbaf36a65b8e42ed04d49a129232ea90700c91c76fd5ae33d16bf7"
+      "bytes": 3180,
+      "sha256": "18ea2cd6e2869e56ac1c27ffac7e78367a5ce987e52ab247f5174c901931d583"
     },
     {
       "path": "vendor/tensorfold/families/glm5_next/cuda/q4_pair.cpp",
@@ -4013,8 +4068,8 @@
     },
     {
       "path": "vendor/tensorfold/families/glm5_next/cuda/qmm.py",
-      "bytes": 28592,
-      "sha256": "40771c4f044d6c29fd85ec9aeb1c8ab53709e60b98d872a189b3ce003ba7e0e4"
+      "bytes": 32929,
+      "sha256": "4455f2040a2b10056153da797818260f845eda05ea54fa15e4c5c31b6576ae10"
     },
     {
       "path": "vendor/tensorfold/families/glm5_next/cuda/qmm_frag.cuh",
@@ -4093,8 +4148,8 @@
     },
     {
       "path": "vendor/tensorfold/families/glm5_next/cuda/trial_control.py",
-      "bytes": 15054,
-      "sha256": "33fca0300c305ecd6faf98bb3961258412c19cf3801cd28928194c9d27279847"
+      "bytes": 17996,
+      "sha256": "7f0fcb1ce550785d757f3ca253f7ba59d976b502dc58633d8d0b1b03a9fd9d42"
     },
     {
       "path": "vendor/tensorfold/families/glm5_next/cuda/trial_kernels.py",

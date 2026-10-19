@@ -10,5 +10,5 @@ RUN if [ "$INSTALL_DEPS" = 1 ]; then python3 -m pip install --no-cache-dir -r /o
 ENV PYTHONDONTWRITEBYTECODE=1 HF_HUB_OFFLINE=1 TENSORFOLD_NO_UPDATE_CHECK=1
 LABEL org.opencontainers.image.title="GLM-5.3-Flash-EXLR8-K4-TensorFold-2x-DGX-Sparks" \
       org.opencontainers.image.licenses="AGPL-3.0-only AND Apache-2.0 AND MIT" \
-      recipe.snapshot="2026-10-18" recipe.weights="not-included"
+      recipe.snapshot="2026-10-19" recipe.weights="not-included"
 ENTRYPOINT ["/opt/nvidia/nvidia_entrypoint.sh", "python3", "/opt/recipe/runtime/serve.py"]

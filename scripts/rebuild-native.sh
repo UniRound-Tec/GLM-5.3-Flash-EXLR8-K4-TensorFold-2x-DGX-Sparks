@@ -18,3 +18,4 @@ nvcc -O3 --shared -std=c++17 -Xcompiler=-fPIC --fmad=false \
   "$native/aot/mx_0.o" "$native/aot/mx_3.o" "$native/aot/mx_6.o" \
   -lcuda -L"$dsl" -lcute_dsl_runtime -Xlinker=-rpath -Xlinker="$dsl" \
   -o "$out/mx_prefill_kernel.so"
+python3 "$root/scripts/rebuild-atomic.py" --output "$out/prefill_atomic_kernel.so"

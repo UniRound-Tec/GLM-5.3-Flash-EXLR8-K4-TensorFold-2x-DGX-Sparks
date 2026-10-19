@@ -4,10 +4,10 @@ import json
 import os
 from pathlib import Path
 
-BOOLS = ('gr8', 'kda', 'taps', 'asyncmsg', 'sampler', 'prefill_taps', 'index_split', 'chunk8k', 'verify8', 'shared_fusion', 'mx_prefill')
+BOOLS = ('gr8', 'kda', 'taps', 'asyncmsg', 'sampler', 'prefill_taps', 'index_split', 'chunk8k', 'verify8', 'shared_fusion', 'mx_prefill', 'prefill_profile', 'prefill_atomic')
 BASE = {'gr8': False, 'quant': 'minmax', 'kda': False, 'taps': False, 'prefill': 0,
         'asyncmsg': False, 'sampler': False, 'prefill_taps': False,
-        'index_split': False, 'chunk8k': False, 'mla_variant': 0, 'spec': 0, 'draft_noise': 0.7, 'pf': 0, 'd30': 0, 'draft_checkpoint': 31, 'verify8': False, 'rrs_k': 0, 'expert_order': 0, 'rrs_mode': 0, 'fnc_zero': 0, 'shared_fusion': False, 'mx_prefill': False}
+        'index_split': False, 'chunk8k': False, 'mla_variant': 0, 'spec': 0, 'draft_noise': 0.7, 'pf': 0, 'd30': 0, 'draft_checkpoint': 31, 'verify8': False, 'rrs_k': 0, 'expert_order': 0, 'rrs_mode': 0, 'fnc_zero': 0, 'shared_fusion': False, 'mx_prefill': False, 'bf16_prefill': 0, 'prefill_pieces': 0, 'prefill_schedule': 0, 'prefill_profile': False, 'prefill_atomic': False}
 ACTIVE = dict(BASE)
 VERIFY8_CAPTURE = False
 _alternates = {}
@@ -59,6 +59,12 @@ def parse(value=None):
         raise ValueError('fnc_zero only applies to original FNC')
     if out['shared_fusion'] and (not out['verify8'] or out['expert_order'] != 2):
         raise ValueError('shared_fusion requires verify8 and expert_order=2')
+    if type(out['bf16_prefill']) is not int or out['bf16_prefill'] not in (0, 1, 2, 3):
+        raise ValueError('bf16_prefill must be 0/1/2/3')
+    if type(out['prefill_pieces']) is not int or out['prefill_pieces'] not in (0,1,2):
+        raise ValueError('prefill_pieces must be 0(original)/1/2')
+    if type(out['prefill_schedule']) is not int or out['prefill_schedule'] not in (0,1,2):
+        raise ValueError('prefill_schedule must be 0(original)/1(full fronts)/2(full matrices)')
     noise = out['draft_noise']
     if type(noise) not in (float, int) or not 0 <= noise <= 1.5 or abs(noise * 1000 - round(noise * 1000)) > 1e-8:
         raise ValueError('draft_noise: 0..1.5 in steps of .001')
@@ -70,7 +76,7 @@ def parse(value=None):
 def pack(value):
     value = parse(value)
     return [int(value['quant'] == 'mse'), int(value['kda']), int(value['taps']),
-            value['prefill'], int(value['asyncmsg']), int(value['sampler']), int(value['prefill_taps']), int(value['index_split']), int(value['chunk8k']), value['mla_variant'], value['spec'], int(round(value['draft_noise'] * 1000)), int(value['gr8']), value['pf'], value['d30'], value['draft_checkpoint'], int(value['verify8']), value['rrs_k'], value['expert_order'], value['rrs_mode'], value['fnc_zero'], int(value['shared_fusion']), int(value['mx_prefill'])]
+            value['prefill'], int(value['asyncmsg']), int(value['sampler']), int(value['prefill_taps']), int(value['index_split']), int(value['chunk8k']), value['mla_variant'], value['spec'], int(round(value['draft_noise'] * 1000)), int(value['gr8']), value['pf'], value['d30'], value['draft_checkpoint'], int(value['verify8']), value['rrs_k'], value['expert_order'], value['rrs_mode'], value['fnc_zero'], int(value['shared_fusion']), int(value['mx_prefill']), value['bf16_prefill'], value['prefill_pieces'], value['prefill_schedule'], int(value['prefill_profile']), int(value['prefill_atomic'])]
 
 def unpack(values):
     if len(values) == 3:
@@ -99,11 +105,19 @@ def unpack(values):
         values = [*values,0]
     if len(values) == 22:
         values = [*values,0]
-    if len(values) != 23 or any(v not in (0, 1) for i,v in enumerate(values) if i not in (3,10,11,13,14,15,17,18,19,20)) or values[10] not in (0,1,2) or type(values[11]) is not int or not 0 <= values[11] <= 1500:
+    if len(values) == 23:
+        values = [*values, 0]
+    if len(values) == 24:
+        values = [*values,0]
+    if len(values) == 25:
+        values = [*values,0,0]
+    if len(values) == 27:
+        values = [*values,0]
+    if len(values) != 28 or any(v not in (0, 1) for i,v in enumerate(values) if i not in (3,10,11,13,14,15,17,18,19,20,23,24,25)) or values[10] not in (0,1,2) or type(values[11]) is not int or not 0 <= values[11] <= 1500:
         raise ValueError('invalid TRIAL payload')
     return parse(dict(quant='mse' if values[0] else 'minmax', kda=bool(values[1]), taps=bool(values[2]),
                       prefill=values[3], asyncmsg=bool(values[4]), sampler=bool(values[5]), prefill_taps=bool(values[6]), index_split=bool(values[7]),
-                      chunk8k=bool(values[8]), mla_variant=values[9], spec=values[10], draft_noise=values[11] / 1000, gr8=bool(values[12]), pf=values[13], d30=values[14], draft_checkpoint=values[15], verify8=bool(values[16]), rrs_k=values[17], expert_order=values[18], rrs_mode=values[19], fnc_zero=values[20], shared_fusion=bool(values[21]), mx_prefill=bool(values[22])))
+                      chunk8k=bool(values[8]), mla_variant=values[9], spec=values[10], draft_noise=values[11] / 1000, gr8=bool(values[12]), pf=values[13], d30=values[14], draft_checkpoint=values[15], verify8=bool(values[16]), rrs_k=values[17], expert_order=values[18], rrs_mode=values[19], fnc_zero=values[20], shared_fusion=bool(values[21]), mx_prefill=bool(values[22]), bf16_prefill=values[23], prefill_pieces=values[24], prefill_schedule=values[25], prefill_profile=bool(values[26]), prefill_atomic=bool(values[27])))
 
 def dual_quantize(w):
     global _quant_bytes
@@ -251,7 +265,8 @@ def prepare(m):
     m.verify.graphs = m.trial_verify[False]
     from . import draft_checkpoints
     draft_checkpoints.prepare(m)
-    from . import mx_prefill
+    from . import mx_prefill, prefill_atomic
+    prefill_atomic.extension()
     mx_prefill.prepare()
     print('TF_MX_PREFILL_READY '+json.dumps({'rank':m.rank,'rows':[1024,4096],'extra_resident_weight_bytes':0,'extra_scratch_bytes':0}),flush=True)
     m.trial_active = dict(BASE)
@@ -259,6 +274,35 @@ def prepare(m):
     print('TF_TRIAL_READY '+json.dumps({'rank': m.rank, 'draft_extra_bytes': _quant_bytes,
           'verify_graphs': {str(k): len(v) for k,v in m.trial_verify.items()},
           'draft_graphs': {k: [len(v[0]),len(v[1])] for k,v in m.trial_drafts.items()}}), flush=True)
+
+def _set_prefill_pieces(m, value, schedule=0):
+    """Reuse the existing events and buffers; called only after an idle-stream synchronize."""
+    from dataclasses import replace
+    sp = m.e.pbuf.split
+    if sp is None:
+        if value or schedule:
+            raise ValueError('prefill scheduling requires HC split')
+        return
+    if sp.active:
+        raise RuntimeError('cannot switch pieces within a prompt')
+    if not hasattr(m, 'trial_split_base'):
+        m.trial_split_base = sp.settings
+        m.trial_split_stream = sp.stream
+    base = m.trial_split_base
+    if value:
+        if not base.overlap or base.exchange != 'p2p' or value > len(sp.ev_fill):
+            raise ValueError('piece setting exceeds the prepared overlap events')
+        sp.settings = replace(base, pieces=value)
+    else:
+        sp.settings = base
+    # Full fronts reduce GEMM fragmentation; mode 2 also fills output projections whole.
+    # Existing buffers/events are reused, and both TP ranks switch while idle.
+    sp.stream = m.trial_split_stream
+    if schedule:
+        sp.settings = replace(sp.settings, fronts=False, overlap=base.overlap if schedule==1 else False)
+    if schedule==2:
+        sp.stream = None
+
 
 def activate(m, value):
     value = parse(value)
@@ -268,6 +312,7 @@ def activate(m, value):
         raise RuntimeError('trial changes require an empty scheduler')
     import torch
     torch.cuda.synchronize()
+    _set_prefill_pieces(m, value['prefill_pieces'], value['prefill_schedule'])
     from . import prefetch_filter
     prefetch_filter.activate(m.w.meta.get('l2pf'),value['pf'])
     _set_weights(m, m.trial_weights[value['quant']])
@@ -293,7 +338,7 @@ def settings(s):
     return parse((getattr(s, 'glm', None) or {}).get('trial'))
 
 def tag():
-    return ACTIVE['quant'] + ':pf4:' + ':'.join(str(ACTIVE[k]) for k in ('index_split', 'mla_variant', 'chunk8k', 'gr8', 'd30', 'draft_checkpoint', 'verify8', 'rrs_k', 'expert_order', 'rrs_mode', 'fnc_zero', 'shared_fusion', 'mx_prefill'))
+    return ACTIVE['quant'] + ':pf4:' + ':'.join(str(ACTIVE[k]) for k in ('index_split', 'mla_variant', 'chunk8k', 'gr8', 'd30', 'draft_checkpoint', 'verify8', 'rrs_k', 'expert_order', 'rrs_mode', 'fnc_zero', 'shared_fusion', 'mx_prefill', 'bf16_prefill', 'prefill_pieces', 'prefill_schedule', 'prefill_profile', 'prefill_atomic'))
 
 def projections(b, fa, ga, fb, gb, R, fallback):
     from . import qmm
